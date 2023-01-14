@@ -92,10 +92,10 @@ fi
 for m in ${models[@]}; do
     for seed in ${seeds[@]}; do
         if [ "$freeze_bert" = true ]; then
-           echo "python3 $python_file --seed $seed --epochs $num_epochs --$calc True --cap_model $m  --learning_rate $learning_rate --freeze_bert $freeze_bert"
+           echo "python3 $python_file --seed $seed --epochs $epochs --$calc True --cap_model $m  --learning_rate $learning_rate --freeze_bert $freeze_bert"
            python3 $python_file --seed $seed --num_epochs $epochs --$calc True --cap_model $m  --learning_rate $learning_rate --freeze_bert $freeze_bert
         else
-           echo "python3 $python_file --seed $seed --epochs $num_epochs --$calc True --cap_model $m  --learning_rate $learning_rate"
+           echo "python3 $python_file --seed $seed --epochs $epochs --$calc True --cap_model $m  --learning_rate $learning_rate"
            python3 $python_file --seed $seed --num_epochs $epochs --$calc True --cap_model $m  --learning_rate $learning_rate    
         fi
     done
