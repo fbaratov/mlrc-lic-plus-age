@@ -1,9 +1,37 @@
+# Running docker files
+
+First of all make sure to install docker :) 
+
+Follow the directory to the lick-caption-bias, and when you are in the directory execute this command.
+
+<h3> For lstm </h3>
+
+```
+docker build -f ./Dockerfiles/Dockerfile_lstm -t lstm_fact . 
+docker run -it lstm_fact /bin/bash
+#In the container
+cd lick-caption-bias
+```
+
+<h3> For BERT </h3>
+
+```
+docker build -f ./Dockerfiles/Dockerfile_bert -t bert_fact . 
+docker run -it bert_fact /bin/bash
+#In the container
+cd lick-caption-bias
+```
+
+You should be in the container now. Go to the lick-caption-bias directory and run the scripts as described below. 
+
+
+
 # Quantifying Societal Bias Amplification in Image Captioning
 This repository contains source code necessary to reproduce the results presented in the paper [Quantifying Societal Bias Amplification in Image Captioning](https://openaccess.thecvf.com/content/CVPR2022/html/Hirota_Quantifying_Societal_Bias_Amplification_in_Image_Captioning_CVPR_2022_paper.html) (CVPR 2022, Oral). Please check the project website [here](https://sites.google.com/view/cvpr-2022-quantify-bias/home).
 
 
 <div align="center">
-<img src="run_scripts/LIC_test.png" width="700pix"/>
+<img src="images/LIC_test.png" width="700pix"/>
 </div>
 
 
@@ -15,7 +43,7 @@ LIC metric measures how much biased a set of model generated captions are with r
 1. Mask attribute-revealing words. 
     
 <div align="center">
-<img src="run_scripts/mask.png" width="400pix"/>
+<img src="images/mask.png" width="400pix"/>
 </div>
 
 2. Train 2 classifiers, 1 for human captions and 1 for generated captions, with attribute labels. The classifiers' goal is to predict the attribute (e.g. gender, race) for the person in the image **using only the captions**.
@@ -23,7 +51,7 @@ LIC metric measures how much biased a set of model generated captions are with r
 3. Calculate LIC scores for each classifier. If the set of captions is not biased, the classifier accuracy should be close to random chance.
 
 <div align="center">
-<img src="run_scripts/LIC_formula.png" width="500pix"/>
+<img src="images/LIC_formula.png" width="500pix"/>
 </div>
 
 4. To compute bias amplification, take the difference of the LIC socres between 2 classifiers.
@@ -98,12 +126,12 @@ In the paper, LSTM or BERT is used as the classifier. Please run the following c
 
 ### Gender bias
 <div align="center">
-<img src="run_scripts/LIC_gender.png" width="800pix"/>
+<img src="images/LIC_gender.png" width="800pix"/>
 </div>
 
 ### Racial bias
 <div align="center">
-<img src="run_scripts/LIC_race.png" width="800pix"/>
+<img src="images/LIC_race.png" width="800pix"/>
 </div>
 
 **Note**: The classifier is trained 10 times with random initializations, and the results are reported by the average and standard deviation.
