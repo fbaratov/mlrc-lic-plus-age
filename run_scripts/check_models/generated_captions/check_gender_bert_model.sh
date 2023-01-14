@@ -3,6 +3,7 @@
 # then we move to next one.
 
 
+
 #!/bin/bash
 
 # Initialize the array of models
