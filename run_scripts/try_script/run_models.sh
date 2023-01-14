@@ -74,11 +74,12 @@ seeds=(0)
 # Otherwise calc_ann_leak
 calc=calc_model_leak 
 freeze_bert=false
-if [ $data == "human" ] 
+
+if [ $captions == "human" ] 
   then
     calc=calc_ann_leak
 fi
-if [ $model != "bert_pretrained" ] 
+if [ "$model" != "bert_pretrained" ] 
   then
     echo "$data, $model"
     python_file=${data}_${model}_leakage.py
