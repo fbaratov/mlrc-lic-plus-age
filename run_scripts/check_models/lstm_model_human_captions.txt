@@ -1,0 +1,810 @@
+----------------------------
+Checking:lstm_leakage.py 
+cal_ann_leak: True 
+model: nic 
+seed: 0
+----------------------------
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+---Start---
+Seed: 0
+Epoch: 1
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: gender
+Align vocab: True
+Vocab of  nic
+
+device: cuda n_gpu: 1
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  5966 662
+len(model_vocab): 777
+a professional tennis player waiting for the ball .
+a genderword and genderword playing a game with nintendo wii controllers .
+a little genderword is ready to eat genderword <unk> .
+a person holding a <unk> teddy bear while riding a bike in the street .
+genderword tennis player <unk> to hit high ball .
+a couple of <unk> young genderword holding <unk> .
+a genderword riding a snowboard on a snow covered hill .
+a genderword wearing a white dress shirt and <unk> with shorts
+a genderword wearing a white shirt holds up a white frisbee .
+a genderword <unk> up the fridge full of beer .
+a genderword flying a red kite on top of a lush green field .
+Unique tokens in TEXT vocabulary: 691
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 692
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 692
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 695
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 699
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 28.14%
+#############################
+----------------------------
+Checking:lstm_leakage.py 
+cal_ann_leak: True 
+model: sat 
+seed: 0
+----------------------------
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+---Start---
+Seed: 0
+Epoch: 1
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: gender
+Align vocab: True
+Vocab of  sat
+
+device: cuda n_gpu: 1
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  5966 662
+len(model_vocab): 641
+a <unk> tennis player <unk> for the ball <unk>
+a genderword and genderword playing a game with nintendo wii controllers <unk>
+a little genderword is ready to <unk> genderword dinner <unk>
+a person holding a <unk> teddy bear while riding a bike in the street <unk>
+genderword tennis player <unk> to hit high ball <unk>
+a couple of <unk> young genderword holding <unk> <unk>
+a genderword riding a snowboard on a snow covered hill <unk>
+a genderword wearing a white dress shirt and <unk> with shorts
+a genderword wearing a white shirt <unk> up a white frisbee <unk>
+a genderword <unk> up the <unk> full of beer <unk>
+a genderword flying a red kite on top of a lush green field <unk>
+Unique tokens in TEXT vocabulary: 615
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 612
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 616
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 611
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 618
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 27.25%
+#############################
+----------------------------
+Checking:lstm_leakage.py 
+cal_ann_leak: True 
+model: fc 
+seed: 0
+----------------------------
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+---Start---
+Seed: 0
+Epoch: 1
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: gender
+Align vocab: True
+Vocab of  fc
+
+device: cuda n_gpu: 1
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  5966 662
+len(model_vocab): 269
+a <unk> tennis player <unk> <unk> the ball <unk>
+a genderword and genderword playing a game with <unk> <unk> <unk> <unk>
+a little genderword is <unk> to <unk> genderword <unk> <unk>
+a person holding a <unk> teddy bear <unk> riding a bike in the street <unk>
+genderword tennis player <unk> to <unk> <unk> ball <unk>
+a couple of <unk> young genderword holding <unk> <unk>
+a genderword riding a snowboard on a snow covered <unk> <unk>
+a genderword wearing a white <unk> <unk> and <unk> with <unk>
+a genderword wearing a white <unk> <unk> <unk> a white frisbee <unk>
+a genderword <unk> <unk> the <unk> <unk> of <unk> <unk>
+a genderword flying a red kite on top of a <unk> <unk> field <unk>
+Unique tokens in TEXT vocabulary: 270
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 272
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 269
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 270
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 270
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 27.60%
+#############################
+----------------------------
+Checking:lstm_leakage.py 
+cal_ann_leak: True 
+model: att2in 
+seed: 0
+----------------------------
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+---Start---
+Seed: 0
+Epoch: 1
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: gender
+Align vocab: True
+Vocab of  att2in
+
+device: cuda n_gpu: 1
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  5966 662
+len(model_vocab): 335
+a <unk> tennis player <unk> <unk> the ball <unk>
+a genderword and genderword playing a game with nintendo wii <unk> <unk>
+a little genderword is <unk> to <unk> genderword <unk> <unk>
+a person holding a <unk> teddy bear while riding a bike in the street <unk>
+genderword tennis player <unk> to <unk> <unk> ball <unk>
+a couple of <unk> young genderword holding <unk> <unk>
+a genderword riding a snowboard on a snow covered <unk> <unk>
+a genderword wearing a white dress shirt and <unk> with <unk>
+a genderword wearing a white shirt <unk> up a white frisbee <unk>
+a genderword <unk> up the <unk> full of beer <unk>
+a genderword flying a red kite on top of a <unk> green field <unk>
+Unique tokens in TEXT vocabulary: 336
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 338
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 336
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 334
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 335
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 27.47%
+#############################
+----------------------------
+Checking:lstm_leakage.py 
+cal_ann_leak: True 
+model: updn 
+seed: 0
+----------------------------
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+---Start---
+Seed: 0
+Epoch: 1
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: gender
+Align vocab: True
+Vocab of  updn
+
+device: cuda n_gpu: 1
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  5966 662
+len(model_vocab): 417
+a <unk> tennis player <unk> for the ball <unk>
+a genderword and genderword playing a game with nintendo wii <unk> <unk>
+a little genderword is <unk> to <unk> genderword <unk> <unk>
+a person holding a <unk> teddy bear while riding a bike in the street <unk>
+genderword tennis player <unk> to <unk> high ball <unk>
+a couple of <unk> young genderword holding <unk> <unk>
+a genderword riding a snowboard on a snow covered hill <unk>
+a genderword wearing a white dress shirt and <unk> with <unk>
+a genderword wearing a white shirt <unk> up a white frisbee <unk>
+a genderword <unk> up the <unk> <unk> of beer <unk>
+a genderword flying a red kite on top of a <unk> green field <unk>
+Unique tokens in TEXT vocabulary: 414
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 414
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 413
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 411
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 412
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 27.67%
+#############################
+----------------------------
+Checking:lstm_leakage.py 
+cal_ann_leak: True 
+model: transformer 
+seed: 0
+----------------------------
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+---Start---
+Seed: 0
+Epoch: 1
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: gender
+Align vocab: True
+Vocab of  transformer
+
+device: cuda n_gpu: 1
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  5966 662
+len(model_vocab): 910
+a <unk> tennis player waiting for the ball <unk>
+a genderword and genderword playing a game with nintendo wii controllers <unk>
+a little genderword is ready to <unk> genderword dinner <unk>
+a person holding a huge teddy bear while riding a bike in the street <unk>
+genderword tennis player reaching to hit high ball <unk>
+a couple of <unk> young genderword holding <unk> <unk>
+a genderword riding a snowboard on a snow covered hill <unk>
+a genderword wearing a white dress shirt and sweater with shorts
+a genderword wearing a white shirt holds up a white frisbee <unk>
+a genderword opening up the <unk> full of beer <unk>
+a genderword flying a red kite on top of a lush green field <unk>
+Unique tokens in TEXT vocabulary: 867
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 868
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 870
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 865
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 872
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 27.90%
+#############################
+----------------------------
+Checking:lstm_leakage.py 
+cal_ann_leak: True 
+model: oscar 
+seed: 0
+----------------------------
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+---Start---
+Seed: 0
+Epoch: 1
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: gender
+Align vocab: True
+Vocab of  oscar
+
+device: cuda n_gpu: 1
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  5966 662
+len(model_vocab): 491
+a <unk> tennis player <unk> <unk> the ball .
+a genderword and genderword playing a game with <unk> <unk> <unk> .
+a little genderword <unk> <unk> to <unk> genderword <unk> .
+a person holding a <unk> teddy bear <unk> riding a bike in the street .
+genderword tennis player <unk> to hit high ball .
+a couple of <unk> young genderword holding <unk> .
+a genderword riding a snowboard on a snow covered hill .
+a genderword wearing a white dress shirt and <unk> with <unk>
+a genderword wearing a white shirt <unk> <unk> a white frisbee .
+a genderword <unk> <unk> the <unk> <unk> of beer .
+a genderword flying a red kite on top of a <unk> green field .
+Unique tokens in TEXT vocabulary: 481
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 485
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 484
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 475
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 482
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 27.52%
+#############################
+----------------------------
+Checking:lstm_leakage.py 
+cal_ann_leak: True 
+model: nic_equalizer 
+seed: 0
+----------------------------
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+---Start---
+Seed: 0
+Epoch: 1
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: gender
+Align vocab: True
+Vocab of  nic_equalizer
+
+device: cuda n_gpu: 1
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  5966 662
+len(model_vocab): 504
+a <unk> tennis player <unk> for the ball .
+a genderword and genderword playing a game with nintendo wii controllers .
+a little genderword is ready to <unk> genderword dinner .
+a person holding a <unk> teddy bear while riding a bike in the street .
+genderword tennis player <unk> to hit high ball .
+a couple of <unk> young genderword holding <unk> .
+a genderword riding a snowboard on a snow covered hill .
+a genderword wearing a white dress shirt and <unk> with shorts
+a genderword wearing a white shirt <unk> up a white frisbee .
+a genderword <unk> up the <unk> full of <unk> .
+a genderword flying a red kite on top of a lush green field .
+Unique tokens in TEXT vocabulary: 487
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 488
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 483
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 484
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 489
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 27.73%
+#############################
+----------------------------
+Checking:lstm_leakage.py 
+cal_ann_leak: True 
+model: nic_plus 
+seed: 0
+----------------------------
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+---Start---
+Seed: 0
+Epoch: 1
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: gender
+Align vocab: True
+Vocab of  nic_plus
+
+device: cuda n_gpu: 1
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  5966 662
+len(model_vocab): 511
+a <unk> tennis player <unk> for the ball .
+a genderword and genderword playing a game with nintendo wii controllers .
+a little genderword is ready to <unk> genderword dinner .
+a person holding a <unk> teddy bear while riding a bike in the street .
+genderword tennis player <unk> to hit high ball .
+a couple of <unk> young genderword holding <unk> .
+a genderword riding a snowboard on a snow covered hill .
+a genderword wearing a white dress shirt and <unk> with shorts
+a genderword wearing a white shirt <unk> up a white frisbee .
+a genderword <unk> up the <unk> full of <unk> .
+a genderword flying a red kite on top of a lush green field .
+Unique tokens in TEXT vocabulary: 498
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 499
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 494
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 493
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 498
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 27.98%
+#############################
+----------------------------
+Checking:race_lstm_leakage.py 
+cal_ann_leak: True 
+model: nic 
+seed: 0
+----------------------------
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+---Start---
+Seed: 0
+Epoch: 1
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  nic
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- task is Captioning --
+#train : #test = 1972 220
+len(model_vocab): 777
+the large blue truck is old with <unk> <unk> .
+a skier is <unk> a corner while going <unk> .
+a <unk> <unk> an <unk> <unk> in the oven
+<unk> <unk> in <unk> standing in the street holding luggage .
+a young <unk> standing in front of a zebra in an <unk> .
+a group of people are on bikes on a busy street .
+Unique tokens in TEXT vocabulary: 603
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 624
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 627
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 613
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 613
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 25.41%
+#############################
+----------------------------
+Checking:race_lstm_leakage.py 
+cal_ann_leak: True 
+model: sat 
+seed: 0
+----------------------------
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+---Start---
+Seed: 0
+Epoch: 1
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  sat
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- task is Captioning --
+#train : #test = 1972 220
+len(model_vocab): 641
+the large blue truck is <unk> with <unk> <unk> <unk>
+a <unk> is <unk> a <unk> while <unk> <unk> <unk>
+a <unk> putting an <unk> <unk> in the oven
+<unk> <unk> in jeans standing in the street holding luggage <unk>
+a young <unk> standing in front of a zebra in an <unk> <unk>
+a group of people are on bikes on a <unk> street <unk>
+Unique tokens in TEXT vocabulary: 551
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 556
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 566
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 564
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 554
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 25.07%
+#############################
+----------------------------
+Checking:race_lstm_leakage.py 
+cal_ann_leak: True 
+model: fc 
+seed: 0
+----------------------------
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+---Start---
+Seed: 0
+Epoch: 1
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  fc
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- task is Captioning --
+#train : #test = 1972 220
+len(model_vocab): 269
+the <unk> <unk> truck is <unk> with <unk> <unk> <unk>
+a <unk> is <unk> a <unk> <unk> <unk> <unk> <unk>
+a <unk> <unk> an <unk> <unk> in the oven
+<unk> <unk> in <unk> standing in the street holding luggage <unk>
+a young <unk> standing in front of a zebra in an <unk> <unk>
+a group of people are on bikes on a <unk> street <unk>
+Unique tokens in TEXT vocabulary: 257
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 261
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 265
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 263
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 262
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 25.79%
+#############################
+----------------------------
+Checking:race_lstm_leakage.py 
+cal_ann_leak: True 
+model: att2in 
+seed: 0
+----------------------------
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+---Start---
+Seed: 0
+Epoch: 1
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  att2in
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- task is Captioning --
+#train : #test = 1972 220
+len(model_vocab): 335
+the large blue truck is <unk> with <unk> <unk> <unk>
+a <unk> is <unk> a <unk> while <unk> <unk> <unk>
+a <unk> <unk> an <unk> <unk> in the oven
+<unk> <unk> in <unk> standing in the street holding luggage <unk>
+a young <unk> standing in front of a zebra in an <unk> <unk>
+a group of people are on bikes on a <unk> street <unk>
+Unique tokens in TEXT vocabulary: 319
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 322
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 323
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 325
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 320
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 26.70%
+#############################
+----------------------------
+Checking:race_lstm_leakage.py 
+cal_ann_leak: True 
+model: updn 
+seed: 0
+----------------------------
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+---Start---
+Seed: 0
+Epoch: 1
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  updn
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- task is Captioning --
+#train : #test = 1972 220
+len(model_vocab): 417
+the large blue truck is old with <unk> <unk> <unk>
+a skier is <unk> a <unk> while <unk> <unk> <unk>
+a <unk> <unk> an <unk> <unk> in the oven
+<unk> <unk> in <unk> standing in the street holding luggage <unk>
+a young <unk> standing in front of a zebra in an <unk> <unk>
+a group of people are on bikes on a busy street <unk>
+Unique tokens in TEXT vocabulary: 384
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 393
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 400
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 395
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 390
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 25.61%
+#############################
+----------------------------
+Checking:race_lstm_leakage.py 
+cal_ann_leak: True 
+model: transformer 
+seed: 0
+----------------------------
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+---Start---
+Seed: 0
+Epoch: 1
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  transformer
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- task is Captioning --
+#train : #test = 1972 220
+len(model_vocab): 910
+the large blue truck is old with rusted <unk> <unk>
+a <unk> is <unk> a corner while going <unk> <unk>
+a <unk> putting an <unk> <unk> in the oven
+<unk> dressed in jeans standing in the street holding luggage <unk>
+a young <unk> standing in front of a zebra in an enclosure <unk>
+a group of people are on bikes on a busy street <unk>
+Unique tokens in TEXT vocabulary: 752
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 763
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 783
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 776
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 761
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 25.48%
+#############################
+----------------------------
+Checking:race_lstm_leakage.py 
+cal_ann_leak: True 
+model: oscar 
+seed: 0
+----------------------------
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+---Start---
+Seed: 0
+Epoch: 1
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  oscar
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- task is Captioning --
+#train : #test = 1972 220
+len(model_vocab): 491
+the <unk> blue truck <unk> <unk> with <unk> <unk> .
+a <unk> <unk> <unk> a <unk> <unk> <unk> <unk> .
+a <unk> <unk> an <unk> turkey in the oven
+<unk> <unk> in <unk> standing in the street holding luggage .
+a young <unk> standing in front of a zebra in an <unk> .
+a group of people <unk> on bikes on a <unk> street .
+Unique tokens in TEXT vocabulary: 427
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 441
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 437
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 438
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 437
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 25.22%
+#############################
+----------------------------
+Checking:race_lstm_leakage.py 
+cal_ann_leak: True 
+model: nic_equalizer 
+seed: 0
+----------------------------
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+---Start---
+Seed: 0
+Epoch: 1
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  nic_equalizer
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- task is Captioning --
+#train : #test = 1972 220
+len(model_vocab): 504
+the large blue truck is <unk> with <unk> <unk> .
+a <unk> is <unk> a corner while <unk> <unk> .
+a <unk> putting an <unk> <unk> in the oven
+<unk> <unk> in <unk> standing in the street holding luggage .
+a young <unk> standing in front of a zebra in an <unk> .
+a group of people are on bikes on a <unk> street .
+Unique tokens in TEXT vocabulary: 453
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 454
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 464
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 458
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 457
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 25.95%
+#############################
+----------------------------
+Checking:race_lstm_leakage.py 
+cal_ann_leak: True 
+model: nic_plus 
+seed: 0
+----------------------------
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+---Start---
+Seed: 0
+Epoch: 1
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  nic_plus
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- task is Captioning --
+#train : #test = 1972 220
+len(model_vocab): 511
+the large blue truck is <unk> with <unk> <unk> .
+a <unk> is <unk> a corner while <unk> <unk> .
+a <unk> putting an <unk> turkey in the oven
+<unk> <unk> in <unk> standing in the street holding luggage .
+a young <unk> standing in front of a zebra in an enclosure .
+a group of people are on bikes on a busy street .
+Unique tokens in TEXT vocabulary: 465
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 465
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 473
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 466
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 463
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 25.06%
+#############################
