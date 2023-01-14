@@ -58,21 +58,22 @@ do
 done
 
 echo -e "\nRunning the model\n"
-echo -e "\t###########################"
+echo -e "##########################################"
 echo -e "\tcaptions: $captions\n\tmodel: $model\n\tdata: $data\n\tepochs: $epochs\n\tlearning_rate: $learning_rate\n\tcheck:$check"
-echo -e "\t###########################"
+echo -e "##########################################"
 
 
 #This script is responsible for running all the models with different seeds. 
 #We still need to find a way to write the output to file.
-models=('nic' 'sat' 'fc' 'att2in' 'updn' 'transformer' 'oscar' 'nic_equalizer' 'nic_plus')
-seeds=(0 12 456 789 100 200 300 400 500 1234)
-
+# models=('nic' 'sat' 'fc' 'att2in' 'updn' 'transformer' 'oscar' 'nic_equalizer' 'nic_plus')
+# seeds=(0 12 456 789 100 200 300 400 500 1234)
+models=('nic')
+seeds=(0)
 # We set calc_model_leak when data is generated.
 # Otherwise calc_ann_leak
 calc=calc_model_leak 
-freeze_bert=False
-if [ $data == "human" ] 
+freeze_bert=false
+if [ $captions == "human" ] 
   then
     calc=calc_ann_leak
 fi
@@ -84,13 +85,18 @@ if [ $model != "bert_pretrained" ]
 else
     echo "$data"
     python_file=${data}_bert_leakage.py
-    freeze_bert=True    
+    freeze_bert=true   
 fi
 
 for m in ${models[@]}; do
     for seed in ${seeds[@]}; do
-        python3 $python_file --seed $seed --num_epochs $num_epochs --$calc True --cap_model $m  --learning_rate $learning_rate --freeze_bert $freeze_bert
-        echo "python3 $python_file --seed $seed --num_epochs $num_epochs --$calc True --cap_model $m  --learning_rate $learning_rate --freeze_bert $freeze_bert"
+        if [ "$freeze_bert" = true ]; then
+          echo "python3 $python_file --seed $seed --num_epochs $epochs --$calc True --cap_model $m  --learning_rate $learning_rate --freeze_bert $freeze_bert"
+          python3 $python_file --seed $seed --num_epochs $epochs --$calc True --cap_model $m  --learning_rate $learning_rate --freeze_bert $freeze_bert
+        else
+          echo "python3 $python_file --seed $seed --num_epochs $epochs --$calc True --cap_model $m  --learning_rate $learning_rate"   
+          python3 $python_file --seed $seed --num_epochs $epochs --$calc True --cap_model $m  --learning_rate $learning_rate
+        fi
     done
 done
 
