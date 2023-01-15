@@ -1,6 +1,8 @@
 import numpy as np
 from typing import Tuple,List,Dict
-from collections import dataclass
+from dataclasses import dataclass
+from parse_LIC import LIC_Calculator
+
 @dataclass
 class Statistics:
     mean: float       # 'a' has no default value
