@@ -2,6 +2,7 @@ import numpy as np
 from typing import Tuple,List,Dict
 from dataclasses import dataclass
 from parse_LIC import LIC_Calculator
+import pprint
 
 @dataclass
 class Statistics:
@@ -70,8 +71,11 @@ if __name__ == "__main__":
                                              annotation_type = "generated")
       parsed_human = LIC_Calculator.from_file(classifier_name = model,
                 classification_type = type,
-                annotation_type = "human")
+                annotation_type = "human")      
+      pp = pprint.PrettyPrinter(width=41, compact=True)
       print("Calculating statistics for classification_type= {}, model= {}".format(type,model))
-      print("Mean LIC scores with STD for generated, so LIC_M is:\n {}".format(calculate_statistics(parsed_generated)))
-      print("Mean LIC scores with STD for human, so LIC_D is:\n {}".format(calculate_statistics(parsed_human)))
-      print("LIC scores are \n {}".format(calculate_LIC(parsed_human, parsed_generated)))
+      pp.pprint("Parsed LIC scores for generated: {}".format(parsed_generated))
+      pp.pprint("Parsed LIC score for human: {}".format(parsed_human))
+      pp.pprint("Mean LIC scores with STD for generated, so LIC_M is:\n {}".format(calculate_statistics(parsed_generated)))
+      pp.pprint("Mean LIC scores with STD for human, so LIC_D is:\n {}".format(calculate_statistics(parsed_human)))
+      pp.pprint("LIC scores are \n {}".format(calculate_LIC(parsed_human, parsed_generated)))
