@@ -65,10 +65,10 @@ echo -e "##########################################"
 
 #This script is responsible for running all the models with different seeds. 
 #We still need to find a way to write the output to file.
-# models=('nic' 'sat' 'fc' 'att2in' 'updn' 'transformer' 'oscar' 'nic_equalizer' 'nic_plus')
-# seeds=(0 12 456 789 100 200 300 400 500 1234)
-models=('nic')
-seeds=(0)
+models=('nic' 'sat' 'fc' 'att2in' 'updn' 'transformer' 'oscar' 'nic_plus' 'nic_equalizer')
+#Run the models with only three seeds due to computational resources.
+seeds=(0 12 456)
+
 # We set calc_model_leak when data is generated.
 # Otherwise calc_ann_leak
 calc=calc_model_leak 
