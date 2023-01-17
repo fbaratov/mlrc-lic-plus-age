@@ -539,6 +539,147 @@ Unique tokens in LABEL vocabulary: 2
 LIC score (LIC_M): 51.61%
 #############################
 
+python3 gender_lstm_leakage.py --seed 789 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 789
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 500
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 49.80%
+#############################
+
+python3 gender_lstm_leakage.py --seed 100 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 100
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 501
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 51.95%
+#############################
+
+python3 gender_lstm_leakage.py --seed 200 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 200
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 503
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 50.59%
+#############################
+
+python3 gender_lstm_leakage.py --seed 300 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 300
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 487
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 51.73%
+#############################
+
+python3 gender_lstm_leakage.py --seed 400 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 400
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 490
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 51.78%
+#############################
+
+python3 gender_lstm_leakage.py --seed 500 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 500
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 490
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 51.24%
+#############################
+
+python3 gender_lstm_leakage.py --seed 1234 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 1234
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 504
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 51.35%
+#############################
+
+
 python3 gender_lstm_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5
 ---Start---
 Seed: 0
@@ -605,3 +746,152 @@ Unique tokens in LABEL vocabulary: 2
 LIC score (LIC_M): 47.73%
 #############################
 
+##########################################
+	captions: generated
+	model: lstm
+	data: gender
+	epochs: 20
+	learning_rate: 5e-5
+	check:false
+##########################################
+gender, lstm
+
+python3 gender_lstm_leakage.py --seed 789 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 789
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 518
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 44.43%
+#############################
+
+python3 gender_lstm_leakage.py --seed 100 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 100
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 505
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 47.51%
+#############################
+
+python3 gender_lstm_leakage.py --seed 200 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 200
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 496
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 47.43%
+#############################
+
+python3 gender_lstm_leakage.py --seed 300 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 300
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 492
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 46.70%
+#############################
+
+python3 gender_lstm_leakage.py --seed 400 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 400
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 504
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 46.20%
+#############################
+
+python3 gender_lstm_leakage.py --seed 500 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 500
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 494
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 45.79%
+#############################
+
+python3 gender_lstm_leakage.py --seed 1234 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 1234
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 507
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 47.01%
+#############################
