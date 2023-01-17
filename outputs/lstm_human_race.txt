@@ -779,4 +779,112 @@ Unique tokens in LABEL vocabulary: 2
 ########## Results ##########
 LIC score (LIC_D): 26.73%
 #############################
-p
+Running the model
+
+##########################################
+	captions: human
+	model: lstm
+	data: race
+	epochs: 20
+	learning_rate: 5e-5
+	check:false
+##########################################
+race, lstm
+
+python3 race_lstm_leakage.py --seed 0 --num_epochs 20 --calc_ann_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  nic_equalizer
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- task is Captioning --
+#train : #test = 1972 220
+len(model_vocab): 504
+the large blue truck is <unk> with <unk> <unk> .
+a <unk> is <unk> a corner while <unk> <unk> .
+a <unk> putting an <unk> <unk> in the oven
+<unk> <unk> in <unk> standing in the street holding luggage .
+a young <unk> standing in front of a zebra in an <unk> .
+a group of people are on bikes on a <unk> street .
+Unique tokens in TEXT vocabulary: 453
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 454
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 464
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 458
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 457
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 28.03%
+#############################
+python3 race_lstm_leakage.py --seed 12 --num_epochs 20 --calc_ann_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  nic_equalizer
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- task is Captioning --
+#train : #test = 1972 220
+len(model_vocab): 504
+Unique tokens in TEXT vocabulary: 459
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 454
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 458
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 453
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 463
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 26.67%
+#############################
+python3 race_lstm_leakage.py --seed 456 --num_epochs 20 --calc_ann_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  nic_equalizer
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- task is Captioning --
+#train : #test = 1972 220
+len(model_vocab): 504
+Unique tokens in TEXT vocabulary: 460
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 453
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 453
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 450
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 446
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 25.75%
+#############################
+
