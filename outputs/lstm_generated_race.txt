@@ -1,0 +1,634 @@
+
+Running the model
+
+##########################################
+	captions: generated
+	model: lstm
+	data: race
+	epochs: 20
+	learning_rate: 5e-5
+	check:false
+##########################################
+race, lstm
+
+python3 race_lstm_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model nic  --learning_rate 5e-5
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+a man riding a skateboard down a street .
+a woman sitting on a bench with a dog .
+a man standing on a tennis court holding a racquet .
+a woman in a park playing with a frisbee .
+a man riding a motorcycle down a street next to a woman .
+a large airplane is accepting passengers at the airport .
+Unique tokens in TEXT vocabulary: 575
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 29.39%
+#############################
+
+python3 race_lstm_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model nic  --learning_rate 5e-5
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+Unique tokens in TEXT vocabulary: 578
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 34.46%
+#############################
+
+python3 race_lstm_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model nic  --learning_rate 5e-5
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+Unique tokens in TEXT vocabulary: 565
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 35.45%
+#############################
+
+python3 race_lstm_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model sat  --learning_rate 5e-5
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: sat
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+a couple of men standing next to a truck
+a large jetliner sitting on top of an airport tarmac
+a woman eating a pizza in a restaurant
+a woman sitting on a bench with a woman
+a young boy standing on top of a dirt field
+a man in a blue shirt holding a baseball bat
+Unique tokens in TEXT vocabulary: 485
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 33.42%
+#############################
+
+python3 race_lstm_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model sat  --learning_rate 5e-5
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: sat
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+Unique tokens in TEXT vocabulary: 505
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 28.57%
+#############################
+
+python3 race_lstm_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model sat  --learning_rate 5e-5
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: sat
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+Unique tokens in TEXT vocabulary: 486
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 31.71%
+#############################
+
+python3 race_lstm_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model fc  --learning_rate 5e-5
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: fc
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+a man riding a horse drawn carriage on a street
+a bunch of bananas and a market
+a man standing next to a sheep in a fence
+a couple of people standing on skis in the snow
+a group of people standing next to a dog
+a man sitting at a table with a cake
+Unique tokens in TEXT vocabulary: 252
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 32.50%
+#############################
+
+python3 race_lstm_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model fc  --learning_rate 5e-5
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: fc
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+Unique tokens in TEXT vocabulary: 253
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 33.50%
+#############################
+
+python3 race_lstm_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model fc  --learning_rate 5e-5
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: fc
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+Unique tokens in TEXT vocabulary: 260
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 34.78%
+#############################
+
+python3 race_lstm_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model att2in  --learning_rate 5e-5
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: att2in
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+a group of people riding a horse drawn carriage
+a man sitting at a table with bananas and bananas
+a man standing next to a sheep in a field
+a couple of people riding skis on a snow covered slope
+a man holding a dog with a dog
+a man sitting at a table with a cake
+Unique tokens in TEXT vocabulary: 277
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 32.77%
+#############################
+
+python3 race_lstm_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model att2in  --learning_rate 5e-5
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: att2in
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+Unique tokens in TEXT vocabulary: 282
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 38.27%
+#############################
+
+python3 race_lstm_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model att2in  --learning_rate 5e-5
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: att2in
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+Unique tokens in TEXT vocabulary: 287
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 34.84%
+#############################
+
+python3 race_lstm_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model updn  --learning_rate 5e-5
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: updn
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+a group of people riding on a horse drawn carriage
+a man is standing in front of a bunch of bananas
+a man is standing next to a sheep
+two people standing on skis in the snow
+a man holding a dog and a dog
+a man and a woman sitting at a table with a birthday cake
+Unique tokens in TEXT vocabulary: 348
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 36.37%
+#############################
+
+python3 race_lstm_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model updn  --learning_rate 5e-5
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: updn
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+Unique tokens in TEXT vocabulary: 362
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 36.49%
+#############################
+
+python3 race_lstm_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model updn  --learning_rate 5e-5
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: updn
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+Unique tokens in TEXT vocabulary: 366
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 37.20%
+#############################
+
+python3 race_lstm_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model transformer  --learning_rate 5e-5
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: transformer
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+a horse drawn carriage with two men in it
+a man standing in front of a bunch of bananas
+a man bending down to pet a sheep
+two people standing on skis in the snow
+a man holding a stuffed animal while standing on a sidewalk
+a man and a little girl looking at a cake
+Unique tokens in TEXT vocabulary: 674
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 34.42%
+#############################
+
+python3 race_lstm_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model transformer  --learning_rate 5e-5
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: transformer
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+Unique tokens in TEXT vocabulary: 688
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 34.22%
+#############################
+
+python3 race_lstm_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model transformer  --learning_rate 5e-5
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: transformer
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+Unique tokens in TEXT vocabulary: 684
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 35.54%
+#############################
+
+python3 race_lstm_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model oscar  --learning_rate 5e-5
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: oscar
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+a woman holding a tennis racket on a tennis court
+a man holding a surfboard on the beach with a
+a woman and a boy holding a tennis racket on a
+a baseball player wearing a helmet on a
+a bride and groom cutting their wedding cake at a
+a woman standing in front of a mirror holding a video game
+Unique tokens in TEXT vocabulary: 412
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 35.20%
+#############################
+
+python3 race_lstm_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model oscar  --learning_rate 5e-5
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: oscar
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+Unique tokens in TEXT vocabulary: 407
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 30.59%
+#############################
+
+python3 race_lstm_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model oscar  --learning_rate 5e-5
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: oscar
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+Unique tokens in TEXT vocabulary: 398
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 36.28%
+#############################
+
+python3 race_lstm_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+a group of people sitting on a couch playing a video game .
+a man riding on the back of an elephant .
+a group of people standing next to a boat .
+a man riding a wave on top of a surfboard .
+a group of young boys playing a game of baseball .
+a woman sitting on a beach with an umbrella .
+Unique tokens in TEXT vocabulary: 428
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 35.59%
+#############################
+
+python3 race_lstm_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+Unique tokens in TEXT vocabulary: 442
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 35.22%
+#############################
+
+python3 race_lstm_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+Unique tokens in TEXT vocabulary: 436
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 34.50%
+#############################
+
+python3 race_lstm_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+a woman cutting a cake with a knife .
+a man riding on the back of an elephant .
+a group of men standing next to a truck .
+a person riding a surf board on a wave .
+a group of young men playing a game of soccer .
+a little girl sitting on a bench holding an umbrella .
+Unique tokens in TEXT vocabulary: 438
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 36.66%
+#############################
+
+python3 race_lstm_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+Unique tokens in TEXT vocabulary: 444
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 34.25%
+#############################
+
+python3 race_lstm_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+--- task is Captioning ---
+#train : #test = 1972 220
+Unique tokens in TEXT vocabulary: 429
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 35.58%
+#############################
+
