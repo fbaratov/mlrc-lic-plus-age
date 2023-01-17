@@ -15,4 +15,4 @@ module load Anaconda3/2021.05
 
 source activate bert
 cd $HOME/fact-group21/fact-group21
-bash run_scripts/run_models.sh --captions generated --model bert_pretrained --data gender --learning_rate 5e-5 --epochs 1
+bash run_scripts/run_models.sh --captions generated --model bert_pretrained --data gender --learning_rate 5e-5 --epochs 20
