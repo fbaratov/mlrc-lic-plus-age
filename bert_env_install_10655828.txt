@@ -1,0 +1,4 @@
+
+Remove all packages in environment /home/lcur0829/.conda/envs/lstm:
+
+Collecting package metadata (repodata.json): ...working... 

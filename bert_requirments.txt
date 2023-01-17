@@ -5,3 +5,4 @@ transformers==4.0.1
 spacy==2.3
 scikit-learn==1.0.2 
 nltk==3.6.3
+python=3.7

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#SBATCH --partition=gpu_titanrtx_shared_course
+#SBATCH --gres=gpu:0
+#SBATCH --job-name=RunModels
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=3
+#SBATCH --time=04:00:00
+#SBATCH --mem=32000M
+#SBATCH --output=bert_env_install_%A.txt
+
+module purge
+module load 2021
+module load Anaconda3/2021.05
+
+cd $HOME/fact-group21/fact-group21
+conda env remove -n lstm
+conda env create -f lstm_env.yml

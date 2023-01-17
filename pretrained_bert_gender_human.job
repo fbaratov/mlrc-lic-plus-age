@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#SBATCH --partition=gpu_titanrtx_shared_course
+#SBATCH --gres=gpu:0
+#SBATCH --job-name=RunModels
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=3
+#SBATCH --time=04:00:00
+#SBATCH --mem=32000M
+#SBATCH --output=pretrained_bert_human_gender.txt
+
+module purge
+module load 2021
+module load Anaconda3/2021.05
+
+source activate bert
+cd $HOME/fact-group21/fact-group21
+python3 --version
+srun python -u gender_bert_leakage.py --seed 456 --num_epochs 1 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5 --freeze_bert true
