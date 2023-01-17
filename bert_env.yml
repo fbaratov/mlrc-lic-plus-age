@@ -12,3 +12,4 @@ dependencies:
     - scikit-learn=1.0.2 
     - nltk=3.6.3
     - pytorch=1.4
+    - sentencepiece=0.1.91

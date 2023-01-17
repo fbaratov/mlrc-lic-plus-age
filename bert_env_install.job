@@ -14,4 +14,5 @@ module load 2021
 module load Anaconda3/2021.05
 
 cd $HOME/fact-group21/fact-group21
+conda env remove -n bert
 conda env create -f bert_env.yml

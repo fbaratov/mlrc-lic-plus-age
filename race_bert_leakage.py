@@ -196,7 +196,7 @@ def calc_leak_epoch_pass(epoch, data_loader, model, optimizer, training, print_e
     total_score = 0 # for calculate scores
 
     cnt_data = 0
-    for ind, (input_ids, attention_mask, token_type_ids, race_target, img_id) in tqdm(enumerate(data_loader), leave=False): # images are not provided
+    for ind, (input_ids, attention_mask, token_type_ids, race_target, img_id) in enumerate(data_loader): # images are not provided
         input_ids = input_ids.cuda()
         attention_mask = attention_mask.cuda()
         token_type_ids = token_type_ids.cuda()
