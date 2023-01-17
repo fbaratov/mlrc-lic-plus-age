@@ -996,3 +996,95 @@ Num of Trainable Parameters: 199426
 train, 0, train loss: 1.10, train acc: 53.92
 train, 5, train loss: 1.01, train acc: 61.93
 train, 10, train loss: 0.99, train acc: 64.52
+train, 15, train loss: 0.98, train acc: 65.09
+Finish training
+19: train acc: 0.647838
+val, 19, val loss: 1.06, val acc: 63.44
+val, 19, val loss: 1.06, Male val acc: 53.17
+val, 19, val loss: 1.06, Feale val acc: 73.72
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.10, train acc: 54.74
+train, 5, train loss: 1.02, train acc: 61.85
+train, 10, train loss: 0.99, train acc: 63.31
+train, 15, train loss: 0.98, train acc: 64.05
+Finish training
+19: train acc: 0.648508
+val, 19, val loss: 1.08, val acc: 61.18
+val, 19, val loss: 1.08, Male val acc: 57.70
+val, 19, val loss: 1.08, Feale val acc: 64.65
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.09, train acc: 54.48
+train, 5, train loss: 1.02, train acc: 61.82
+train, 10, train loss: 0.99, train acc: 64.16
+train, 15, train loss: 0.97, train acc: 66.12
+Finish training
+19: train acc: 0.660577
+val, 19, val loss: 1.06, val acc: 62.84
+val, 19, val loss: 1.06, Male val acc: 57.40
+val, 19, val loss: 1.06, Feale val acc: 68.28
+########### Reluts ##########
+LIC score (LIC_D): 41.41%
+#############################
+python3 gender_bert_leakage.py --seed 456 --num_epochs 20 --calc_ann_leak True --cap_model att2in  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 456
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: gender
+Align vocab: True
+Vocab of  att2in
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  5966 662
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.09, train acc: 55.20
+train, 5, train loss: 1.01, train acc: 63.68
+train, 10, train loss: 0.99, train acc: 64.20
+train, 15, train loss: 0.97, train acc: 65.35
+Finish training
+19: train acc: 0.660912
+val, 19, val loss: 1.06, val acc: 62.08
+val, 19, val loss: 1.06, Male val acc: 61.33
+val, 19, val loss: 1.06, Feale val acc: 62.84
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.09, train acc: 55.97
+train, 5, train loss: 1.02, train acc: 62.39
+train, 10, train loss: 0.99, train acc: 63.86
+train, 15, train loss: 0.97, train acc: 65.47
+Finish training
+19: train acc: 0.652196
+val, 19, val loss: 1.04, val acc: 61.93
+val, 19, val loss: 1.04, Male val acc: 61.93
+val, 19, val loss: 1.04, Feale val acc: 61.93
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.08, train acc: 55.68
+train, 5, train loss: 1.02, train acc: 61.72
