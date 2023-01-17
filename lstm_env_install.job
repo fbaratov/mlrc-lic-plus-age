@@ -14,5 +14,6 @@ module load 2021
 module load Anaconda3/2021.05
 
 cd $HOME/fact-group21/fact-group21
+conda update -n base -c defaults conda
 conda env remove -n lstm
 conda env create -f lstm_env.yml

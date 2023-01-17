@@ -67,8 +67,8 @@ if __name__ == "__main__":
   for type in classification_type:
     for model in models:
       parsed_generated = LIC_Calculator.from_file(classifier_name = model,
-                                      classification_type = type,
-                                             annotation_type = "generated")
+                                                  classification_type = type,
+                                                  annotation_type = "generated")
       parsed_human = LIC_Calculator.from_file(classifier_name = model,
                 classification_type = type,
                 annotation_type = "human")      

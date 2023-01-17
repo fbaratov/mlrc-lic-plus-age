@@ -48,7 +48,7 @@ class LIC_Calculator:
     seeds : List[List[int]]
     nr_of_epochs: List[List[int]]
     @classmethod
-    def from_file(cls,classifier_name:str, classification_type:str, annotation_type:str, file_name: Optional[str]):
+    def from_file(cls,classifier_name:str, classification_type:str, annotation_type:str, file_name: Optional[str] = None):
       '''
       This function initializes the class for  classifier and classification_type, annotation_type
       Parameters
