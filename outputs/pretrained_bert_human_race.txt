@@ -1,0 +1,288 @@
+
+Running the model
+
+##########################################
+	captions: human
+	model: bert_pretrained
+	data: race
+	epochs: 20
+	learning_rate: 5e-5
+	check:false
+##########################################
+race
+python3 race_bert_leakage.py --seed 0 --num_epochs 20 --calc_ann_leak True --cap_model nic_equalizer  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 0
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  nic_equalizer
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 50.25
+train, 5, train loss: 1.06, train acc: 58.87
+train, 10, train loss: 1.05, train acc: 59.38
+train, 15, train loss: 1.03, train acc: 60.65
+Finish training
+19: train acc: 0.636410
+val, 19, val loss: 1.26, val acc: 57.27
+val, 19, val loss: 1.26, Light val acc: 57.27
+val, 19, val loss: 1.26, Dark val acc: 57.27
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 52.23
+train, 5, train loss: 1.06, train acc: 57.45
+train, 10, train loss: 1.04, train acc: 60.65
+train, 15, train loss: 1.02, train acc: 61.56
+Finish training
+19: train acc: 0.620690
+val, 19, val loss: 1.27, val acc: 59.55
+val, 19, val loss: 1.27, Light val acc: 53.64
+val, 19, val loss: 1.27, Dark val acc: 65.45
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 49.09
+train, 5, train loss: 1.07, train acc: 56.95
+train, 10, train loss: 1.03, train acc: 60.55
+train, 15, train loss: 1.02, train acc: 61.87
+Finish training
+19: train acc: 0.634381
+val, 19, val loss: 1.25, val acc: 53.64
+val, 19, val loss: 1.25, Light val acc: 57.27
+val, 19, val loss: 1.25, Dark val acc: 50.00
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 51.37
+train, 5, train loss: 1.07, train acc: 55.68
+train, 10, train loss: 1.03, train acc: 60.14
+train, 15, train loss: 1.01, train acc: 61.36
+Finish training
+19: train acc: 0.650101
+val, 19, val loss: 1.25, val acc: 56.82
+val, 19, val loss: 1.25, Light val acc: 64.55
+val, 19, val loss: 1.25, Dark val acc: 49.09
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 51.93
+train, 5, train loss: 1.07, train acc: 57.35
+train, 10, train loss: 1.04, train acc: 59.58
+train, 15, train loss: 1.02, train acc: 62.42
+Finish training
+19: train acc: 0.644016
+val, 19, val loss: 1.20, val acc: 60.00
+val, 19, val loss: 1.20, Light val acc: 57.27
+val, 19, val loss: 1.20, Dark val acc: 62.73
+########### Reluts ##########
+LIC score (LIC_D): 34.94%
+#############################
+python3 race_bert_leakage.py --seed 12 --num_epochs 20 --calc_ann_leak True --cap_model nic_equalizer  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 12
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  nic_equalizer
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 47.97
+train, 5, train loss: 1.06, train acc: 58.22
+train, 10, train loss: 1.05, train acc: 58.62
+train, 15, train loss: 1.02, train acc: 61.46
+Finish training
+19: train acc: 0.623225
+val, 19, val loss: 1.35, val acc: 51.36
+val, 19, val loss: 1.35, Light val acc: 51.82
+val, 19, val loss: 1.35, Dark val acc: 50.91
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 51.72
+train, 5, train loss: 1.05, train acc: 59.28
+train, 10, train loss: 1.04, train acc: 60.19
+train, 15, train loss: 1.01, train acc: 61.36
+Finish training
+19: train acc: 0.630325
+val, 19, val loss: 1.30, val acc: 52.73
+val, 19, val loss: 1.30, Light val acc: 42.73
+val, 19, val loss: 1.30, Dark val acc: 62.73
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 52.08
+train, 5, train loss: 1.06, train acc: 57.51
+train, 10, train loss: 1.03, train acc: 59.63
+train, 15, train loss: 1.01, train acc: 62.53
+Finish training
+19: train acc: 0.635903
+val, 19, val loss: 1.25, val acc: 55.45
+val, 19, val loss: 1.25, Light val acc: 57.27
+val, 19, val loss: 1.25, Dark val acc: 53.64
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.16, train acc: 49.75
+train, 5, train loss: 1.07, train acc: 56.34
+train, 10, train loss: 1.04, train acc: 61.05
+train, 15, train loss: 1.02, train acc: 61.51
+Finish training
+19: train acc: 0.614097
+val, 19, val loss: 1.30, val acc: 54.09
+val, 19, val loss: 1.30, Light val acc: 50.91
+val, 19, val loss: 1.30, Dark val acc: 57.27
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.11, train acc: 52.08
+train, 5, train loss: 1.06, train acc: 58.47
+train, 10, train loss: 1.04, train acc: 59.08
+train, 15, train loss: 1.01, train acc: 61.76
+Finish training
+19: train acc: 0.630325
+val, 19, val loss: 1.32, val acc: 52.27
+val, 19, val loss: 1.32, Light val acc: 50.91
+val, 19, val loss: 1.32, Dark val acc: 53.64
+########### Reluts ##########
+LIC score (LIC_D): 32.28%
+#############################
+python3 race_bert_leakage.py --seed 456 --num_epochs 20 --calc_ann_leak True --cap_model nic_equalizer  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 456
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  nic_equalizer
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 49.44
+train, 5, train loss: 1.07, train acc: 56.34
+train, 10, train loss: 1.05, train acc: 58.01
+train, 15, train loss: 1.03, train acc: 61.00
+Finish training
+19: train acc: 0.644523
+val, 19, val loss: 1.30, val acc: 55.91
+val, 19, val loss: 1.30, Light val acc: 57.27
+val, 19, val loss: 1.30, Dark val acc: 54.55
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 50.66
+train, 5, train loss: 1.06, train acc: 57.15
+train, 10, train loss: 1.05, train acc: 59.79
+train, 15, train loss: 1.01, train acc: 62.88
+Finish training
+19: train acc: 0.624239
+val, 19, val loss: 1.31, val acc: 51.36
+val, 19, val loss: 1.31, Light val acc: 52.73
+val, 19, val loss: 1.31, Dark val acc: 50.00
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.11, train acc: 52.89
+train, 5, train loss: 1.05, train acc: 58.27
+train, 10, train loss: 1.03, train acc: 61.05
+train, 15, train loss: 1.02, train acc: 61.51
+Finish training
+19: train acc: 0.632860
+val, 19, val loss: 1.25, val acc: 56.36
+val, 19, val loss: 1.25, Light val acc: 58.18
+val, 19, val loss: 1.25, Dark val acc: 54.55
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.15, train acc: 48.17
+train, 5, train loss: 1.07, train acc: 56.90
+train, 10, train loss: 1.05, train acc: 58.98
+train, 15, train loss: 1.02, train acc: 61.16
+Finish training
+19: train acc: 0.625761
+val, 19, val loss: 1.26, val acc: 51.36
+val, 19, val loss: 1.26, Light val acc: 46.36
+val, 19, val loss: 1.26, Dark val acc: 56.36
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 50.35
+train, 5, train loss: 1.06, train acc: 58.52
+train, 10, train loss: 1.04, train acc: 60.04
+train, 15, train loss: 1.02, train acc: 62.02
+Finish training
+19: train acc: 0.621704
+val, 19, val loss: 1.24, val acc: 55.91
+val, 19, val loss: 1.24, Light val acc: 56.36
+val, 19, val loss: 1.24, Dark val acc: 55.45
+########### Reluts ##########
+LIC score (LIC_D): 32.96%
+#############################
