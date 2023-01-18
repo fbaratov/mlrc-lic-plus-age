@@ -795,6 +795,211 @@ Unique tokens in LABEL vocabulary: 2
 ########## Results ##########
 LIC score (LIC_D): 40.47%
 #############################
+
+python3 gender_lstm_leakage.py --seed 789 --num_epochs 20 --calc_ann_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 789
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: gender
+Align vocab: True
+Vocab of  nic_equalizer
+
+device: cuda n_gpu: 1
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  5966 662
+len(model_vocab): 504
+Unique tokens in TEXT vocabulary: 491
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 484
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 488
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 486
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 490
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 39.08%
+#############################
+python3 gender_lstm_leakage.py --seed 100 --num_epochs 20 --calc_ann_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 100
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: gender
+Align vocab: True
+Vocab of  nic_equalizer
+
+device: cuda n_gpu: 1
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  5966 662
+len(model_vocab): 504
+Unique tokens in TEXT vocabulary: 493
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 488
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 485
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 488
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 489
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 39.41%
+#############################
+python3 gender_lstm_leakage.py --seed 200 --num_epochs 20 --calc_ann_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 200
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: gender
+Align vocab: True
+Vocab of  nic_equalizer
+
+device: cuda n_gpu: 1
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  5966 662
+len(model_vocab): 504
+Unique tokens in TEXT vocabulary: 488
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 488
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 484
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 489
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 489
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 40.69%
+#############################
+python3 gender_lstm_leakage.py --seed 300 --num_epochs 20 --calc_ann_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 300
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: gender
+Align vocab: True
+Vocab of  nic_equalizer
+
+device: cuda n_gpu: 1
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  5966 662
+len(model_vocab): 504
+Unique tokens in TEXT vocabulary: 489
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 491
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 485
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 486
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 487
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 39.72%
+#############################
+python3 gender_lstm_leakage.py --seed 400 --num_epochs 20 --calc_ann_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 400
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: gender
+Align vocab: True
+Vocab of  nic_equalizer
+
+device: cuda n_gpu: 1
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  5966 662
+len(model_vocab): 504
+Unique tokens in TEXT vocabulary: 492
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 487
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 488
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 486
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 487
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 38.18%
+#############################
+python3 gender_lstm_leakage.py --seed 500 --num_epochs 20 --calc_ann_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 500
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: gender
+Align vocab: True
+Vocab of  nic_equalizer
+
+device: cuda n_gpu: 1
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  5966 662
+len(model_vocab): 504
+Unique tokens in TEXT vocabulary: 491
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 491
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 487
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 494
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 488
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 40.11%
+#############################
+python3 gender_lstm_leakage.py --seed 1234 --num_epochs 20 --calc_ann_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 1234
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: gender
+Align vocab: True
+Vocab of  nic_equalizer
+
+device: cuda n_gpu: 1
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  5966 662
+len(model_vocab): 504
+Unique tokens in TEXT vocabulary: 489
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 489
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 489
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 491
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 488
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 38.54%
+#############################
+
 python3 gender_lstm_leakage.py --seed 0 --num_epochs 20 --calc_ann_leak True --cap_model nic_plus  --learning_rate 5e-5
 ---Start---
 Seed: 0
@@ -892,4 +1097,208 @@ Unique tokens in TEXT vocabulary: 501
 Unique tokens in LABEL vocabulary: 2
 ########## Results ##########
 LIC score (LIC_D): 40.26%
+#############################
+
+python3 gender_lstm_leakage.py --seed 789 --num_epochs 20 --calc_ann_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 789
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: gender
+Align vocab: True
+Vocab of  nic_plus
+
+device: cuda n_gpu: 1
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  5966 662
+len(model_vocab): 511
+Unique tokens in TEXT vocabulary: 499
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 498
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 497
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 494
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 496
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 39.38%
+#############################
+python3 gender_lstm_leakage.py --seed 100 --num_epochs 20 --calc_ann_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 100
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: gender
+Align vocab: True
+Vocab of  nic_plus
+
+device: cuda n_gpu: 1
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  5966 662
+len(model_vocab): 511
+Unique tokens in TEXT vocabulary: 499
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 502
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 493
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 495
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 497
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 39.20%
+#############################
+python3 gender_lstm_leakage.py --seed 200 --num_epochs 20 --calc_ann_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 200
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: gender
+Align vocab: True
+Vocab of  nic_plus
+
+device: cuda n_gpu: 1
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  5966 662
+len(model_vocab): 511
+Unique tokens in TEXT vocabulary: 497
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 499
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 497
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 493
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 499
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 40.53%
+#############################
+python3 gender_lstm_leakage.py --seed 300 --num_epochs 20 --calc_ann_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 300
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: gender
+Align vocab: True
+Vocab of  nic_plus
+
+device: cuda n_gpu: 1
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  5966 662
+len(model_vocab): 511
+Unique tokens in TEXT vocabulary: 496
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 498
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 498
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 488
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 499
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 39.49%
+#############################
+python3 gender_lstm_leakage.py --seed 400 --num_epochs 20 --calc_ann_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 400
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: gender
+Align vocab: True
+Vocab of  nic_plus
+
+device: cuda n_gpu: 1
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  5966 662
+len(model_vocab): 511
+Unique tokens in TEXT vocabulary: 496
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 497
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 498
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 490
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 498
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 38.05%
+#############################
+python3 gender_lstm_leakage.py --seed 500 --num_epochs 20 --calc_ann_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 500
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: gender
+Align vocab: True
+Vocab of  nic_plus
+
+device: cuda n_gpu: 1
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  5966 662
+len(model_vocab): 511
+Unique tokens in TEXT vocabulary: 496
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 504
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 496
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 495
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 495
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 39.62%
+#############################
+python3 gender_lstm_leakage.py --seed 1234 --num_epochs 20 --calc_ann_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 1234
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Gender or Race: gender
+Align vocab: True
+Vocab of  nic_plus
+
+device: cuda n_gpu: 1
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  5966 662
+len(model_vocab): 511
+Unique tokens in TEXT vocabulary: 494
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 501
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 498
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 494
+Unique tokens in LABEL vocabulary: 2
+Unique tokens in TEXT vocabulary: 498
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_D): 38.53%
 #############################
