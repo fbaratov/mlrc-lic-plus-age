@@ -65,7 +65,7 @@ echo -e "##########################################"
 
 #This script is responsible for running all the models with different seeds. 
 #We still need to find a way to write the output to file.
-models=('oscar' 'nic_plus' 'nic_equalizer')
+models=('nic' 'sat' 'fc' 'att2in' 'updn' 'transformer' 'oscar' 'nic_plus' 'nic_equalizer')
 #Run the models with only three seeds due to computational resources.
 seeds=(0 12 456)
 
