@@ -5,10 +5,10 @@
 
 # Set some default values for the arguments of the python scripts.
 captions='generated'
-model='lstm'
-data='gender'
-epochs=20
-learning_rate=5e-5
+model='bert'
+data='race'
+epochs=5
+learning_rate=1e-5
 check=false
 usage()
 {
