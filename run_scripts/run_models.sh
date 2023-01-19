@@ -4,7 +4,7 @@
 #Use arguments to control the behaviour of this script.
 
 # Set some default values for the arguments of the python scripts.
-captions='generated'
+captions='human'
 model='bert'
 data='race'
 epochs=5
