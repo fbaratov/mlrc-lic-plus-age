@@ -13,3 +13,4 @@ dependencies:
     - nltk=3.6.3
     - pytorch=1.4
     - sentencepiece=0.1.91
+    - pandas
