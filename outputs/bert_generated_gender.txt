@@ -1,0 +1,823 @@
+
+Running the model
+
+##########################################
+	captions: generated
+	model: bert
+	data: gender
+	epochs: 5
+	learning_rate: 1e-5
+	check:false
+##########################################
+gender, bert
+
+python3 gender_bert_leakage.py --seed 0 --num_epochs 5 --calc_model_leak True --cap_model nic  --learning_rate 1e-5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.04, train acc: 59.72
+Finish training
+4: train acc: 0.692759
+val, 4, val loss: 1.03, val acc: 64.50
+val, 4, val loss: 1.03, Male val acc: 54.38
+val, 4, val loss: 1.03, Feale val acc: 74.62
+########### Reluts ##########
+LIC score (LIC_M): 46.19%
+#############################
+python3 gender_bert_leakage.py --seed 12 --num_epochs 5 --calc_model_leak True --cap_model nic  --learning_rate 1e-5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.02, train acc: 61.21
+Finish training
+4: train acc: 0.699296
+val, 4, val loss: 1.00, val acc: 65.11
+val, 4, val loss: 1.00, Male val acc: 63.75
+val, 4, val loss: 1.00, Feale val acc: 66.47
+########### Reluts ##########
+LIC score (LIC_M): 48.76%
+#############################
+python3 gender_bert_leakage.py --seed 456 --num_epochs 5 --calc_model_leak True --cap_model nic  --learning_rate 1e-5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.03, train acc: 61.01
+Finish training
+4: train acc: 0.691753
+val, 4, val loss: 1.07, val acc: 61.18
+val, 4, val loss: 1.07, Male val acc: 56.80
+val, 4, val loss: 1.07, Feale val acc: 65.56
+########### Reluts ##########
+LIC score (LIC_M): 45.24%
+#############################
+python3 gender_bert_leakage.py --seed 0 --num_epochs 5 --calc_model_leak True --cap_model sat  --learning_rate 1e-5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: sat
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.02, train acc: 61.11
+Finish training
+4: train acc: 0.694435
+val, 4, val loss: 0.97, val acc: 67.67
+val, 4, val loss: 0.97, Male val acc: 67.67
+val, 4, val loss: 0.97, Feale val acc: 67.67
+########### Reluts ##########
+LIC score (LIC_M): 48.76%
+#############################
+python3 gender_bert_leakage.py --seed 12 --num_epochs 5 --calc_model_leak True --cap_model sat  --learning_rate 1e-5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: sat
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.02, train acc: 60.91
+Finish training
+4: train acc: 0.695608
+val, 4, val loss: 1.06, val acc: 65.11
+val, 4, val loss: 1.06, Male val acc: 56.19
+val, 4, val loss: 1.06, Feale val acc: 74.02
+########### Reluts ##########
+LIC score (LIC_M): 47.95%
+#############################
+python3 gender_bert_leakage.py --seed 456 --num_epochs 5 --calc_model_leak True --cap_model sat  --learning_rate 1e-5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: sat
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.01, train acc: 61.43
+Finish training
+4: train acc: 0.700134
+val, 4, val loss: 1.07, val acc: 63.60
+val, 4, val loss: 1.07, Male val acc: 58.31
+val, 4, val loss: 1.07, Feale val acc: 68.88
+########### Reluts ##########
+LIC score (LIC_M): 46.32%
+#############################
+python3 gender_bert_leakage.py --seed 0 --num_epochs 5 --calc_model_leak True --cap_model fc  --learning_rate 1e-5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: fc
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.00, train acc: 62.59
+Finish training
+4: train acc: 0.697285
+val, 4, val loss: 0.95, val acc: 68.58
+val, 4, val loss: 0.95, Male val acc: 59.21
+val, 4, val loss: 0.95, Feale val acc: 77.95
+########### Reluts ##########
+LIC score (LIC_M): 52.45%
+#############################
+python3 gender_bert_leakage.py --seed 12 --num_epochs 5 --calc_model_leak True --cap_model fc  --learning_rate 1e-5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: fc
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 0.99, train acc: 62.72
+Finish training
+4: train acc: 0.678679
+val, 4, val loss: 0.94, val acc: 69.03
+val, 4, val loss: 0.94, Male val acc: 62.54
+val, 4, val loss: 0.94, Feale val acc: 75.53
+########### Reluts ##########
+LIC score (LIC_M): 50.24%
+#############################
+python3 gender_bert_leakage.py --seed 456 --num_epochs 5 --calc_model_leak True --cap_model fc  --learning_rate 1e-5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: fc
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 0.99, train acc: 63.58
+Finish training
+4: train acc: 0.684211
+val, 4, val loss: 1.01, val acc: 65.56
+val, 4, val loss: 1.01, Male val acc: 62.84
+val, 4, val loss: 1.01, Feale val acc: 68.28
+########### Reluts ##########
+LIC score (LIC_M): 48.50%
+#############################
+python3 gender_bert_leakage.py --seed 0 --num_epochs 5 --calc_model_leak True --cap_model att2in  --learning_rate 1e-5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: att2in
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.01, train acc: 61.57
+Finish training
+4: train acc: 0.686892
+val, 4, val loss: 0.98, val acc: 66.62
+val, 4, val loss: 0.98, Male val acc: 54.38
+val, 4, val loss: 0.98, Feale val acc: 78.85
+########### Reluts ##########
+LIC score (LIC_M): 48.81%
+#############################
+python3 gender_bert_leakage.py --seed 12 --num_epochs 5 --calc_model_leak True --cap_model att2in  --learning_rate 1e-5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: att2in
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.00, train acc: 62.91
+Finish training
+4: train acc: 0.680020
+val, 4, val loss: 0.96, val acc: 66.92
+val, 4, val loss: 0.96, Male val acc: 55.29
+val, 4, val loss: 0.96, Feale val acc: 78.55
+########### Reluts ##########
+LIC score (LIC_M): 49.14%
+#############################
+python3 gender_bert_leakage.py --seed 456 --num_epochs 5 --calc_model_leak True --cap_model att2in  --learning_rate 1e-5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: att2in
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.00, train acc: 62.42
+Finish training
+4: train acc: 0.681529
+val, 4, val loss: 1.02, val acc: 62.84
+val, 4, val loss: 1.02, Male val acc: 54.98
+val, 4, val loss: 1.02, Feale val acc: 70.69
+########### Reluts ##########
+LIC score (LIC_M): 46.52%
+#############################
+python3 gender_bert_leakage.py --seed 0 --num_epochs 5 --calc_model_leak True --cap_model updn  --learning_rate 1e-5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: updn
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 0.98, train acc: 62.74
+Finish training
+4: train acc: 0.715555
+val, 4, val loss: 0.93, val acc: 68.58
+val, 4, val loss: 0.93, Male val acc: 55.59
+val, 4, val loss: 0.93, Feale val acc: 81.57
+########### Reluts ##########
+LIC score (LIC_M): 53.42%
+#############################
+python3 gender_bert_leakage.py --seed 12 --num_epochs 5 --calc_model_leak True --cap_model updn  --learning_rate 1e-5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: updn
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 0.98, train acc: 63.88
+Finish training
+4: train acc: 0.713041
+val, 4, val loss: 0.93, val acc: 67.82
+val, 4, val loss: 0.93, Male val acc: 56.80
+val, 4, val loss: 0.93, Feale val acc: 78.85
+########### Reluts ##########
+LIC score (LIC_M): 52.66%
+#############################
+python3 gender_bert_leakage.py --seed 456 --num_epochs 5 --calc_model_leak True --cap_model updn  --learning_rate 1e-5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: updn
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 0.96, train acc: 64.47
+Finish training
+4: train acc: 0.716561
+val, 4, val loss: 0.95, val acc: 67.82
+val, 4, val loss: 0.95, Male val acc: 62.84
+val, 4, val loss: 0.95, Feale val acc: 72.81
+########### Reluts ##########
+LIC score (LIC_M): 53.02%
+#############################
+python3 gender_bert_leakage.py --seed 0 --num_epochs 5 --calc_model_leak True --cap_model transformer  --learning_rate 1e-5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: transformer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.01, train acc: 62.54
+Finish training
+4: train acc: 0.749413
+val, 4, val loss: 0.94, val acc: 70.69
+val, 4, val loss: 0.94, Male val acc: 59.82
+val, 4, val loss: 0.94, Feale val acc: 81.57
+########### Reluts ##########
+LIC score (LIC_M): 55.71%
+#############################
+python3 gender_bert_leakage.py --seed 12 --num_epochs 5 --calc_model_leak True --cap_model transformer  --learning_rate 1e-5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: transformer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.00, train acc: 62.74
+Finish training
+4: train acc: 0.738854
+val, 4, val loss: 0.92, val acc: 69.79
+val, 4, val loss: 0.92, Male val acc: 71.90
+val, 4, val loss: 0.92, Feale val acc: 67.67
+########### Reluts ##########
+LIC score (LIC_M): 55.13%
+#############################
+python3 gender_bert_leakage.py --seed 456 --num_epochs 5 --calc_model_leak True --cap_model transformer  --learning_rate 1e-5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: transformer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.00, train acc: 62.97
+Finish training
+4: train acc: 0.754945
+val, 4, val loss: 0.98, val acc: 70.85
+val, 4, val loss: 0.98, Male val acc: 72.81
+val, 4, val loss: 0.98, Feale val acc: 68.88
+########### Reluts ##########
+LIC score (LIC_M): 55.50%
+#############################
+python3 gender_bert_leakage.py --seed 0 --num_epochs 5 --calc_model_leak True --cap_model oscar  --learning_rate 1e-5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: oscar
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 0.98, train acc: 62.71
+Finish training
+4: train acc: 0.729802
+val, 4, val loss: 0.94, val acc: 70.39
+val, 4, val loss: 0.94, Male val acc: 64.05
+val, 4, val loss: 0.94, Feale val acc: 76.74
+########### Reluts ##########
+LIC score (LIC_M): 53.79%
+#############################
+python3 gender_bert_leakage.py --seed 12 --num_epochs 5 --calc_model_leak True --cap_model oscar  --learning_rate 1e-5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: oscar
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 0.99, train acc: 62.69
+Finish training
+4: train acc: 0.724606
+val, 4, val loss: 1.01, val acc: 65.11
+val, 4, val loss: 1.01, Male val acc: 57.10
+val, 4, val loss: 1.01, Feale val acc: 73.11
+########### Reluts ##########
+LIC score (LIC_M): 49.88%
+#############################
+python3 gender_bert_leakage.py --seed 456 --num_epochs 5 --calc_model_leak True --cap_model oscar  --learning_rate 1e-5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: oscar
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 0.98, train acc: 63.21
+Finish training
+4: train acc: 0.715890
+val, 4, val loss: 0.93, val acc: 69.64
+val, 4, val loss: 0.93, Male val acc: 61.33
+val, 4, val loss: 0.93, Feale val acc: 77.95
+########### Reluts ##########
+LIC score (LIC_M): 54.91%
+#############################
+python3 gender_bert_leakage.py --seed 0 --num_epochs 5 --calc_model_leak True --cap_model nic_plus  --learning_rate 1e-5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.01, train acc: 62.14
+Finish training
+4: train acc: 0.685049
+val, 4, val loss: 1.02, val acc: 67.52
+val, 4, val loss: 1.02, Male val acc: 56.50
+val, 4, val loss: 1.02, Feale val acc: 78.55
+########### Reluts ##########
+LIC score (LIC_M): 51.52%
+#############################
+python3 gender_bert_leakage.py --seed 12 --num_epochs 5 --calc_model_leak True --cap_model nic_plus  --learning_rate 1e-5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.01, train acc: 62.25
+Finish training
+4: train acc: 0.703486
+val, 4, val loss: 1.01, val acc: 66.47
+val, 4, val loss: 1.01, Male val acc: 59.52
+val, 4, val loss: 1.01, Feale val acc: 73.41
+########### Reluts ##########
+LIC score (LIC_M): 48.90%
+#############################
+python3 gender_bert_leakage.py --seed 456 --num_epochs 5 --calc_model_leak True --cap_model nic_plus  --learning_rate 1e-5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.01, train acc: 61.92
+Finish training
+4: train acc: 0.679852
+val, 4, val loss: 0.96, val acc: 69.49
+val, 4, val loss: 0.96, Male val acc: 57.40
+val, 4, val loss: 0.96, Feale val acc: 81.57
+########### Reluts ##########
+LIC score (LIC_M): 51.98%
+#############################
+python3 gender_bert_leakage.py --seed 0 --num_epochs 5 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 1e-5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 0.99, train acc: 63.79
+Finish training
+4: train acc: 0.721086
+val, 4, val loss: 0.93, val acc: 72.21
+val, 4, val loss: 0.93, Male val acc: 62.54
+val, 4, val loss: 0.93, Feale val acc: 81.87
+########### Reluts ##########
+LIC score (LIC_M): 56.43%
+#############################
+python3 gender_bert_leakage.py --seed 12 --num_epochs 5 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 1e-5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 0.98, train acc: 65.17
+Finish training
+4: train acc: 0.730305
+val, 4, val loss: 0.97, val acc: 67.67
+val, 4, val loss: 0.97, Male val acc: 55.89
+val, 4, val loss: 0.97, Feale val acc: 79.46
+########### Reluts ##########
+LIC score (LIC_M): 52.47%
+#############################
+python3 gender_bert_leakage.py --seed 456 --num_epochs 5 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 1e-5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  5966 662
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 0.98, train acc: 64.57
+Finish training
+4: train acc: 0.721589
+val, 4, val loss: 0.89, val acc: 72.36
+val, 4, val loss: 0.89, Male val acc: 69.79
+val, 4, val loss: 0.89, Feale val acc: 74.92
+########### Reluts ##########
+LIC score (LIC_M): 55.80%
+#############################

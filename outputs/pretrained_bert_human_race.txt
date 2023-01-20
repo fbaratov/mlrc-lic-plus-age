@@ -1,0 +1,2550 @@
+
+Running the model
+
+##########################################
+	captions: human
+	model: bert_pretrained
+	data: race
+	epochs: 20
+	learning_rate: 5e-5
+	check:false
+##########################################
+race
+python3 race_bert_leakage.py --seed 0 --num_epochs 20 --calc_ann_leak True --cap_model nic  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 0
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  nic
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 49.85
+train, 5, train loss: 1.07, train acc: 55.32
+train, 10, train loss: 1.05, train acc: 59.03
+train, 15, train loss: 1.02, train acc: 62.73
+Finish training
+19: train acc: 0.629310
+val, 19, val loss: 1.30, val acc: 50.91
+val, 19, val loss: 1.30, Light val acc: 57.27
+val, 19, val loss: 1.30, Dark val acc: 44.55
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 51.83
+train, 5, train loss: 1.05, train acc: 58.87
+train, 10, train loss: 1.04, train acc: 59.48
+train, 15, train loss: 1.02, train acc: 61.16
+Finish training
+19: train acc: 0.639452
+val, 19, val loss: 1.27, val acc: 56.36
+val, 19, val loss: 1.27, Light val acc: 57.27
+val, 19, val loss: 1.27, Dark val acc: 55.45
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 49.49
+train, 5, train loss: 1.06, train acc: 57.40
+train, 10, train loss: 1.03, train acc: 61.11
+train, 15, train loss: 1.02, train acc: 61.71
+Finish training
+19: train acc: 0.623732
+val, 19, val loss: 1.28, val acc: 55.91
+val, 19, val loss: 1.28, Light val acc: 60.91
+val, 19, val loss: 1.28, Dark val acc: 50.91
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.11, train acc: 52.69
+train, 5, train loss: 1.07, train acc: 56.24
+train, 10, train loss: 1.03, train acc: 61.41
+train, 15, train loss: 1.03, train acc: 61.31
+Finish training
+19: train acc: 0.637931
+val, 19, val loss: 1.23, val acc: 59.55
+val, 19, val loss: 1.23, Light val acc: 51.82
+val, 19, val loss: 1.23, Dark val acc: 67.27
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 51.17
+train, 5, train loss: 1.06, train acc: 59.18
+train, 10, train loss: 1.04, train acc: 61.41
+train, 15, train loss: 1.02, train acc: 62.58
+Finish training
+19: train acc: 0.646045
+val, 19, val loss: 1.23, val acc: 55.00
+val, 19, val loss: 1.23, Light val acc: 51.82
+val, 19, val loss: 1.23, Dark val acc: 58.18
+########### Reluts ##########
+LIC score (LIC_D): 33.74%
+#############################
+python3 race_bert_leakage.py --seed 12 --num_epochs 20 --calc_ann_leak True --cap_model nic  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 12
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  nic
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 50.71
+train, 5, train loss: 1.07, train acc: 57.76
+train, 10, train loss: 1.04, train acc: 59.43
+train, 15, train loss: 1.02, train acc: 62.73
+Finish training
+19: train acc: 0.645538
+val, 19, val loss: 1.31, val acc: 49.55
+val, 19, val loss: 1.31, Light val acc: 52.73
+val, 19, val loss: 1.31, Dark val acc: 46.36
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 50.41
+train, 5, train loss: 1.05, train acc: 58.62
+train, 10, train loss: 1.02, train acc: 61.05
+train, 15, train loss: 1.02, train acc: 61.61
+Finish training
+19: train acc: 0.629817
+val, 19, val loss: 1.32, val acc: 52.27
+val, 19, val loss: 1.32, Light val acc: 49.09
+val, 19, val loss: 1.32, Dark val acc: 55.45
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 50.91
+train, 5, train loss: 1.05, train acc: 58.06
+train, 10, train loss: 1.04, train acc: 60.65
+train, 15, train loss: 1.01, train acc: 62.78
+Finish training
+19: train acc: 0.634381
+val, 19, val loss: 1.25, val acc: 54.55
+val, 19, val loss: 1.25, Light val acc: 54.55
+val, 19, val loss: 1.25, Dark val acc: 54.55
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.17, train acc: 48.83
+train, 5, train loss: 1.06, train acc: 57.91
+train, 10, train loss: 1.05, train acc: 58.52
+train, 15, train loss: 1.02, train acc: 60.65
+Finish training
+19: train acc: 0.642495
+val, 19, val loss: 1.32, val acc: 51.82
+val, 19, val loss: 1.32, Light val acc: 49.09
+val, 19, val loss: 1.32, Dark val acc: 54.55
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 51.01
+train, 5, train loss: 1.05, train acc: 57.76
+train, 10, train loss: 1.03, train acc: 61.11
+train, 15, train loss: 1.00, train acc: 63.44
+Finish training
+19: train acc: 0.642495
+val, 19, val loss: 1.27, val acc: 55.45
+val, 19, val loss: 1.27, Light val acc: 60.00
+val, 19, val loss: 1.27, Dark val acc: 50.91
+########### Reluts ##########
+LIC score (LIC_D): 32.05%
+#############################
+python3 race_bert_leakage.py --seed 456 --num_epochs 20 --calc_ann_leak True --cap_model nic  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 456
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  nic
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 49.14
+train, 5, train loss: 1.08, train acc: 55.17
+train, 10, train loss: 1.05, train acc: 60.85
+train, 15, train loss: 1.03, train acc: 60.45
+Finish training
+19: train acc: 0.618154
+val, 19, val loss: 1.30, val acc: 54.55
+val, 19, val loss: 1.30, Light val acc: 50.00
+val, 19, val loss: 1.30, Dark val acc: 59.09
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 52.38
+train, 5, train loss: 1.06, train acc: 57.20
+train, 10, train loss: 1.02, train acc: 61.41
+train, 15, train loss: 1.01, train acc: 62.88
+Finish training
+19: train acc: 0.638438
+val, 19, val loss: 1.29, val acc: 52.73
+val, 19, val loss: 1.29, Light val acc: 47.27
+val, 19, val loss: 1.29, Dark val acc: 58.18
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.10, train acc: 52.54
+train, 5, train loss: 1.05, train acc: 58.06
+train, 10, train loss: 1.03, train acc: 60.80
+train, 15, train loss: 1.00, train acc: 62.83
+Finish training
+19: train acc: 0.636917
+val, 19, val loss: 1.29, val acc: 51.82
+val, 19, val loss: 1.29, Light val acc: 55.45
+val, 19, val loss: 1.29, Dark val acc: 48.18
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 52.03
+train, 5, train loss: 1.09, train acc: 53.80
+train, 10, train loss: 1.04, train acc: 59.28
+train, 15, train loss: 1.03, train acc: 61.36
+Finish training
+19: train acc: 0.632353
+val, 19, val loss: 1.29, val acc: 52.27
+val, 19, val loss: 1.29, Light val acc: 50.00
+val, 19, val loss: 1.29, Dark val acc: 54.55
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 50.81
+train, 5, train loss: 1.07, train acc: 55.48
+train, 10, train loss: 1.04, train acc: 59.03
+train, 15, train loss: 1.03, train acc: 60.55
+Finish training
+19: train acc: 0.609533
+val, 19, val loss: 1.22, val acc: 54.55
+val, 19, val loss: 1.22, Light val acc: 59.09
+val, 19, val loss: 1.22, Dark val acc: 50.00
+########### Reluts ##########
+LIC score (LIC_D): 32.55%
+#############################
+python3 race_bert_leakage.py --seed 0 --num_epochs 20 --calc_ann_leak True --cap_model sat  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 0
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  sat
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 51.12
+train, 5, train loss: 1.07, train acc: 56.64
+train, 10, train loss: 1.05, train acc: 59.63
+train, 15, train loss: 1.02, train acc: 61.26
+Finish training
+19: train acc: 0.627282
+val, 19, val loss: 1.30, val acc: 49.09
+val, 19, val loss: 1.30, Light val acc: 49.09
+val, 19, val loss: 1.30, Dark val acc: 49.09
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 52.48
+train, 5, train loss: 1.05, train acc: 59.74
+train, 10, train loss: 1.03, train acc: 60.45
+train, 15, train loss: 1.03, train acc: 61.00
+Finish training
+19: train acc: 0.641988
+val, 19, val loss: 1.25, val acc: 57.73
+val, 19, val loss: 1.25, Light val acc: 53.64
+val, 19, val loss: 1.25, Dark val acc: 61.82
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 49.54
+train, 5, train loss: 1.06, train acc: 57.05
+train, 10, train loss: 1.04, train acc: 61.66
+train, 15, train loss: 1.03, train acc: 60.40
+Finish training
+19: train acc: 0.626268
+val, 19, val loss: 1.26, val acc: 52.73
+val, 19, val loss: 1.26, Light val acc: 52.73
+val, 19, val loss: 1.26, Dark val acc: 52.73
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.11, train acc: 51.83
+train, 5, train loss: 1.06, train acc: 57.10
+train, 10, train loss: 1.04, train acc: 61.66
+train, 15, train loss: 1.02, train acc: 63.44
+Finish training
+19: train acc: 0.622211
+val, 19, val loss: 1.21, val acc: 61.36
+val, 19, val loss: 1.21, Light val acc: 63.64
+val, 19, val loss: 1.21, Dark val acc: 59.09
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 51.42
+train, 5, train loss: 1.06, train acc: 57.86
+train, 10, train loss: 1.05, train acc: 58.57
+train, 15, train loss: 1.03, train acc: 61.16
+Finish training
+19: train acc: 0.635903
+val, 19, val loss: 1.24, val acc: 54.09
+val, 19, val loss: 1.24, Light val acc: 52.73
+val, 19, val loss: 1.24, Dark val acc: 55.45
+########### Reluts ##########
+LIC score (LIC_D): 33.43%
+#############################
+python3 race_bert_leakage.py --seed 12 --num_epochs 20 --calc_ann_leak True --cap_model sat  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 12
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  sat
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 51.52
+train, 5, train loss: 1.08, train acc: 54.77
+train, 10, train loss: 1.05, train acc: 59.74
+train, 15, train loss: 1.02, train acc: 61.05
+Finish training
+19: train acc: 0.627282
+val, 19, val loss: 1.34, val acc: 52.73
+val, 19, val loss: 1.34, Light val acc: 50.91
+val, 19, val loss: 1.34, Dark val acc: 54.55
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 49.95
+train, 5, train loss: 1.05, train acc: 60.19
+train, 10, train loss: 1.02, train acc: 61.00
+train, 15, train loss: 1.02, train acc: 62.12
+Finish training
+19: train acc: 0.637424
+val, 19, val loss: 1.32, val acc: 51.36
+val, 19, val loss: 1.32, Light val acc: 44.55
+val, 19, val loss: 1.32, Dark val acc: 58.18
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 50.35
+train, 5, train loss: 1.06, train acc: 59.38
+train, 10, train loss: 1.04, train acc: 59.99
+train, 15, train loss: 1.02, train acc: 61.71
+Finish training
+19: train acc: 0.629817
+val, 19, val loss: 1.25, val acc: 55.00
+val, 19, val loss: 1.25, Light val acc: 54.55
+val, 19, val loss: 1.25, Dark val acc: 55.45
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.17, train acc: 50.10
+train, 5, train loss: 1.06, train acc: 56.85
+train, 10, train loss: 1.05, train acc: 58.42
+train, 15, train loss: 1.03, train acc: 60.40
+Finish training
+19: train acc: 0.627282
+val, 19, val loss: 1.31, val acc: 54.09
+val, 19, val loss: 1.31, Light val acc: 49.09
+val, 19, val loss: 1.31, Dark val acc: 59.09
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 51.98
+train, 5, train loss: 1.05, train acc: 58.52
+train, 10, train loss: 1.03, train acc: 61.76
+train, 15, train loss: 1.01, train acc: 62.58
+Finish training
+19: train acc: 0.639452
+val, 19, val loss: 1.26, val acc: 58.18
+val, 19, val loss: 1.26, Light val acc: 65.45
+val, 19, val loss: 1.26, Dark val acc: 50.91
+########### Reluts ##########
+LIC score (LIC_D): 32.88%
+#############################
+python3 race_bert_leakage.py --seed 456 --num_epochs 20 --calc_ann_leak True --cap_model sat  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 456
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  sat
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 50.30
+train, 5, train loss: 1.08, train acc: 55.27
+train, 10, train loss: 1.05, train acc: 57.96
+train, 15, train loss: 1.02, train acc: 62.02
+Finish training
+19: train acc: 0.627789
+val, 19, val loss: 1.29, val acc: 53.18
+val, 19, val loss: 1.29, Light val acc: 46.36
+val, 19, val loss: 1.29, Dark val acc: 60.00
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 51.06
+train, 5, train loss: 1.06, train acc: 58.11
+train, 10, train loss: 1.03, train acc: 60.19
+train, 15, train loss: 1.00, train acc: 63.34
+Finish training
+19: train acc: 0.629817
+val, 19, val loss: 1.24, val acc: 57.27
+val, 19, val loss: 1.24, Light val acc: 56.36
+val, 19, val loss: 1.24, Dark val acc: 58.18
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 49.90
+train, 5, train loss: 1.06, train acc: 57.45
+train, 10, train loss: 1.03, train acc: 60.60
+train, 15, train loss: 1.01, train acc: 63.24
+Finish training
+19: train acc: 0.638945
+val, 19, val loss: 1.29, val acc: 50.00
+val, 19, val loss: 1.29, Light val acc: 50.91
+val, 19, val loss: 1.29, Dark val acc: 49.09
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 50.66
+train, 5, train loss: 1.08, train acc: 57.20
+train, 10, train loss: 1.04, train acc: 59.89
+train, 15, train loss: 1.03, train acc: 61.82
+Finish training
+19: train acc: 0.625254
+val, 19, val loss: 1.30, val acc: 50.00
+val, 19, val loss: 1.30, Light val acc: 45.45
+val, 19, val loss: 1.30, Dark val acc: 54.55
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 50.05
+train, 5, train loss: 1.08, train acc: 55.02
+train, 10, train loss: 1.04, train acc: 59.28
+train, 15, train loss: 1.02, train acc: 61.66
+Finish training
+19: train acc: 0.596349
+val, 19, val loss: 1.22, val acc: 57.27
+val, 19, val loss: 1.22, Light val acc: 58.18
+val, 19, val loss: 1.22, Dark val acc: 56.36
+########### Reluts ##########
+LIC score (LIC_D): 32.55%
+#############################
+python3 race_bert_leakage.py --seed 0 --num_epochs 20 --calc_ann_leak True --cap_model fc  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 0
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  fc
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.11, train acc: 51.72
+train, 5, train loss: 1.07, train acc: 57.51
+train, 10, train loss: 1.05, train acc: 59.74
+train, 15, train loss: 1.02, train acc: 61.76
+Finish training
+19: train acc: 0.627789
+val, 19, val loss: 1.28, val acc: 53.18
+val, 19, val loss: 1.28, Light val acc: 56.36
+val, 19, val loss: 1.28, Dark val acc: 50.00
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 51.98
+train, 5, train loss: 1.06, train acc: 57.56
+train, 10, train loss: 1.04, train acc: 60.55
+train, 15, train loss: 1.03, train acc: 61.31
+Finish training
+19: train acc: 0.614097
+val, 19, val loss: 1.33, val acc: 48.18
+val, 19, val loss: 1.33, Light val acc: 50.00
+val, 19, val loss: 1.33, Dark val acc: 46.36
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 49.95
+train, 5, train loss: 1.06, train acc: 58.82
+train, 10, train loss: 1.04, train acc: 60.09
+train, 15, train loss: 1.03, train acc: 60.04
+Finish training
+19: train acc: 0.613590
+val, 19, val loss: 1.29, val acc: 53.18
+val, 19, val loss: 1.29, Light val acc: 57.27
+val, 19, val loss: 1.29, Dark val acc: 49.09
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.11, train acc: 51.62
+train, 5, train loss: 1.07, train acc: 56.49
+train, 10, train loss: 1.04, train acc: 60.70
+train, 15, train loss: 1.02, train acc: 62.22
+Finish training
+19: train acc: 0.628803
+val, 19, val loss: 1.28, val acc: 53.64
+val, 19, val loss: 1.28, Light val acc: 49.09
+val, 19, val loss: 1.28, Dark val acc: 58.18
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 50.66
+train, 5, train loss: 1.06, train acc: 57.45
+train, 10, train loss: 1.06, train acc: 58.77
+train, 15, train loss: 1.04, train acc: 60.65
+Finish training
+19: train acc: 0.615112
+val, 19, val loss: 1.23, val acc: 54.55
+val, 19, val loss: 1.23, Light val acc: 50.00
+val, 19, val loss: 1.23, Dark val acc: 59.09
+########### Reluts ##########
+LIC score (LIC_D): 31.66%
+#############################
+python3 race_bert_leakage.py --seed 12 --num_epochs 20 --calc_ann_leak True --cap_model fc  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 12
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  fc
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 51.37
+train, 5, train loss: 1.08, train acc: 55.48
+train, 10, train loss: 1.05, train acc: 58.98
+train, 15, train loss: 1.03, train acc: 62.32
+Finish training
+19: train acc: 0.613590
+val, 19, val loss: 1.31, val acc: 54.09
+val, 19, val loss: 1.31, Light val acc: 50.91
+val, 19, val loss: 1.31, Dark val acc: 57.27
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 49.59
+train, 5, train loss: 1.06, train acc: 58.82
+train, 10, train loss: 1.04, train acc: 59.43
+train, 15, train loss: 1.04, train acc: 59.13
+Finish training
+19: train acc: 0.624239
+val, 19, val loss: 1.29, val acc: 52.27
+val, 19, val loss: 1.29, Light val acc: 42.73
+val, 19, val loss: 1.29, Dark val acc: 61.82
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 50.51
+train, 5, train loss: 1.06, train acc: 58.37
+train, 10, train loss: 1.06, train acc: 59.13
+train, 15, train loss: 1.04, train acc: 59.74
+Finish training
+19: train acc: 0.613590
+val, 19, val loss: 1.26, val acc: 51.82
+val, 19, val loss: 1.26, Light val acc: 55.45
+val, 19, val loss: 1.26, Dark val acc: 48.18
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.17, train acc: 48.68
+train, 5, train loss: 1.07, train acc: 56.64
+train, 10, train loss: 1.06, train acc: 57.05
+train, 15, train loss: 1.03, train acc: 61.66
+Finish training
+19: train acc: 0.624239
+val, 19, val loss: 1.28, val acc: 55.91
+val, 19, val loss: 1.28, Light val acc: 49.09
+val, 19, val loss: 1.28, Dark val acc: 62.73
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 50.41
+train, 5, train loss: 1.06, train acc: 57.40
+train, 10, train loss: 1.03, train acc: 59.79
+train, 15, train loss: 1.01, train acc: 61.87
+Finish training
+19: train acc: 0.627789
+val, 19, val loss: 1.30, val acc: 55.91
+val, 19, val loss: 1.30, Light val acc: 65.45
+val, 19, val loss: 1.30, Dark val acc: 46.36
+########### Reluts ##########
+LIC score (LIC_D): 32.78%
+#############################
+python3 race_bert_leakage.py --seed 456 --num_epochs 20 --calc_ann_leak True --cap_model fc  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 456
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  fc
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 49.85
+train, 5, train loss: 1.07, train acc: 57.30
+train, 10, train loss: 1.04, train acc: 59.89
+train, 15, train loss: 1.02, train acc: 61.87
+Finish training
+19: train acc: 0.602434
+val, 19, val loss: 1.30, val acc: 51.82
+val, 19, val loss: 1.30, Light val acc: 45.45
+val, 19, val loss: 1.30, Dark val acc: 58.18
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 50.20
+train, 5, train loss: 1.07, train acc: 56.95
+train, 10, train loss: 1.04, train acc: 58.42
+train, 15, train loss: 1.03, train acc: 60.85
+Finish training
+19: train acc: 0.631339
+val, 19, val loss: 1.28, val acc: 52.73
+val, 19, val loss: 1.28, Light val acc: 49.09
+val, 19, val loss: 1.28, Dark val acc: 56.36
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 51.47
+train, 5, train loss: 1.07, train acc: 56.09
+train, 10, train loss: 1.04, train acc: 59.89
+train, 15, train loss: 1.02, train acc: 62.63
+Finish training
+19: train acc: 0.632860
+val, 19, val loss: 1.27, val acc: 52.27
+val, 19, val loss: 1.27, Light val acc: 52.73
+val, 19, val loss: 1.27, Dark val acc: 51.82
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.15, train acc: 49.65
+train, 5, train loss: 1.08, train acc: 56.64
+train, 10, train loss: 1.05, train acc: 60.19
+train, 15, train loss: 1.04, train acc: 60.14
+Finish training
+19: train acc: 0.617647
+val, 19, val loss: 1.28, val acc: 56.36
+val, 19, val loss: 1.28, Light val acc: 47.27
+val, 19, val loss: 1.28, Dark val acc: 65.45
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 49.70
+train, 5, train loss: 1.08, train acc: 55.12
+train, 10, train loss: 1.04, train acc: 58.98
+train, 15, train loss: 1.03, train acc: 60.55
+Finish training
+19: train acc: 0.612576
+val, 19, val loss: 1.25, val acc: 53.64
+val, 19, val loss: 1.25, Light val acc: 45.45
+val, 19, val loss: 1.25, Dark val acc: 61.82
+########### Reluts ##########
+LIC score (LIC_D): 32.22%
+#############################
+python3 race_bert_leakage.py --seed 0 --num_epochs 20 --calc_ann_leak True --cap_model att2in  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 0
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  att2in
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 50.30
+train, 5, train loss: 1.07, train acc: 56.34
+train, 10, train loss: 1.04, train acc: 59.43
+train, 15, train loss: 1.02, train acc: 60.55
+Finish training
+19: train acc: 0.627282
+val, 19, val loss: 1.29, val acc: 55.00
+val, 19, val loss: 1.29, Light val acc: 52.73
+val, 19, val loss: 1.29, Dark val acc: 57.27
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.11, train acc: 52.59
+train, 5, train loss: 1.06, train acc: 58.57
+train, 10, train loss: 1.03, train acc: 59.89
+train, 15, train loss: 1.02, train acc: 61.92
+Finish training
+19: train acc: 0.623732
+val, 19, val loss: 1.30, val acc: 51.82
+val, 19, val loss: 1.30, Light val acc: 55.45
+val, 19, val loss: 1.30, Dark val acc: 48.18
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 48.53
+train, 5, train loss: 1.06, train acc: 56.64
+train, 10, train loss: 1.05, train acc: 59.38
+train, 15, train loss: 1.04, train acc: 59.89
+Finish training
+19: train acc: 0.608519
+val, 19, val loss: 1.30, val acc: 50.45
+val, 19, val loss: 1.30, Light val acc: 52.73
+val, 19, val loss: 1.30, Dark val acc: 48.18
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.11, train acc: 51.47
+train, 5, train loss: 1.07, train acc: 56.44
+train, 10, train loss: 1.04, train acc: 60.34
+train, 15, train loss: 1.02, train acc: 64.00
+Finish training
+19: train acc: 0.610548
+val, 19, val loss: 1.27, val acc: 54.09
+val, 19, val loss: 1.27, Light val acc: 47.27
+val, 19, val loss: 1.27, Dark val acc: 60.91
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 50.81
+train, 5, train loss: 1.06, train acc: 57.05
+train, 10, train loss: 1.05, train acc: 59.84
+train, 15, train loss: 1.03, train acc: 61.46
+Finish training
+19: train acc: 0.617140
+val, 19, val loss: 1.25, val acc: 56.36
+val, 19, val loss: 1.25, Light val acc: 51.82
+val, 19, val loss: 1.25, Dark val acc: 60.91
+########### Reluts ##########
+LIC score (LIC_D): 32.20%
+#############################
+python3 race_bert_leakage.py --seed 12 --num_epochs 20 --calc_ann_leak True --cap_model att2in  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 12
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  att2in
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 51.12
+train, 5, train loss: 1.07, train acc: 55.83
+train, 10, train loss: 1.05, train acc: 58.01
+train, 15, train loss: 1.03, train acc: 61.11
+Finish training
+19: train acc: 0.625254
+val, 19, val loss: 1.31, val acc: 49.55
+val, 19, val loss: 1.31, Light val acc: 48.18
+val, 19, val loss: 1.31, Dark val acc: 50.91
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 51.22
+train, 5, train loss: 1.05, train acc: 58.77
+train, 10, train loss: 1.03, train acc: 60.50
+train, 15, train loss: 1.03, train acc: 59.23
+Finish training
+19: train acc: 0.618661
+val, 19, val loss: 1.27, val acc: 55.45
+val, 19, val loss: 1.27, Light val acc: 50.00
+val, 19, val loss: 1.27, Dark val acc: 60.91
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.11, train acc: 52.13
+train, 5, train loss: 1.05, train acc: 59.28
+train, 10, train loss: 1.04, train acc: 60.29
+train, 15, train loss: 1.03, train acc: 62.07
+Finish training
+19: train acc: 0.628803
+val, 19, val loss: 1.28, val acc: 52.73
+val, 19, val loss: 1.28, Light val acc: 56.36
+val, 19, val loss: 1.28, Dark val acc: 49.09
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.17, train acc: 49.24
+train, 5, train loss: 1.07, train acc: 55.38
+train, 10, train loss: 1.06, train acc: 58.82
+train, 15, train loss: 1.03, train acc: 60.70
+Finish training
+19: train acc: 0.620690
+val, 19, val loss: 1.30, val acc: 51.82
+val, 19, val loss: 1.30, Light val acc: 47.27
+val, 19, val loss: 1.30, Dark val acc: 56.36
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 50.25
+train, 5, train loss: 1.06, train acc: 57.91
+train, 10, train loss: 1.03, train acc: 61.56
+train, 15, train loss: 1.01, train acc: 62.27
+Finish training
+19: train acc: 0.628803
+val, 19, val loss: 1.34, val acc: 52.27
+val, 19, val loss: 1.34, Light val acc: 61.82
+val, 19, val loss: 1.34, Dark val acc: 42.73
+########### Reluts ##########
+LIC score (LIC_D): 31.76%
+#############################
+python3 race_bert_leakage.py --seed 456 --num_epochs 20 --calc_ann_leak True --cap_model att2in  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 456
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  att2in
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 51.01
+train, 5, train loss: 1.07, train acc: 56.74
+train, 10, train loss: 1.05, train acc: 59.43
+train, 15, train loss: 1.02, train acc: 62.22
+Finish training
+19: train acc: 0.603448
+val, 19, val loss: 1.32, val acc: 49.55
+val, 19, val loss: 1.32, Light val acc: 40.91
+val, 19, val loss: 1.32, Dark val acc: 58.18
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 51.27
+train, 5, train loss: 1.06, train acc: 57.35
+train, 10, train loss: 1.04, train acc: 59.18
+train, 15, train loss: 1.01, train acc: 62.37
+Finish training
+19: train acc: 0.627789
+val, 19, val loss: 1.24, val acc: 51.82
+val, 19, val loss: 1.24, Light val acc: 56.36
+val, 19, val loss: 1.24, Dark val acc: 47.27
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 52.38
+train, 5, train loss: 1.07, train acc: 56.69
+train, 10, train loss: 1.04, train acc: 59.38
+train, 15, train loss: 1.02, train acc: 62.47
+Finish training
+19: train acc: 0.635396
+val, 19, val loss: 1.26, val acc: 55.45
+val, 19, val loss: 1.26, Light val acc: 59.09
+val, 19, val loss: 1.26, Dark val acc: 51.82
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 50.25
+train, 5, train loss: 1.08, train acc: 56.29
+train, 10, train loss: 1.05, train acc: 58.57
+train, 15, train loss: 1.04, train acc: 61.87
+Finish training
+19: train acc: 0.610548
+val, 19, val loss: 1.29, val acc: 50.91
+val, 19, val loss: 1.29, Light val acc: 43.64
+val, 19, val loss: 1.29, Dark val acc: 58.18
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 49.09
+train, 5, train loss: 1.08, train acc: 54.67
+train, 10, train loss: 1.04, train acc: 58.72
+train, 15, train loss: 1.03, train acc: 60.50
+Finish training
+19: train acc: 0.599899
+val, 19, val loss: 1.20, val acc: 60.00
+val, 19, val loss: 1.20, Light val acc: 61.82
+val, 19, val loss: 1.20, Dark val acc: 58.18
+########### Reluts ##########
+LIC score (LIC_D): 32.33%
+#############################
+python3 race_bert_leakage.py --seed 0 --num_epochs 20 --calc_ann_leak True --cap_model updn  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 0
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  updn
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.11, train acc: 51.98
+train, 5, train loss: 1.07, train acc: 56.44
+train, 10, train loss: 1.04, train acc: 59.94
+train, 15, train loss: 1.02, train acc: 61.05
+Finish training
+19: train acc: 0.627282
+val, 19, val loss: 1.31, val acc: 52.73
+val, 19, val loss: 1.31, Light val acc: 51.82
+val, 19, val loss: 1.31, Dark val acc: 53.64
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 52.79
+train, 5, train loss: 1.06, train acc: 58.87
+train, 10, train loss: 1.03, train acc: 60.34
+train, 15, train loss: 1.02, train acc: 62.02
+Finish training
+19: train acc: 0.627282
+val, 19, val loss: 1.27, val acc: 50.91
+val, 19, val loss: 1.27, Light val acc: 50.00
+val, 19, val loss: 1.27, Dark val acc: 51.82
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 48.78
+train, 5, train loss: 1.06, train acc: 58.32
+train, 10, train loss: 1.04, train acc: 60.65
+train, 15, train loss: 1.03, train acc: 61.66
+Finish training
+19: train acc: 0.621197
+val, 19, val loss: 1.28, val acc: 52.73
+val, 19, val loss: 1.28, Light val acc: 55.45
+val, 19, val loss: 1.28, Dark val acc: 50.00
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.11, train acc: 51.83
+train, 5, train loss: 1.07, train acc: 55.98
+train, 10, train loss: 1.04, train acc: 60.75
+train, 15, train loss: 1.02, train acc: 62.68
+Finish training
+19: train acc: 0.617647
+val, 19, val loss: 1.22, val acc: 60.00
+val, 19, val loss: 1.22, Light val acc: 53.64
+val, 19, val loss: 1.22, Dark val acc: 66.36
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 50.76
+train, 5, train loss: 1.06, train acc: 58.06
+train, 10, train loss: 1.05, train acc: 57.81
+train, 15, train loss: 1.03, train acc: 61.05
+Finish training
+19: train acc: 0.633874
+val, 19, val loss: 1.27, val acc: 54.55
+val, 19, val loss: 1.27, Light val acc: 49.09
+val, 19, val loss: 1.27, Dark val acc: 60.00
+########### Reluts ##########
+LIC score (LIC_D): 32.79%
+#############################
+python3 race_bert_leakage.py --seed 12 --num_epochs 20 --calc_ann_leak True --cap_model updn  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 12
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  updn
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 50.00
+train, 5, train loss: 1.07, train acc: 55.27
+train, 10, train loss: 1.05, train acc: 59.43
+train, 15, train loss: 1.02, train acc: 60.80
+Finish training
+19: train acc: 0.627789
+val, 19, val loss: 1.33, val acc: 50.45
+val, 19, val loss: 1.33, Light val acc: 50.91
+val, 19, val loss: 1.33, Dark val acc: 50.00
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 49.34
+train, 5, train loss: 1.05, train acc: 58.62
+train, 10, train loss: 1.02, train acc: 60.29
+train, 15, train loss: 1.03, train acc: 60.29
+Finish training
+19: train acc: 0.627789
+val, 19, val loss: 1.27, val acc: 58.18
+val, 19, val loss: 1.27, Light val acc: 49.09
+val, 19, val loss: 1.27, Dark val acc: 67.27
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.11, train acc: 52.28
+train, 5, train loss: 1.05, train acc: 59.28
+train, 10, train loss: 1.04, train acc: 59.63
+train, 15, train loss: 1.02, train acc: 62.78
+Finish training
+19: train acc: 0.612576
+val, 19, val loss: 1.26, val acc: 53.18
+val, 19, val loss: 1.26, Light val acc: 53.64
+val, 19, val loss: 1.26, Dark val acc: 52.73
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.16, train acc: 48.73
+train, 5, train loss: 1.07, train acc: 55.73
+train, 10, train loss: 1.06, train acc: 57.25
+train, 15, train loss: 1.02, train acc: 61.31
+Finish training
+19: train acc: 0.621704
+val, 19, val loss: 1.30, val acc: 57.27
+val, 19, val loss: 1.30, Light val acc: 54.55
+val, 19, val loss: 1.30, Dark val acc: 60.00
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 51.06
+train, 5, train loss: 1.06, train acc: 57.86
+train, 10, train loss: 1.03, train acc: 60.85
+train, 15, train loss: 1.01, train acc: 61.76
+Finish training
+19: train acc: 0.627282
+val, 19, val loss: 1.29, val acc: 56.36
+val, 19, val loss: 1.29, Light val acc: 65.45
+val, 19, val loss: 1.29, Dark val acc: 47.27
+########### Reluts ##########
+LIC score (LIC_D): 33.41%
+#############################
+python3 race_bert_leakage.py --seed 456 --num_epochs 20 --calc_ann_leak True --cap_model updn  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 456
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  updn
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 50.30
+train, 5, train loss: 1.08, train acc: 56.03
+train, 10, train loss: 1.05, train acc: 58.98
+train, 15, train loss: 1.02, train acc: 62.83
+Finish training
+19: train acc: 0.608012
+val, 19, val loss: 1.29, val acc: 51.82
+val, 19, val loss: 1.29, Light val acc: 41.82
+val, 19, val loss: 1.29, Dark val acc: 61.82
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 51.57
+train, 5, train loss: 1.06, train acc: 58.01
+train, 10, train loss: 1.04, train acc: 59.13
+train, 15, train loss: 1.01, train acc: 62.47
+Finish training
+19: train acc: 0.631339
+val, 19, val loss: 1.26, val acc: 52.73
+val, 19, val loss: 1.26, Light val acc: 49.09
+val, 19, val loss: 1.26, Dark val acc: 56.36
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 51.17
+train, 5, train loss: 1.06, train acc: 56.74
+train, 10, train loss: 1.03, train acc: 61.26
+train, 15, train loss: 1.01, train acc: 62.47
+Finish training
+19: train acc: 0.641988
+val, 19, val loss: 1.26, val acc: 53.18
+val, 19, val loss: 1.26, Light val acc: 54.55
+val, 19, val loss: 1.26, Dark val acc: 51.82
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 50.15
+train, 5, train loss: 1.08, train acc: 55.88
+train, 10, train loss: 1.04, train acc: 59.33
+train, 15, train loss: 1.03, train acc: 62.07
+Finish training
+19: train acc: 0.631846
+val, 19, val loss: 1.30, val acc: 55.91
+val, 19, val loss: 1.30, Light val acc: 48.18
+val, 19, val loss: 1.30, Dark val acc: 63.64
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 50.00
+train, 5, train loss: 1.07, train acc: 56.49
+train, 10, train loss: 1.04, train acc: 59.53
+train, 15, train loss: 1.02, train acc: 61.21
+Finish training
+19: train acc: 0.612576
+val, 19, val loss: 1.22, val acc: 58.18
+val, 19, val loss: 1.22, Light val acc: 56.36
+val, 19, val loss: 1.22, Dark val acc: 60.00
+########### Reluts ##########
+LIC score (LIC_D): 33.02%
+#############################
+python3 race_bert_leakage.py --seed 0 --num_epochs 20 --calc_ann_leak True --cap_model transformer  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 0
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  transformer
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 49.39
+train, 5, train loss: 1.07, train acc: 57.51
+train, 10, train loss: 1.04, train acc: 58.22
+train, 15, train loss: 1.02, train acc: 62.32
+Finish training
+19: train acc: 0.639959
+val, 19, val loss: 1.30, val acc: 56.82
+val, 19, val loss: 1.30, Light val acc: 58.18
+val, 19, val loss: 1.30, Dark val acc: 55.45
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 52.03
+train, 5, train loss: 1.05, train acc: 59.89
+train, 10, train loss: 1.02, train acc: 61.61
+train, 15, train loss: 1.02, train acc: 62.32
+Finish training
+19: train acc: 0.638945
+val, 19, val loss: 1.27, val acc: 55.91
+val, 19, val loss: 1.27, Light val acc: 55.45
+val, 19, val loss: 1.27, Dark val acc: 56.36
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 49.19
+train, 5, train loss: 1.06, train acc: 58.27
+train, 10, train loss: 1.03, train acc: 62.17
+train, 15, train loss: 1.01, train acc: 62.12
+Finish training
+19: train acc: 0.624239
+val, 19, val loss: 1.30, val acc: 51.36
+val, 19, val loss: 1.30, Light val acc: 55.45
+val, 19, val loss: 1.30, Dark val acc: 47.27
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.11, train acc: 51.83
+train, 5, train loss: 1.05, train acc: 57.30
+train, 10, train loss: 1.03, train acc: 61.97
+train, 15, train loss: 1.01, train acc: 62.83
+Finish training
+19: train acc: 0.629310
+val, 19, val loss: 1.22, val acc: 60.91
+val, 19, val loss: 1.22, Light val acc: 58.18
+val, 19, val loss: 1.22, Dark val acc: 63.64
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 51.06
+train, 5, train loss: 1.06, train acc: 58.98
+train, 10, train loss: 1.04, train acc: 59.53
+train, 15, train loss: 1.02, train acc: 61.36
+Finish training
+19: train acc: 0.640974
+val, 19, val loss: 1.21, val acc: 60.91
+val, 19, val loss: 1.21, Light val acc: 60.00
+val, 19, val loss: 1.21, Dark val acc: 61.82
+########### Reluts ##########
+LIC score (LIC_D): 35.03%
+#############################
+python3 race_bert_leakage.py --seed 12 --num_epochs 20 --calc_ann_leak True --cap_model transformer  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 12
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  transformer
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 50.25
+train, 5, train loss: 1.08, train acc: 55.63
+train, 10, train loss: 1.04, train acc: 59.58
+train, 15, train loss: 1.02, train acc: 62.37
+Finish training
+19: train acc: 0.640467
+val, 19, val loss: 1.34, val acc: 50.00
+val, 19, val loss: 1.34, Light val acc: 49.09
+val, 19, val loss: 1.34, Dark val acc: 50.91
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 50.10
+train, 5, train loss: 1.05, train acc: 59.69
+train, 10, train loss: 1.02, train acc: 62.58
+train, 15, train loss: 1.03, train acc: 60.65
+Finish training
+19: train acc: 0.620690
+val, 19, val loss: 1.31, val acc: 52.73
+val, 19, val loss: 1.31, Light val acc: 41.82
+val, 19, val loss: 1.31, Dark val acc: 63.64
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 50.96
+train, 5, train loss: 1.05, train acc: 58.27
+train, 10, train loss: 1.04, train acc: 59.84
+train, 15, train loss: 1.02, train acc: 61.92
+Finish training
+19: train acc: 0.630325
+val, 19, val loss: 1.25, val acc: 55.91
+val, 19, val loss: 1.25, Light val acc: 50.91
+val, 19, val loss: 1.25, Dark val acc: 60.91
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.17, train acc: 49.34
+train, 5, train loss: 1.06, train acc: 59.23
+train, 10, train loss: 1.05, train acc: 59.03
+train, 15, train loss: 1.02, train acc: 61.00
+Finish training
+19: train acc: 0.636410
+val, 19, val loss: 1.29, val acc: 52.73
+val, 19, val loss: 1.29, Light val acc: 49.09
+val, 19, val loss: 1.29, Dark val acc: 56.36
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 53.25
+train, 5, train loss: 1.05, train acc: 59.63
+train, 10, train loss: 1.01, train acc: 62.83
+train, 15, train loss: 1.00, train acc: 62.27
+Finish training
+19: train acc: 0.626268
+val, 19, val loss: 1.31, val acc: 54.09
+val, 19, val loss: 1.31, Light val acc: 60.00
+val, 19, val loss: 1.31, Dark val acc: 48.18
+########### Reluts ##########
+LIC score (LIC_D): 32.52%
+#############################
+python3 race_bert_leakage.py --seed 456 --num_epochs 20 --calc_ann_leak True --cap_model transformer  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 456
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  transformer
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 49.34
+train, 5, train loss: 1.08, train acc: 56.29
+train, 10, train loss: 1.05, train acc: 58.16
+train, 15, train loss: 1.01, train acc: 62.78
+Finish training
+19: train acc: 0.620183
+val, 19, val loss: 1.29, val acc: 55.45
+val, 19, val loss: 1.29, Light val acc: 48.18
+val, 19, val loss: 1.29, Dark val acc: 62.73
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 50.71
+train, 5, train loss: 1.06, train acc: 56.69
+train, 10, train loss: 1.04, train acc: 59.63
+train, 15, train loss: 1.01, train acc: 61.16
+Finish training
+19: train acc: 0.631846
+val, 19, val loss: 1.23, val acc: 57.73
+val, 19, val loss: 1.23, Light val acc: 52.73
+val, 19, val loss: 1.23, Dark val acc: 62.73
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 50.56
+train, 5, train loss: 1.06, train acc: 57.61
+train, 10, train loss: 1.03, train acc: 60.60
+train, 15, train loss: 1.02, train acc: 63.18
+Finish training
+19: train acc: 0.633874
+val, 19, val loss: 1.29, val acc: 52.73
+val, 19, val loss: 1.29, Light val acc: 54.55
+val, 19, val loss: 1.29, Dark val acc: 50.91
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 50.35
+train, 5, train loss: 1.08, train acc: 56.14
+train, 10, train loss: 1.03, train acc: 59.99
+train, 15, train loss: 1.02, train acc: 62.68
+Finish training
+19: train acc: 0.633367
+val, 19, val loss: 1.29, val acc: 52.73
+val, 19, val loss: 1.29, Light val acc: 46.36
+val, 19, val loss: 1.29, Dark val acc: 59.09
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 50.35
+train, 5, train loss: 1.07, train acc: 56.03
+train, 10, train loss: 1.04, train acc: 60.85
+train, 15, train loss: 1.02, train acc: 61.71
+Finish training
+19: train acc: 0.612576
+val, 19, val loss: 1.21, val acc: 60.00
+val, 19, val loss: 1.21, Light val acc: 62.73
+val, 19, val loss: 1.21, Dark val acc: 57.27
+########### Reluts ##########
+LIC score (LIC_D): 33.72%
+#############################
+python3 race_bert_leakage.py --seed 0 --num_epochs 20 --calc_ann_leak True --cap_model oscar  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 0
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  oscar
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 51.27
+train, 5, train loss: 1.07, train acc: 56.95
+train, 10, train loss: 1.06, train acc: 58.72
+train, 15, train loss: 1.03, train acc: 61.46
+Finish training
+19: train acc: 0.625761
+val, 19, val loss: 1.29, val acc: 52.27
+val, 19, val loss: 1.29, Light val acc: 52.73
+val, 19, val loss: 1.29, Dark val acc: 51.82
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 52.99
+train, 5, train loss: 1.07, train acc: 57.35
+train, 10, train loss: 1.04, train acc: 60.09
+train, 15, train loss: 1.03, train acc: 61.26
+Finish training
+19: train acc: 0.631846
+val, 19, val loss: 1.26, val acc: 51.36
+val, 19, val loss: 1.26, Light val acc: 50.91
+val, 19, val loss: 1.26, Dark val acc: 51.82
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 49.44
+train, 5, train loss: 1.06, train acc: 57.40
+train, 10, train loss: 1.03, train acc: 60.85
+train, 15, train loss: 1.02, train acc: 61.46
+Finish training
+19: train acc: 0.613590
+val, 19, val loss: 1.26, val acc: 50.45
+val, 19, val loss: 1.26, Light val acc: 51.82
+val, 19, val loss: 1.26, Dark val acc: 49.09
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.11, train acc: 52.79
+train, 5, train loss: 1.07, train acc: 57.66
+train, 10, train loss: 1.04, train acc: 61.46
+train, 15, train loss: 1.02, train acc: 61.66
+Finish training
+19: train acc: 0.616633
+val, 19, val loss: 1.25, val acc: 57.27
+val, 19, val loss: 1.25, Light val acc: 54.55
+val, 19, val loss: 1.25, Dark val acc: 60.00
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 50.56
+train, 5, train loss: 1.06, train acc: 57.81
+train, 10, train loss: 1.05, train acc: 58.22
+train, 15, train loss: 1.03, train acc: 61.82
+Finish training
+19: train acc: 0.634381
+val, 19, val loss: 1.22, val acc: 60.00
+val, 19, val loss: 1.22, Light val acc: 50.91
+val, 19, val loss: 1.22, Dark val acc: 69.09
+########### Reluts ##########
+LIC score (LIC_D): 32.74%
+#############################
+python3 race_bert_leakage.py --seed 12 --num_epochs 20 --calc_ann_leak True --cap_model oscar  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 12
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  oscar
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 51.01
+train, 5, train loss: 1.07, train acc: 55.78
+train, 10, train loss: 1.05, train acc: 59.63
+train, 15, train loss: 1.03, train acc: 61.82
+Finish training
+19: train acc: 0.634381
+val, 19, val loss: 1.27, val acc: 54.09
+val, 19, val loss: 1.27, Light val acc: 53.64
+val, 19, val loss: 1.27, Dark val acc: 54.55
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 50.15
+train, 5, train loss: 1.06, train acc: 57.35
+train, 10, train loss: 1.03, train acc: 60.65
+train, 15, train loss: 1.03, train acc: 60.60
+Finish training
+19: train acc: 0.631846
+val, 19, val loss: 1.28, val acc: 53.18
+val, 19, val loss: 1.28, Light val acc: 47.27
+val, 19, val loss: 1.28, Dark val acc: 59.09
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.11, train acc: 52.43
+train, 5, train loss: 1.05, train acc: 58.98
+train, 10, train loss: 1.04, train acc: 60.50
+train, 15, train loss: 1.02, train acc: 61.97
+Finish training
+19: train acc: 0.617140
+val, 19, val loss: 1.25, val acc: 59.09
+val, 19, val loss: 1.25, Light val acc: 67.27
+val, 19, val loss: 1.25, Dark val acc: 50.91
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.17, train acc: 49.09
+train, 5, train loss: 1.07, train acc: 57.20
+train, 10, train loss: 1.06, train acc: 57.10
+train, 15, train loss: 1.03, train acc: 60.40
+Finish training
+19: train acc: 0.632353
+val, 19, val loss: 1.27, val acc: 53.18
+val, 19, val loss: 1.27, Light val acc: 50.00
+val, 19, val loss: 1.27, Dark val acc: 56.36
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 50.41
+train, 5, train loss: 1.06, train acc: 58.32
+train, 10, train loss: 1.04, train acc: 58.82
+train, 15, train loss: 1.02, train acc: 61.41
+Finish training
+19: train acc: 0.630325
+val, 19, val loss: 1.25, val acc: 58.18
+val, 19, val loss: 1.25, Light val acc: 70.00
+val, 19, val loss: 1.25, Dark val acc: 46.36
+########### Reluts ##########
+LIC score (LIC_D): 33.40%
+#############################
+python3 race_bert_leakage.py --seed 456 --num_epochs 20 --calc_ann_leak True --cap_model oscar  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 456
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  oscar
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 51.27
+train, 5, train loss: 1.07, train acc: 55.88
+train, 10, train loss: 1.05, train acc: 59.53
+train, 15, train loss: 1.02, train acc: 61.61
+Finish training
+19: train acc: 0.613590
+val, 19, val loss: 1.29, val acc: 54.55
+val, 19, val loss: 1.29, Light val acc: 48.18
+val, 19, val loss: 1.29, Dark val acc: 60.91
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 50.61
+train, 5, train loss: 1.07, train acc: 57.51
+train, 10, train loss: 1.04, train acc: 61.11
+train, 15, train loss: 1.02, train acc: 62.37
+Finish training
+19: train acc: 0.626775
+val, 19, val loss: 1.27, val acc: 54.09
+val, 19, val loss: 1.27, Light val acc: 52.73
+val, 19, val loss: 1.27, Dark val acc: 55.45
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.11, train acc: 51.27
+train, 5, train loss: 1.05, train acc: 58.67
+train, 10, train loss: 1.04, train acc: 60.04
+train, 15, train loss: 1.02, train acc: 62.07
+Finish training
+19: train acc: 0.628296
+val, 19, val loss: 1.26, val acc: 54.55
+val, 19, val loss: 1.26, Light val acc: 54.55
+val, 19, val loss: 1.26, Dark val acc: 54.55
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 50.61
+train, 5, train loss: 1.08, train acc: 55.73
+train, 10, train loss: 1.05, train acc: 58.98
+train, 15, train loss: 1.03, train acc: 61.82
+Finish training
+19: train acc: 0.617140
+val, 19, val loss: 1.24, val acc: 50.45
+val, 19, val loss: 1.24, Light val acc: 40.91
+val, 19, val loss: 1.24, Dark val acc: 60.00
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 50.81
+train, 5, train loss: 1.07, train acc: 55.83
+train, 10, train loss: 1.05, train acc: 58.62
+train, 15, train loss: 1.04, train acc: 60.50
+Finish training
+19: train acc: 0.611562
+val, 19, val loss: 1.21, val acc: 53.64
+val, 19, val loss: 1.21, Light val acc: 56.36
+val, 19, val loss: 1.21, Dark val acc: 50.91
+########### Reluts ##########
+LIC score (LIC_D): 32.44%
+#############################
+python3 race_bert_leakage.py --seed 0 --num_epochs 20 --calc_ann_leak True --cap_model nic_plus  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 0
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  nic_plus
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 50.91
+train, 5, train loss: 1.07, train acc: 54.56
+train, 10, train loss: 1.05, train acc: 58.22
+train, 15, train loss: 1.02, train acc: 61.51
+Finish training
+19: train acc: 0.634888
+val, 19, val loss: 1.28, val acc: 54.09
+val, 19, val loss: 1.28, Light val acc: 57.27
+val, 19, val loss: 1.28, Dark val acc: 50.91
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 53.25
+train, 5, train loss: 1.06, train acc: 58.42
+train, 10, train loss: 1.03, train acc: 60.45
+train, 15, train loss: 1.02, train acc: 61.00
+Finish training
+19: train acc: 0.636410
+val, 19, val loss: 1.27, val acc: 57.27
+val, 19, val loss: 1.27, Light val acc: 58.18
+val, 19, val loss: 1.27, Dark val acc: 56.36
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 49.34
+train, 5, train loss: 1.06, train acc: 58.06
+train, 10, train loss: 1.03, train acc: 60.40
+train, 15, train loss: 1.02, train acc: 62.83
+Finish training
+19: train acc: 0.614097
+val, 19, val loss: 1.27, val acc: 55.45
+val, 19, val loss: 1.27, Light val acc: 56.36
+val, 19, val loss: 1.27, Dark val acc: 54.55
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.11, train acc: 51.88
+train, 5, train loss: 1.06, train acc: 57.91
+train, 10, train loss: 1.03, train acc: 61.21
+train, 15, train loss: 1.02, train acc: 61.76
+Finish training
+19: train acc: 0.636410
+val, 19, val loss: 1.27, val acc: 55.45
+val, 19, val loss: 1.27, Light val acc: 51.82
+val, 19, val loss: 1.27, Dark val acc: 59.09
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 50.96
+train, 5, train loss: 1.06, train acc: 58.62
+train, 10, train loss: 1.05, train acc: 58.82
+train, 15, train loss: 1.03, train acc: 61.21
+Finish training
+19: train acc: 0.637931
+val, 19, val loss: 1.20, val acc: 62.73
+val, 19, val loss: 1.20, Light val acc: 54.55
+val, 19, val loss: 1.20, Dark val acc: 70.91
+########### Reluts ##########
+LIC score (LIC_D): 34.47%
+#############################
+python3 race_bert_leakage.py --seed 12 --num_epochs 20 --calc_ann_leak True --cap_model nic_plus  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 12
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  nic_plus
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 49.65
+train, 5, train loss: 1.06, train acc: 57.45
+train, 10, train loss: 1.04, train acc: 59.53
+train, 15, train loss: 1.02, train acc: 62.37
+Finish training
+19: train acc: 0.641481
+val, 19, val loss: 1.32, val acc: 50.91
+val, 19, val loss: 1.32, Light val acc: 51.82
+val, 19, val loss: 1.32, Dark val acc: 50.00
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 51.27
+train, 5, train loss: 1.05, train acc: 59.33
+train, 10, train loss: 1.02, train acc: 61.82
+train, 15, train loss: 1.02, train acc: 61.31
+Finish training
+19: train acc: 0.630325
+val, 19, val loss: 1.30, val acc: 49.09
+val, 19, val loss: 1.30, Light val acc: 44.55
+val, 19, val loss: 1.30, Dark val acc: 53.64
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 50.71
+train, 5, train loss: 1.05, train acc: 57.81
+train, 10, train loss: 1.04, train acc: 59.79
+train, 15, train loss: 1.02, train acc: 62.63
+Finish training
+19: train acc: 0.635903
+val, 19, val loss: 1.25, val acc: 55.91
+val, 19, val loss: 1.25, Light val acc: 53.64
+val, 19, val loss: 1.25, Dark val acc: 58.18
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.16, train acc: 49.04
+train, 5, train loss: 1.07, train acc: 55.58
+train, 10, train loss: 1.05, train acc: 59.18
+train, 15, train loss: 1.02, train acc: 61.46
+Finish training
+19: train acc: 0.633874
+val, 19, val loss: 1.32, val acc: 49.09
+val, 19, val loss: 1.32, Light val acc: 41.82
+val, 19, val loss: 1.32, Dark val acc: 56.36
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 50.05
+train, 5, train loss: 1.06, train acc: 56.95
+train, 10, train loss: 1.03, train acc: 60.90
+train, 15, train loss: 1.00, train acc: 62.32
+Finish training
+19: train acc: 0.638438
+val, 19, val loss: 1.29, val acc: 57.27
+val, 19, val loss: 1.29, Light val acc: 61.82
+val, 19, val loss: 1.29, Dark val acc: 52.73
+########### Reluts ##########
+LIC score (LIC_D): 31.79%
+#############################
+python3 race_bert_leakage.py --seed 456 --num_epochs 20 --calc_ann_leak True --cap_model nic_plus  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 456
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  nic_plus
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 49.29
+train, 5, train loss: 1.08, train acc: 54.87
+train, 10, train loss: 1.05, train acc: 60.09
+train, 15, train loss: 1.02, train acc: 61.66
+Finish training
+19: train acc: 0.613083
+val, 19, val loss: 1.28, val acc: 56.82
+val, 19, val loss: 1.28, Light val acc: 55.45
+val, 19, val loss: 1.28, Dark val acc: 58.18
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 51.67
+train, 5, train loss: 1.07, train acc: 56.29
+train, 10, train loss: 1.04, train acc: 59.99
+train, 15, train loss: 1.01, train acc: 62.98
+Finish training
+19: train acc: 0.631339
+val, 19, val loss: 1.32, val acc: 52.27
+val, 19, val loss: 1.32, Light val acc: 48.18
+val, 19, val loss: 1.32, Dark val acc: 56.36
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 51.06
+train, 5, train loss: 1.06, train acc: 57.56
+train, 10, train loss: 1.04, train acc: 60.29
+train, 15, train loss: 1.00, train acc: 64.60
+Finish training
+19: train acc: 0.622211
+val, 19, val loss: 1.24, val acc: 57.73
+val, 19, val loss: 1.24, Light val acc: 60.91
+val, 19, val loss: 1.24, Dark val acc: 54.55
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 50.35
+train, 5, train loss: 1.09, train acc: 53.80
+train, 10, train loss: 1.04, train acc: 60.45
+train, 15, train loss: 1.03, train acc: 61.56
+Finish training
+19: train acc: 0.623225
+val, 19, val loss: 1.23, val acc: 52.73
+val, 19, val loss: 1.23, Light val acc: 47.27
+val, 19, val loss: 1.23, Dark val acc: 58.18
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 49.75
+train, 5, train loss: 1.07, train acc: 55.98
+train, 10, train loss: 1.03, train acc: 61.26
+train, 15, train loss: 1.02, train acc: 62.12
+Finish training
+19: train acc: 0.613083
+val, 19, val loss: 1.21, val acc: 56.82
+val, 19, val loss: 1.21, Light val acc: 60.00
+val, 19, val loss: 1.21, Dark val acc: 53.64
+########### Reluts ##########
+LIC score (LIC_D): 33.61%
+#############################
+python3 race_bert_leakage.py --seed 0 --num_epochs 20 --calc_ann_leak True --cap_model nic_equalizer  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 0
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  nic_equalizer
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 50.46
+train, 5, train loss: 1.08, train acc: 55.07
+train, 10, train loss: 1.05, train acc: 59.13
+train, 15, train loss: 1.02, train acc: 62.83
+Finish training
+19: train acc: 0.632860
+val, 19, val loss: 1.26, val acc: 55.45
+val, 19, val loss: 1.26, Light val acc: 60.00
+val, 19, val loss: 1.26, Dark val acc: 50.91
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 52.69
+train, 5, train loss: 1.06, train acc: 59.13
+train, 10, train loss: 1.03, train acc: 60.80
+train, 15, train loss: 1.02, train acc: 61.87
+Finish training
+19: train acc: 0.645538
+val, 19, val loss: 1.26, val acc: 55.91
+val, 19, val loss: 1.26, Light val acc: 55.45
+val, 19, val loss: 1.26, Dark val acc: 56.36
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 48.99
+train, 5, train loss: 1.06, train acc: 58.16
+train, 10, train loss: 1.03, train acc: 62.22
+train, 15, train loss: 1.02, train acc: 62.07
+Finish training
+19: train acc: 0.617647
+val, 19, val loss: 1.25, val acc: 53.64
+val, 19, val loss: 1.25, Light val acc: 54.55
+val, 19, val loss: 1.25, Dark val acc: 52.73
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.11, train acc: 51.93
+train, 5, train loss: 1.06, train acc: 57.40
+train, 10, train loss: 1.03, train acc: 60.90
+train, 15, train loss: 1.02, train acc: 62.83
+Finish training
+19: train acc: 0.643509
+val, 19, val loss: 1.26, val acc: 55.45
+val, 19, val loss: 1.26, Light val acc: 51.82
+val, 19, val loss: 1.26, Dark val acc: 59.09
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 51.47
+train, 5, train loss: 1.06, train acc: 57.45
+train, 10, train loss: 1.05, train acc: 59.69
+train, 15, train loss: 1.03, train acc: 61.05
+Finish training
+19: train acc: 0.638438
+val, 19, val loss: 1.19, val acc: 59.55
+val, 19, val loss: 1.19, Light val acc: 54.55
+val, 19, val loss: 1.19, Dark val acc: 64.55
+########### Reluts ##########
+LIC score (LIC_D): 34.10%
+#############################
+python3 race_bert_leakage.py --seed 12 --num_epochs 20 --calc_ann_leak True --cap_model nic_equalizer  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 12
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  nic_equalizer
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 50.81
+train, 5, train loss: 1.06, train acc: 58.11
+train, 10, train loss: 1.04, train acc: 60.85
+train, 15, train loss: 1.01, train acc: 63.29
+Finish training
+19: train acc: 0.638945
+val, 19, val loss: 1.35, val acc: 50.45
+val, 19, val loss: 1.35, Light val acc: 50.91
+val, 19, val loss: 1.35, Dark val acc: 50.00
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 50.91
+train, 5, train loss: 1.05, train acc: 57.71
+train, 10, train loss: 1.02, train acc: 62.78
+train, 15, train loss: 1.02, train acc: 62.02
+Finish training
+19: train acc: 0.627282
+val, 19, val loss: 1.30, val acc: 49.55
+val, 19, val loss: 1.30, Light val acc: 40.91
+val, 19, val loss: 1.30, Dark val acc: 58.18
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 50.15
+train, 5, train loss: 1.05, train acc: 57.96
+train, 10, train loss: 1.04, train acc: 60.55
+train, 15, train loss: 1.02, train acc: 61.56
+Finish training
+19: train acc: 0.633367
+val, 19, val loss: 1.25, val acc: 57.27
+val, 19, val loss: 1.25, Light val acc: 55.45
+val, 19, val loss: 1.25, Dark val acc: 59.09
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.16, train acc: 50.05
+train, 5, train loss: 1.07, train acc: 57.61
+train, 10, train loss: 1.05, train acc: 58.47
+train, 15, train loss: 1.02, train acc: 61.56
+Finish training
+19: train acc: 0.639452
+val, 19, val loss: 1.31, val acc: 51.36
+val, 19, val loss: 1.31, Light val acc: 44.55
+val, 19, val loss: 1.31, Dark val acc: 58.18
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 50.41
+train, 5, train loss: 1.05, train acc: 57.56
+train, 10, train loss: 1.03, train acc: 60.75
+train, 15, train loss: 1.00, train acc: 62.83
+Finish training
+19: train acc: 0.638438
+val, 19, val loss: 1.32, val acc: 54.55
+val, 19, val loss: 1.32, Light val acc: 55.45
+val, 19, val loss: 1.32, Dark val acc: 53.64
+########### Reluts ##########
+LIC score (LIC_D): 32.05%
+#############################
+python3 race_bert_leakage.py --seed 456 --num_epochs 20 --calc_ann_leak True --cap_model nic_equalizer  --learning_rate 5e-5 --freeze_bert true
+
+---Start---
+Seed: 456
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Gender or Race: race
+Mask race words: False
+Align vocab: True
+Vocab of  nic_equalizer
+
+device: cuda n_gpu: 1
+--- calc ANN LIC score ---
+-- Task is Captioning --
+1972 220
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.13, train acc: 48.48
+train, 5, train loss: 1.08, train acc: 55.78
+train, 10, train loss: 1.05, train acc: 59.58
+train, 15, train loss: 1.02, train acc: 61.16
+Finish training
+19: train acc: 0.627282
+val, 19, val loss: 1.29, val acc: 55.00
+val, 19, val loss: 1.29, Light val acc: 55.45
+val, 19, val loss: 1.29, Dark val acc: 54.55
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 52.18
+train, 5, train loss: 1.07, train acc: 56.80
+train, 10, train loss: 1.03, train acc: 59.99
+train, 15, train loss: 1.01, train acc: 62.07
+Finish training
+19: train acc: 0.639452
+val, 19, val loss: 1.31, val acc: 52.73
+val, 19, val loss: 1.31, Light val acc: 52.73
+val, 19, val loss: 1.31, Dark val acc: 52.73
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.12, train acc: 50.00
+train, 5, train loss: 1.06, train acc: 58.16
+train, 10, train loss: 1.04, train acc: 59.33
+train, 15, train loss: 1.01, train acc: 63.39
+Finish training
+19: train acc: 0.626268
+val, 19, val loss: 1.25, val acc: 56.82
+val, 19, val loss: 1.25, Light val acc: 60.00
+val, 19, val loss: 1.25, Dark val acc: 53.64
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 50.10
+train, 5, train loss: 1.09, train acc: 54.01
+train, 10, train loss: 1.04, train acc: 59.53
+train, 15, train loss: 1.03, train acc: 61.56
+Finish training
+19: train acc: 0.623732
+val, 19, val loss: 1.25, val acc: 52.27
+val, 19, val loss: 1.25, Light val acc: 45.45
+val, 19, val loss: 1.25, Dark val acc: 59.09
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.14, train acc: 50.96
+train, 5, train loss: 1.06, train acc: 56.03
+train, 10, train loss: 1.03, train acc: 61.00
+train, 15, train loss: 1.02, train acc: 61.61
+Finish training
+19: train acc: 0.617140
+val, 19, val loss: 1.23, val acc: 56.36
+val, 19, val loss: 1.23, Light val acc: 60.91
+val, 19, val loss: 1.23, Dark val acc: 51.82
+########### Reluts ##########
+LIC score (LIC_D): 33.20%
+#############################

@@ -1,0 +1,796 @@
+
+Running the model
+
+##########################################
+	captions: generated
+	model: bert
+	data: race
+	epochs: 5
+	learning_rate: 1e-5
+	check:false
+##########################################
+race, bert
+
+python3 race_bert_leakage.py --seed 0 --num_epochs 5 --calc_model_leak True --cap_model nic  --learning_rate 1e-5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.11, train acc: 51.88
+Finish training
+4: train acc: 0.641988
+val, 4, val loss: 1.38, val acc: 45.91
+val, 4, val loss: 1.38, Light val acc: 36.36
+val, 4, val loss: 1.38, Dark val acc: 55.45
+########### Reluts ##########
+LIC score (LIC_M): 30.44%
+#############################
+python3 race_bert_leakage.py --seed 12 --num_epochs 5 --calc_model_leak True --cap_model nic  --learning_rate 1e-5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.11, train acc: 52.43
+Finish training
+4: train acc: 0.631339
+val, 4, val loss: 1.26, val acc: 51.82
+val, 4, val loss: 1.26, Light val acc: 37.27
+val, 4, val loss: 1.26, Dark val acc: 66.36
+########### Reluts ##########
+LIC score (LIC_M): 33.74%
+#############################
+python3 race_bert_leakage.py --seed 456 --num_epochs 5 --calc_model_leak True --cap_model nic  --learning_rate 1e-5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.11, train acc: 52.33
+Finish training
+4: train acc: 0.644016
+val, 4, val loss: 1.27, val acc: 53.64
+val, 4, val loss: 1.27, Light val acc: 49.09
+val, 4, val loss: 1.27, Dark val acc: 58.18
+########### Reluts ##########
+LIC score (LIC_M): 34.94%
+#############################
+python3 race_bert_leakage.py --seed 0 --num_epochs 5 --calc_model_leak True --cap_model sat  --learning_rate 1e-5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: sat
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.11, train acc: 52.69
+Finish training
+4: train acc: 0.643002
+val, 4, val loss: 1.22, val acc: 62.73
+val, 4, val loss: 1.22, Light val acc: 63.64
+val, 4, val loss: 1.22, Dark val acc: 61.82
+########### Reluts ##########
+LIC score (LIC_M): 41.06%
+#############################
+python3 race_bert_leakage.py --seed 12 --num_epochs 5 --calc_model_leak True --cap_model sat  --learning_rate 1e-5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: sat
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.12, train acc: 51.01
+Finish training
+4: train acc: 0.643509
+val, 4, val loss: 1.29, val acc: 55.00
+val, 4, val loss: 1.29, Light val acc: 65.45
+val, 4, val loss: 1.29, Dark val acc: 44.55
+########### Reluts ##########
+LIC score (LIC_M): 36.19%
+#############################
+python3 race_bert_leakage.py --seed 456 --num_epochs 5 --calc_model_leak True --cap_model sat  --learning_rate 1e-5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: sat
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.12, train acc: 51.88
+Finish training
+4: train acc: 0.637931
+val, 4, val loss: 1.29, val acc: 55.91
+val, 4, val loss: 1.29, Light val acc: 69.09
+val, 4, val loss: 1.29, Dark val acc: 42.73
+########### Reluts ##########
+LIC score (LIC_M): 37.29%
+#############################
+python3 race_bert_leakage.py --seed 0 --num_epochs 5 --calc_model_leak True --cap_model fc  --learning_rate 1e-5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: fc
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.11, train acc: 52.84
+Finish training
+4: train acc: 0.616126
+val, 4, val loss: 1.20, val acc: 60.91
+val, 4, val loss: 1.20, Light val acc: 56.36
+val, 4, val loss: 1.20, Dark val acc: 65.45
+########### Reluts ##########
+LIC score (LIC_M): 41.95%
+#############################
+python3 race_bert_leakage.py --seed 12 --num_epochs 5 --calc_model_leak True --cap_model fc  --learning_rate 1e-5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: fc
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.10, train acc: 52.99
+Finish training
+4: train acc: 0.640974
+val, 4, val loss: 1.22, val acc: 60.45
+val, 4, val loss: 1.22, Light val acc: 60.00
+val, 4, val loss: 1.22, Dark val acc: 60.91
+########### Reluts ##########
+LIC score (LIC_M): 41.02%
+#############################
+python3 race_bert_leakage.py --seed 456 --num_epochs 5 --calc_model_leak True --cap_model fc  --learning_rate 1e-5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: fc
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.12, train acc: 52.74
+Finish training
+4: train acc: 0.610548
+val, 4, val loss: 1.15, val acc: 61.36
+val, 4, val loss: 1.15, Light val acc: 66.36
+val, 4, val loss: 1.15, Dark val acc: 56.36
+########### Reluts ##########
+LIC score (LIC_M): 41.45%
+#############################
+python3 race_bert_leakage.py --seed 0 --num_epochs 5 --calc_model_leak True --cap_model att2in  --learning_rate 1e-5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: att2in
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.10, train acc: 52.79
+Finish training
+4: train acc: 0.647566
+val, 4, val loss: 1.24, val acc: 59.09
+val, 4, val loss: 1.24, Light val acc: 60.91
+val, 4, val loss: 1.24, Dark val acc: 57.27
+########### Reluts ##########
+LIC score (LIC_M): 40.45%
+#############################
+python3 race_bert_leakage.py --seed 12 --num_epochs 5 --calc_model_leak True --cap_model att2in  --learning_rate 1e-5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: att2in
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.11, train acc: 52.94
+Finish training
+4: train acc: 0.636917
+val, 4, val loss: 1.16, val acc: 62.27
+val, 4, val loss: 1.16, Light val acc: 63.64
+val, 4, val loss: 1.16, Dark val acc: 60.91
+########### Reluts ##########
+LIC score (LIC_M): 42.82%
+#############################
+python3 race_bert_leakage.py --seed 456 --num_epochs 5 --calc_model_leak True --cap_model att2in  --learning_rate 1e-5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: att2in
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.12, train acc: 51.32
+Finish training
+4: train acc: 0.627282
+val, 4, val loss: 1.14, val acc: 61.82
+val, 4, val loss: 1.14, Light val acc: 46.36
+val, 4, val loss: 1.14, Dark val acc: 77.27
+########### Reluts ##########
+LIC score (LIC_M): 40.95%
+#############################
+python3 race_bert_leakage.py --seed 0 --num_epochs 5 --calc_model_leak True --cap_model updn  --learning_rate 1e-5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: updn
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.11, train acc: 53.25
+Finish training
+4: train acc: 0.662272
+val, 4, val loss: 1.18, val acc: 62.27
+val, 4, val loss: 1.18, Light val acc: 63.64
+val, 4, val loss: 1.18, Dark val acc: 60.91
+########### Reluts ##########
+LIC score (LIC_M): 42.62%
+#############################
+python3 race_bert_leakage.py --seed 12 --num_epochs 5 --calc_model_leak True --cap_model updn  --learning_rate 1e-5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: updn
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.11, train acc: 52.69
+Finish training
+4: train acc: 0.657201
+val, 4, val loss: 1.17, val acc: 61.36
+val, 4, val loss: 1.17, Light val acc: 69.09
+val, 4, val loss: 1.17, Dark val acc: 53.64
+########### Reluts ##########
+LIC score (LIC_M): 43.03%
+#############################
+python3 race_bert_leakage.py --seed 456 --num_epochs 5 --calc_model_leak True --cap_model updn  --learning_rate 1e-5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: updn
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.11, train acc: 53.35
+Finish training
+4: train acc: 0.650609
+val, 4, val loss: 1.14, val acc: 59.09
+val, 4, val loss: 1.14, Light val acc: 52.73
+val, 4, val loss: 1.14, Dark val acc: 65.45
+########### Reluts ##########
+LIC score (LIC_M): 41.11%
+#############################
+python3 race_bert_leakage.py --seed 0 --num_epochs 5 --calc_model_leak True --cap_model transformer  --learning_rate 1e-5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: transformer
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.11, train acc: 52.33
+Finish training
+4: train acc: 0.677485
+val, 4, val loss: 1.25, val acc: 57.27
+val, 4, val loss: 1.25, Light val acc: 55.45
+val, 4, val loss: 1.25, Dark val acc: 59.09
+########### Reluts ##########
+LIC score (LIC_M): 39.41%
+#############################
+python3 race_bert_leakage.py --seed 12 --num_epochs 5 --calc_model_leak True --cap_model transformer  --learning_rate 1e-5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: transformer
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.12, train acc: 52.69
+Finish training
+4: train acc: 0.664300
+val, 4, val loss: 1.27, val acc: 58.64
+val, 4, val loss: 1.27, Light val acc: 66.36
+val, 4, val loss: 1.27, Dark val acc: 50.91
+########### Reluts ##########
+LIC score (LIC_M): 40.25%
+#############################
+python3 race_bert_leakage.py --seed 456 --num_epochs 5 --calc_model_leak True --cap_model transformer  --learning_rate 1e-5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: transformer
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.12, train acc: 51.67
+Finish training
+4: train acc: 0.659736
+val, 4, val loss: 1.10, val acc: 62.27
+val, 4, val loss: 1.10, Light val acc: 60.91
+val, 4, val loss: 1.10, Dark val acc: 63.64
+########### Reluts ##########
+LIC score (LIC_M): 42.87%
+#############################
+python3 race_bert_leakage.py --seed 0 --num_epochs 5 --calc_model_leak True --cap_model oscar  --learning_rate 1e-5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: oscar
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.12, train acc: 52.28
+Finish training
+4: train acc: 0.657201
+val, 4, val loss: 1.20, val acc: 61.36
+val, 4, val loss: 1.20, Light val acc: 62.73
+val, 4, val loss: 1.20, Dark val acc: 60.00
+########### Reluts ##########
+LIC score (LIC_M): 41.71%
+#############################
+python3 race_bert_leakage.py --seed 12 --num_epochs 5 --calc_model_leak True --cap_model oscar  --learning_rate 1e-5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: oscar
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.11, train acc: 52.43
+Finish training
+4: train acc: 0.659229
+val, 4, val loss: 1.23, val acc: 56.36
+val, 4, val loss: 1.23, Light val acc: 52.73
+val, 4, val loss: 1.23, Dark val acc: 60.00
+########### Reluts ##########
+LIC score (LIC_M): 37.55%
+#############################
+python3 race_bert_leakage.py --seed 456 --num_epochs 5 --calc_model_leak True --cap_model oscar  --learning_rate 1e-5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: oscar
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.12, train acc: 51.52
+Finish training
+4: train acc: 0.668357
+val, 4, val loss: 1.23, val acc: 60.00
+val, 4, val loss: 1.23, Light val acc: 51.82
+val, 4, val loss: 1.23, Dark val acc: 68.18
+########### Reluts ##########
+LIC score (LIC_M): 40.98%
+#############################
+python3 race_bert_leakage.py --seed 0 --num_epochs 5 --calc_model_leak True --cap_model nic_plus  --learning_rate 1e-5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.10, train acc: 53.40
+Finish training
+4: train acc: 0.623225
+val, 4, val loss: 1.24, val acc: 62.73
+val, 4, val loss: 1.24, Light val acc: 60.00
+val, 4, val loss: 1.24, Dark val acc: 65.45
+########### Reluts ##########
+LIC score (LIC_M): 42.29%
+#############################
+python3 race_bert_leakage.py --seed 12 --num_epochs 5 --calc_model_leak True --cap_model nic_plus  --learning_rate 1e-5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.10, train acc: 53.55
+Finish training
+4: train acc: 0.640974
+val, 4, val loss: 1.24, val acc: 60.00
+val, 4, val loss: 1.24, Light val acc: 43.64
+val, 4, val loss: 1.24, Dark val acc: 76.36
+########### Reluts ##########
+LIC score (LIC_M): 39.50%
+#############################
+python3 race_bert_leakage.py --seed 456 --num_epochs 5 --calc_model_leak True --cap_model nic_plus  --learning_rate 1e-5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.11, train acc: 52.23
+Finish training
+4: train acc: 0.632353
+val, 4, val loss: 1.21, val acc: 58.18
+val, 4, val loss: 1.21, Light val acc: 57.27
+val, 4, val loss: 1.21, Dark val acc: 59.09
+########### Reluts ##########
+LIC score (LIC_M): 38.90%
+#############################
+python3 race_bert_leakage.py --seed 0 --num_epochs 5 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 1e-5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.10, train acc: 52.99
+Finish training
+4: train acc: 0.620690
+val, 4, val loss: 1.30, val acc: 58.64
+val, 4, val loss: 1.30, Light val acc: 50.00
+val, 4, val loss: 1.30, Dark val acc: 67.27
+########### Reluts ##########
+LIC score (LIC_M): 39.00%
+#############################
+python3 race_bert_leakage.py --seed 12 --num_epochs 5 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 1e-5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.12, train acc: 52.89
+Finish training
+4: train acc: 0.629310
+val, 4, val loss: 1.28, val acc: 57.27
+val, 4, val loss: 1.28, Light val acc: 61.82
+val, 4, val loss: 1.28, Dark val acc: 52.73
+########### Reluts ##########
+LIC score (LIC_M): 37.21%
+#############################
+python3 race_bert_leakage.py --seed 456 --num_epochs 5 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 1e-5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: race
+Mask race words: False
+
+device: cuda n_gpu: 1
+--- calc MODEL LIC score ---
+-- Task is Captioning --
+1972 220
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.11, train acc: 53.04
+Finish training
+4: train acc: 0.606998
+val, 4, val loss: 1.19, val acc: 61.82
+val, 4, val loss: 1.19, Light val acc: 51.82
+val, 4, val loss: 1.19, Dark val acc: 71.82
+########### Reluts ##########
+LIC score (LIC_M): 40.79%
+#############################

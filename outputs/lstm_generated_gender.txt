@@ -1,0 +1,897 @@
+
+Running the model
+
+##########################################
+	captions: generated
+	model: lstm
+	data: gender
+	epochs: 20
+	learning_rate: 5e-5
+	check:false
+##########################################
+gender, lstm
+
+python3 gender_lstm_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model nic  --learning_rate 5e-5
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+a genderword sitting on a couch with a dog .
+a genderword and a genderword are sitting at a table .
+a car is driving down a street with a car in the background .
+a group of people standing next to each other .
+a genderword riding on the back of a brown horse .
+a genderword is standing on a snowboard in the snow .
+Unique tokens in TEXT vocabulary: 719
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 41.75%
+#############################
+
+python3 gender_lstm_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model nic  --learning_rate 5e-5
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 712
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 45.44%
+#############################
+
+python3 gender_lstm_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model nic  --learning_rate 5e-5
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 712
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 41.89%
+#############################
+
+python3 gender_lstm_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model sat  --learning_rate 5e-5
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: sat
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+a little genderword holding a baby in genderword arms
+a close up of a person eating a doughnut
+a group of people standing outside of a store
+a genderword is brushing genderword teeth in the dark
+a little genderword that is sitting at a table
+a group of people sitting around a table
+Unique tokens in TEXT vocabulary: 619
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 44.18%
+#############################
+
+python3 gender_lstm_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model sat  --learning_rate 5e-5
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: sat
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 630
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 42.63%
+#############################
+
+python3 gender_lstm_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model sat  --learning_rate 5e-5
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: sat
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 629
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 41.89%
+#############################
+
+python3 gender_lstm_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model fc  --learning_rate 5e-5
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: fc
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+a genderword holding a tennis racket on a tennis court
+a genderword talking on a cell phone in a street
+a group of people standing in front of a bus
+a genderword standing on skis in the snow
+a genderword sitting in front of a dog in a car
+a genderword holding a tennis ball on a court
+Unique tokens in TEXT vocabulary: 263
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 47.61%
+#############################
+
+python3 gender_lstm_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model fc  --learning_rate 5e-5
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: fc
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 267
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 48.09%
+#############################
+
+python3 gender_lstm_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model fc  --learning_rate 5e-5
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: fc
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 272
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 45.34%
+#############################
+
+python3 gender_lstm_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model att2in  --learning_rate 5e-5
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: att2in
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+a genderword holding a tennis racket on a tennis court
+a genderword talking on a cell phone
+a group of people standing next to a bus
+a genderword riding a dog on a snow covered slope
+a genderword sitting on a car with a dog
+a genderword swinging a tennis racket at a tennis ball
+Unique tokens in TEXT vocabulary: 326
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 47.68%
+#############################
+
+python3 gender_lstm_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model att2in  --learning_rate 5e-5
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: att2in
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 331
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 45.47%
+#############################
+
+python3 gender_lstm_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model att2in  --learning_rate 5e-5
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: att2in
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 329
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 45.31%
+#############################
+
+python3 gender_lstm_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model updn  --learning_rate 5e-5
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: updn
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+a genderword standing on a tennis court holding a racket
+a genderword talking on a cell phone on a street
+a group of people standing in front of a bus
+a genderword riding skis on a snow covered slope
+a genderword sitting in the back of a dog with a dog
+a genderword holding a tennis ball on a court
+Unique tokens in TEXT vocabulary: 404
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 49.36%
+#############################
+
+python3 gender_lstm_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model updn  --learning_rate 5e-5
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: updn
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 417
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 48.19%
+#############################
+
+python3 gender_lstm_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model updn  --learning_rate 5e-5
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: updn
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 414
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 48.32%
+#############################
+
+python3 gender_lstm_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model transformer  --learning_rate 5e-5
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: transformer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+a genderword is holding a tennis racket on a tennis court
+a genderword on a cell phone on a sidewalk
+a group of people standing next to a bus
+a genderword standing on a snow covered ski slope holding a dog
+a genderword is holding a dog in the back of a truck
+a genderword hitting a tennis ball with a racquet
+Unique tokens in TEXT vocabulary: 880
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 49.00%
+#############################
+
+python3 gender_lstm_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model transformer  --learning_rate 5e-5
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: transformer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 884
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 48.33%
+#############################
+
+python3 gender_lstm_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model transformer  --learning_rate 5e-5
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: transformer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 894
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 48.51%
+#############################
+
+python3 gender_lstm_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model oscar  --learning_rate 5e-5
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: oscar
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+a genderword brushing genderword teeth in a bathroom with a
+a black and white photo of genderword standing next to a car
+a genderword holding a piece of pizza on a cutting board
+a young genderword eating a plate of food with a
+a genderword sitting in a bed reading a book
+a little genderword sitting at a table eating a bowl of food
+Unique tokens in TEXT vocabulary: 486
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 48.91%
+#############################
+
+python3 gender_lstm_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model oscar  --learning_rate 5e-5
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: oscar
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 481
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 45.81%
+#############################
+
+python3 gender_lstm_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model oscar  --learning_rate 5e-5
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: oscar
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 491
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 50.90%
+#############################
+
+python3 gender_lstm_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+a genderword walking down a street holding an umbrella .
+a genderword sitting on a bench with genderword luggage .
+a group of people riding bikes down a street .
+a genderword in a suit and tie standing in a room .
+a group of people standing around a wooden bench .
+a genderword holding an umbrella in the rain .
+Unique tokens in TEXT vocabulary: 491
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 52.09%
+#############################
+
+python3 gender_lstm_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 501
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 51.08%
+#############################
+
+python3 gender_lstm_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 501
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 51.61%
+#############################
+
+python3 gender_lstm_leakage.py --seed 789 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 789
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 500
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 49.80%
+#############################
+
+python3 gender_lstm_leakage.py --seed 100 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 100
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 501
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 51.95%
+#############################
+
+python3 gender_lstm_leakage.py --seed 200 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 200
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 503
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 50.59%
+#############################
+
+python3 gender_lstm_leakage.py --seed 300 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 300
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 487
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 51.73%
+#############################
+
+python3 gender_lstm_leakage.py --seed 400 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 400
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 490
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 51.78%
+#############################
+
+python3 gender_lstm_leakage.py --seed 500 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 500
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 490
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 51.24%
+#############################
+
+python3 gender_lstm_leakage.py --seed 1234 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5
+---Start---
+Seed: 1234
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_equalizer
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 504
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 51.35%
+#############################
+
+
+python3 gender_lstm_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+a genderword walking down a street holding an umbrella .
+a genderword standing next to a pile of luggage .
+a group of people riding bikes down a street .
+a genderword wearing a tie and a hat .
+a group of people standing next to each other .
+a genderword holding an umbrella in the rain .
+Unique tokens in TEXT vocabulary: 502
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 48.48%
+#############################
+
+python3 gender_lstm_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 514
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 46.10%
+#############################
+
+python3 gender_lstm_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 506
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 47.73%
+#############################
+
+##########################################
+	captions: generated
+	model: lstm
+	data: gender
+	epochs: 20
+	learning_rate: 5e-5
+	check:false
+##########################################
+gender, lstm
+
+python3 gender_lstm_leakage.py --seed 789 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 789
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 518
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 44.43%
+#############################
+
+python3 gender_lstm_leakage.py --seed 100 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 100
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 505
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 47.51%
+#############################
+
+python3 gender_lstm_leakage.py --seed 200 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 200
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 496
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 47.43%
+#############################
+
+python3 gender_lstm_leakage.py --seed 300 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 300
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 492
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 46.70%
+#############################
+
+python3 gender_lstm_leakage.py --seed 400 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 400
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 504
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 46.20%
+#############################
+
+python3 gender_lstm_leakage.py --seed 500 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 500
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 494
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 45.79%
+#############################
+
+python3 gender_lstm_leakage.py --seed 1234 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5
+---Start---
+Seed: 1234
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Captioning model: nic_plus
+Gender or Race: gender
+
+device: cuda n_gpu: 1
+--- calc MODEL Leakage ---
+--- task is Captioning ---
+#train : #test =  5966 662
+Unique tokens in TEXT vocabulary: 507
+Unique tokens in LABEL vocabulary: 2
+########## Results ##########
+LIC score (LIC_M): 47.01%
+#############################
