@@ -235,7 +235,7 @@ def main(args):
     young_words = ['kid', 'kids', 'child', 'children', 'young', 'boy', 'boys', 'little', 'baby', 'babies',
                'childhood', 'babyhood', 'toddler', 'adolescence', 'adolescent', 'teenager', 'teenagers',
                'schoolboy', 'schoolgirl', 'youngster', 'infant', 'preschooler'
-               'toddler', 'student']
+               'toddler', 'student', 'girl', 'girls']
     old_words = ['elder', 'old', 'man', 'men', 'woman', 'women', 'elders', 'elderly', 'grandma', 'grandpa',
              'mom', 'dad', 'father', 'ancient', 'elder', 'aged', 'senior',
              'grandparent', 'senior']
