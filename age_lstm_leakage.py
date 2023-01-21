@@ -353,7 +353,7 @@ def evaluate(model, iterator, criterion, batch_size, TEXT, args):
 
 def main(args):
     '''
-    Modified version of main from age_lstm_leakage.
+    Modified version of main from gender_lstm_leakage.
 
     Arguments
     ---------
@@ -400,7 +400,7 @@ def main(args):
         ## Captioning ##
         if args.task == 'captioning':
             print('-- task is Captioning --')
-            d_train, d_test = make_train_test_split(args, age_obj_cap_mw_entries)
+            d_train, d_test = make_train_test_split(args, age_val_obj_cap_entries)
             
             val_acc_list = []
             young_acc_list, old_acc_list = [], [] 
