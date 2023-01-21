@@ -7,6 +7,17 @@ import random
 import pickle 
 import pandas as pd
 
+# age word bank
+young_words = ['kid', 'kids', 'child', 'children', 'young', 'boy', 'boys', 'little', 'baby', 'babies',
+               'childhood', 'babyhood', 'toddler', 'adolescence', 'adolescent', 'teenager', 'teenagers',
+               'schoolboy', 'schoolgirl', 'youngster', 'infant', 'preschooler'
+               'toddler', 'student', 'girl', 'girls']
+old_words = ['elder', 'man', 'men', 'woman', 'women', 'old', 'elders', 'elderly', 'grandma', 'grandpa',
+             'mom', 'dad', 'father', 'ancient', 'elder', 'aged', 'senior',
+             'grandparent', 'senior']
+age_words = young_words + old_words
+#   
+
 def gender_pickle_generator(cap_model):
   '''
     This function generates the captions for the specified model. It only concerns
