@@ -39,7 +39,7 @@ from sklearn.metrics import accuracy_score
 # import unchanged functions from original file, just to be clear what is modified and what isn't
 from gender_lstm_leakage import binary_accuracy, RNN, count_parameters, train
 
-def age_pickle_generator(cap_model):
+def gender_pickle_generator(cap_model):
   '''
     This function generates the captions for the specified model. It only concerns
     age. It could be merged, but for the purposes of readability it is better to 
@@ -49,16 +49,16 @@ def age_pickle_generator(cap_model):
     cap_model : str
         The captioning model in string format.
   '''
-  directory_age = {'nic':  pickle.load(open('bias_data/Show-Tell/age_val_st10_th10_cap_mw_entries.pkl', 'rb')),
-             'sat':         pickle.load(open('bias_data/Show-Attend-Tell/age_val_sat_cap_mw_entries.pkl', 'rb')),
-             'fc' :         pickle.load(open('bias_data/Att2in_FC/age_val_fc_cap_mw_entries.pkl', 'rb')),
-             'att2in':      pickle.load(open('bias_data/Att2in_FC/age_val_att2in_cap_mw_entries.pkl', 'rb')),
-             'updn':        pickle.load(open('bias_data/UpDn/age_val_updn_cap_mw_entries.pkl', 'rb')),
-             'transformer': pickle.load(open('bias_data/Transformer/age_val_transformer_cap_mw_entries.pkl', 'rb')),
-             'oscar':       pickle.load(open('bias_data/Oscar/age_val_cider_oscar_cap_mw_entries.pkl', 'rb')),
-             'nic_plus':    pickle.load(open('bias_data/Woman-Snowboard/age_val_baselineft_cap_mw_entries.pkl', 'rb')),
-             'nic_equalizer': pickle.load(open('bias_data/Woman-Snowboard/age_val_snowboard_cap_mw_entries.pkl', 'rb')),
-             'human':         pickle.load(open('bias_data/Human_Ann/age_obj_cap_mw_entries.pkl', 'rb'))                          
+  directory_age = {'nic':  pickle.load(open('bias_data/Show-Tell/gender_val_st10_th10_cap_mw_entries.pkl', 'rb')),
+             'sat':         pickle.load(open('bias_data/Show-Attend-Tell/gender_val_sat_cap_mw_entries.pkl', 'rb')),
+             'fc' :         pickle.load(open('bias_data/Att2in_FC/gender_val_fc_cap_mw_entries.pkl', 'rb')),
+             'att2in':      pickle.load(open('bias_data/Att2in_FC/gender_val_att2in_cap_mw_entries.pkl', 'rb')),
+             'updn':        pickle.load(open('bias_data/UpDn/gender_val_updn_cap_mw_entries.pkl', 'rb')),
+             'transformer': pickle.load(open('bias_data/Transformer/gender_val_transformer_cap_mw_entries.pkl', 'rb')),
+             'oscar':       pickle.load(open('bias_data/Oscar/gender_val_cider_oscar_cap_mw_entries.pkl', 'rb')),
+             'nic_plus':    pickle.load(open('bias_data/Woman-Snowboard/gender_val_baselineft_cap_mw_entries.pkl', 'rb')),
+             'nic_equalizer': pickle.load(open('bias_data/Woman-Snowboard/gender_val_snowboard_cap_mw_entries.pkl', 'rb')),
+             'human':         pickle.load(open('bias_data/Human_Ann/gender_obj_cap_mw_entries.pkl', 'rb'))                          
              }
   return directory_age[cap_model]
        
@@ -381,57 +381,7 @@ def main(args):
 
     
     TEXT = data.Field(tokenize = 'spacy', tokenizer_language ='en_core_web_sm', include_lengths = True)
-
     LABEL = data.LabelField(dtype = torch.float)
-
-    # open file with age captions
-    age_obj_cap_mw_entries = pickle.load(open('bias_data/Human_Ann/age_obj_cap_mw_entries.pkl', 'rb')) # Human captions
-    
-    #Select captioning model
-    if args.cap_model == 'nic':
-        #selected_cap_age_entries = pickle.load(open('bias_data/Show-Tell/age_val_st10_cap_mw_entries.pkl', 'rb')) #Official
-        #selected_cap_age_entries = pickle.load(open('bias_data/Show-Tell/age_val_st10_th2_cap_mw_entries.pkl', 'rb'))
-        #selected_cap_age_entries = pickle.load(open('bias_data/Show-Tell/age_val_st10_th5_cap_mw_entries.pkl', 'rb'))
-        selected_cap_age_entries = pickle.load(open('bias_data/Show-Tell/age_val_st10_th10_cap_mw_entries.pkl', 'rb'))
-    elif args.cap_model == 'sat':
-        if args.mask_bias_source == 'obj':
-            print('### MASK OBJECT ###')
-            selected_cap_age_entries = pickle.load(open('bias_data/Show-Attend-Tell/age_val_sat_masked_seg_obj_cap_mw_entries.pkl', 'rb'))
-        elif args.mask_bias_source == 'person':
-            print('### MASK PERSON ###')
-            selected_cap_age_entries = pickle.load(open('bias_data/Show-Attend-Tell/age_val_sat_masked_seg_person_cap_mw_entries.pkl', 'rb'))
-        elif args.mask_bias_source == 'both':
-            print('### MASK BOTH ###')
-            selected_cap_age_entries = pickle.load(open('bias_data/Show-Attend-Tell/age_val_sat_masked_seg_both_cap_mw_entries.pkl', 'rb'))
-        else:
-            selected_cap_age_entries = pickle.load(open('bias_data/Show-Attend-Tell/age_val_sat_cap_mw_entries.pkl', 'rb'))
-
-    elif args.cap_model == 'fc':
-        selected_cap_age_entries = pickle.load(open('bias_data/Att2in_FC/age_val_fc_cap_mw_entries.pkl', 'rb'))
-    elif args.cap_model == 'att2in':
-        selected_cap_age_entries = pickle.load(open('bias_data/Att2in_FC/age_val_att2in_cap_mw_entries.pkl', 'rb'))
-    elif args.cap_model == 'updn':
-        selected_cap_age_entries = pickle.load(open('bias_data/UpDn/age_val_updn_cap_mw_entries.pkl', 'rb'))
-    elif args.cap_model == 'transformer':
-        selected_cap_age_entries = pickle.load(open('bias_data/Transformer/age_val_transformer_cap_mw_entries.pkl', 'rb'))
-    elif args.cap_model == 'oscar':
-        if args.mask_bias_source == 'obj':
-            print('### MASK OBJECT ###')
-            selected_cap_age_entries = pickle.load(open('bias_data/Oscar/age_val_cider_oscar_masked_obj_cap_mw_entries.pkl', 'rb'))
-        elif args.mask_bias_source == 'person':
-            print('### MASK PERSON ###')
-            selected_cap_age_entries = pickle.load(open('bias_data/Oscar/age_val_cider_oscar_masked_person_cap_mw_entries.pkl', 'rb'))
-        elif args.mask_bias_source == 'both':
-            print('### MASK BOTH ###')
-            selected_cap_age_entries = pickle.load(open('bias_data/Oscar/age_val_cider_oscar_masked_both_cap_mw_entries.pkl', 'rb'))
-        else:
-            selected_cap_age_entries = pickle.load(open('bias_data/Oscar/age_val_cider_oscar_cap_mw_entries.pkl', 'rb'))
-    elif args.cap_model == 'nic_equalizer':
-        selected_cap_age_entries = pickle.load(open('bias_data/Woman-Snowboard/age_val_snowboard_cap_mw_entries.pkl', 'rb'))
-    elif args.cap_model == 'nic_plus':
-        selected_cap_age_entries = pickle.load(open('bias_data/Woman-Snowboard/age_val_baselineft_cap_mw_entries.pkl', 'rb'))
-
-    # define age-related words that we want to mask
     young_words = ['kid', 'kids', 'child', 'children', 'young', 'boy', 'boys', 'little', 'baby', 'babies',
                'childhood', 'babyhood', 'toddler', 'adolescence', 'adolescent', 'teenager', 'teenagers',
                'schoolboy', 'schoolgirl', 'youngster', 'infant', 'preschooler'
@@ -439,8 +389,10 @@ def main(args):
     old_words = ['elder', 'man', 'men', 'woman', 'women', 'old', 'elders', 'elderly', 'grandma', 'grandpa',
              'mom', 'dad', 'father', 'ancient', 'elder', 'aged', 'senior',
              'grandparent', 'senior']
-    age_words = young_words + old_words
-
+    age_words = young_words + old_words  
+    age_val_obj_cap_entries = label_human_annotations(gender_pickle_generator('human'),young_words,old_words) # Human captions
+    selected_cap_age_entries = match_labels(age_val_obj_cap_entries,gender_pickle_generator(args.cap_model))
+    print("Generated using {}".format(args.cap_model))
 
     ##################### ANN LIC score #######################
     if args.calc_ann_leak:
