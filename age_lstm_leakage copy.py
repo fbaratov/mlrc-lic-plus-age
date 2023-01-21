@@ -3,17 +3,18 @@ import pandas as pd
 import random
 from collections import namedtuple
 
+
 def gender_pickle_generator(cap_model):
   '''
     This function generates the captions for the specified model. It only concerns
-    gender. It could be merged, but for the purposes of readability it is better to 
-    keep this way
+    age. It could be merged, but for the purposes of readability it is better to 
+    keep this way.
     Arguments
     ---------
     cap_model : str
         The captioning model in string format.
   '''
-  directory_gender = {'nic':  pickle.load(open('bias_data/Show-Tell/gender_val_st10_th10_cap_mw_entries.pkl', 'rb')),
+  directory_age = {'nic':  pickle.load(open('bias_data/Show-Tell/gender_val_st10_th10_cap_mw_entries.pkl', 'rb')),
              'sat':         pickle.load(open('bias_data/Show-Attend-Tell/gender_val_sat_cap_mw_entries.pkl', 'rb')),
              'fc' :         pickle.load(open('bias_data/Att2in_FC/gender_val_fc_cap_mw_entries.pkl', 'rb')),
              'att2in':      pickle.load(open('bias_data/Att2in_FC/gender_val_att2in_cap_mw_entries.pkl', 'rb')),
@@ -24,13 +25,13 @@ def gender_pickle_generator(cap_model):
              'nic_equalizer': pickle.load(open('bias_data/Woman-Snowboard/gender_val_snowboard_cap_mw_entries.pkl', 'rb')),
              'human':         pickle.load(open('bias_data/Human_Ann/gender_obj_cap_mw_entries.pkl', 'rb'))                          
              }
-  return directory_gender[cap_model]
+  return directory_age[cap_model]
        
 def race_pickle_generator(cap_model):
   '''
     This function generates the captions for the specified model. It only concerns
     race. It could be merged, but for the purposes of readability it is better to 
-    keep this way
+    keep this way.
     Arguments
     ---------
     cap_model : str
@@ -78,6 +79,9 @@ def label_human_caption(caption_list, young_words, old_words):
         return "Old"
     if exists_young:
         return "Young"
+    if not exists_old and not exists_young:
+        return "Unknown"
+
 def label_human_annotations(captions, young_words, old_words):
   '''
   This functions labels the human annotations from the captions dictionary.
@@ -130,26 +134,25 @@ def make_train_test_split(args, age_task_mw_entries):
     age_task_entries : list[dict]
         The entries for age task. This is basically the labelled dataframe.
     '''
-    if True:
-        old_entries, young_entries = [], []
-        for _ , entry in age_task_mw_entries.iterrows():
-            if entry['bb_age'] == 'Young':
-                young_entries.append(entry)
-            else:
-                old_entries.append(entry)
-        #print(len(female_entries))
-        each_test_sample_num = round(len(young_entries) * args.test_ratio)
-        each_train_sample_num = len(young_entries) - each_test_sample_num
+    old_entries, young_entries = [], []
+    for _ , entry in age_task_mw_entries.iterrows():
+        if entry['bb_age'] == 'Young':
+            young_entries.append(entry)
+        elif entry['bb_age'] == 'Old':
+            old_entries.append(entry)
+    #print(len(old_entries))
+    each_test_sample_num = round(len(young_entries) * args.test_ratio)
+    each_train_sample_num = len(young_entries) - each_test_sample_num
 
-        old_train_entries = [old_entries.pop(random.randrange(len(old_entries))) for _ in range(each_train_sample_num)]
-        young_train_entries = [young_entries.pop(random.randrange(len(young_entries))) for _ in range(each_train_sample_num)]
-        old_test_entries = [old_entries.pop(random.randrange(len(old_entries))) for _ in range(each_test_sample_num)]
-        young_test_entries = [young_entries.pop(random.randrange(len(young_entries))) for _ in range(each_test_sample_num)]
-        d_train = old_train_entries + young_train_entries
-        d_test = old_test_entries + young_test_entries
-        random.shuffle(d_train)
-        random.shuffle(d_test)
-        print('#train : #test = ', len(d_train), len(d_test))
+    old_train_entries = [old_entries.pop(random.randrange(len(old_entries))) for _ in range(each_train_sample_num)]
+    young_train_entries = [young_entries.pop(random.randrange(len(young_entries))) for _ in range(each_train_sample_num)]
+    old_test_entries = [old_entries.pop(random.randrange(len(old_entries))) for _ in range(each_test_sample_num)]
+    young_test_entries = [young_entries.pop(random.randrange(len(young_entries))) for _ in range(each_test_sample_num)]
+    d_train = old_train_entries + young_train_entries
+    d_test = old_test_entries + young_test_entries
+    random.shuffle(d_train)
+    random.shuffle(d_test)
+    print('#train : #test = ', len(d_train), len(d_test))
 
     return d_train, d_test
 

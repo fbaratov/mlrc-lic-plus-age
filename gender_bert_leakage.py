@@ -37,7 +37,7 @@ import torch.utils.data as data
 from transformers import BertModel
 from transformers import BertPreTrainedModel
 
-from model import Bert_AgeClassifier
+from model import Bert_GenderClassifier
 from bias_dataset import BERT_ANN_leak_data, BERT_MODEL_leak_data
 
 from string import punctuation
@@ -343,7 +343,7 @@ def main(args):
                 train_dataloader = torch.utils.data.DataLoader(trainANNCAPobject, batch_size=args.batch_size, shuffle=True, pin_memory=True, num_workers=args.workers)
                 test_dataloader = torch.utils.data.DataLoader(testANNCAPobject, batch_size=args.batch_size, shuffle=False, pin_memory=True, num_workers=args.workers)
                 # initialize gender classifier
-                model = Bert_AgeClassifier(args, tokenizer)
+                model = Bert_GenderClassifier(args, tokenizer)
                 # calculate random predictions
                 val_acc, val_loss, val_male_acc, val_female_acc, avg_score = calc_random_acc_score(args, model, test_dataloader)
                 rand_acc_list.append(val_acc)
@@ -380,7 +380,7 @@ def main(args):
             train_dataloader = torch.utils.data.DataLoader(trainMODELCAPobject, batch_size=args.batch_size, shuffle=True, pin_memory=True, num_workers=args.workers)
             test_dataloader = torch.utils.data.DataLoader(testMODELCAPobject, batch_size=args.batch_size, shuffle=False, pin_memory=True, num_workers=args.workers)
             # initialize gender classifier
-            model = Bert_AgeClassifier(args, tokenizer)
+            model = Bert_GenderClassifier(args, tokenizer)
             # calculate random predictions
             rand_val_acc, rand_val_loss, rand_val_male_acc, rand_val_female_acc, rand_avg_score = calc_random_acc_score(args, model, test_dataloader)
             # train and test
