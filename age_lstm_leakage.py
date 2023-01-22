@@ -50,7 +50,10 @@ from age_utils import (
   label_human_annotations,
   match_labels,
   make_train_test_split,
-
+)
+# Import the function responsible for saving the model
+from age_utils import (
+  save_model
 )
 
 # import unchanged functions from original file, just to be clear what is modified and what isn't
@@ -83,9 +86,7 @@ def get_parser():
     parser.add_argument("--seed", default=0, type=int)
     parser.add_argument("--num_epochs", default=20, type=int)
     parser.add_argument("--learning_rate", default=5e-5, type=float)
-    parser.add_argument("--save_model", default=False, type=bool)
     parser.add_argument("--workers", default=1, type=int)
-
     parser.add_argument("--embedding_dim", default=100, type=int)
     parser.add_argument("--hidden_dim", default=256, type=int)
     parser.add_argument("--output_dim", default=1, type=int)
@@ -95,8 +96,12 @@ def get_parser():
     parser.add_argument("--pad_idx", default=0, type=int)
     parser.add_argument("--fix_length", default=False, type=bool)
 
+    # Add an argument to save the model after training is finished.
+    parser.add_argument('--save_model', default = True, type = bool)
+    parser.add_argument('--every', default = 5, type = int, help = 'Saving period of the model in epochs')
     return parser
 
+  
 
 def evaluate(model, iterator, criterion, batch_size, TEXT, args):
 
@@ -403,7 +408,17 @@ def main(args):
                 for epoch in range(N_EPOCHS):
 
                     train_loss, train_acc, train_proc = train(model, train_iterator, optimizer, criterion, train_proc)
-
+                    if args.save_model:
+                          if epoch % args.every == 0:
+                            path = "saved_models/{}"
+                            file_name = "age_annotation_{}_model_lstm_{}_seed_{}_epoch_{}.pt"
+                            if args.calc_ann_leak:
+                              annotation = "human"
+                            elif args.calc_model_leak:
+                              annotation = "generated"
+                            file_name = file_name.format(annotation,args.cap_model,args.seed,epoch)
+                            path = path.format(file_name)
+                            save_model(model, path)
                 valid_loss, valid_acc, avg_score, young_acc, old_acc, young_score, old_score = evaluate(model, test_iterator, criterion, args.batch_size, TEXT, args)
                 val_acc_list.append(valid_acc)
                 young_acc_list.append(young_acc)
@@ -411,7 +426,8 @@ def main(args):
                 score_list.append(avg_score)
                 young_score_list.append(young_score)
                 old_score_list.append(old_score)
-                #print("Average score:", avg_score)
+                # Save every epoch described in the args.
+                # Save only if state is save_model.
 
             old_avg_acc = sum(old_acc_list) / len(old_acc_list)
             young_avg_acc = sum(young_acc_list) / len(young_acc_list)
@@ -577,7 +593,18 @@ def main(args):
         for epoch in range(N_EPOCHS):
 
             train_loss, train_acc, train_proc = train(model, train_iterator, optimizer, criterion, train_proc)
-
+            if args.save_model:
+                  if epoch % args.every == 0:
+                    path = "saved_models/{}"
+                    file_name = "age_annotation_{}_model_lstm_{}_seed_{}_epoch_{}.pt"
+                    if args.calc_ann_leak:
+                      annotation = "human"
+                    elif args.calc_model_leak:
+                      annotation = "generated"
+                    file_name = file_name.format(annotation,args.cap_model,args.seed,epoch)
+                    path = path.format(file_name)
+                    save_model(model, path)
+                
         valid_loss, valid_acc, avg_score, young_acc, old_acc, young_score, old_score  = evaluate(model, test_iterator, criterion, args.batch_size, TEXT, args)
         print('########## Results ##########')
         print(f'LIC score (LIC_M): {avg_score*100:.2f}%')
@@ -598,6 +625,9 @@ if __name__ == "__main__":
     if args.task == 'captioning' and args.calc_model_leak:
         print("Captioning model:", args.cap_model)
     print("Protected attribute: Age")
+    print("Save Model : ", args.save_model)
+    if args.save_model:
+      print("Saving Every : ", args.every)
 
     if args.calc_ann_leak:
         print('Align vocab:', args.align_vocab)
@@ -606,3 +636,4 @@ if __name__ == "__main__":
     print()
 
     main(args)
+

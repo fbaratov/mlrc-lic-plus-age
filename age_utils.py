@@ -6,7 +6,9 @@ age from the datasets we have.
 import random
 import pickle 
 import pandas as pd
-
+import torch
+# For type checking.
+from torch import nn
 # age word bank
 young_words = ['kid', 'kids', 'child', 'children', 'young', 'boy', 'boys', 'little', 'baby', 'babies',
                'childhood', 'babyhood', 'toddler', 'adolescence', 'adolescent', 'teenager', 'teenagers',
@@ -16,7 +18,37 @@ old_words = ['elder', 'man', 'men', 'woman', 'women', 'old', 'elders', 'elderly'
              'mom', 'dad', 'father', 'ancient', 'elder', 'aged', 'senior',
              'grandparent', 'senior']
 age_words = young_words + old_words
-#   
+
+
+def save_model(model: nn.Module, PATH : str):
+  '''
+  This function saves the torch model to the specified file name under 
+  the specified path using torch.save_model.
+
+  Arguments
+  ---------
+  model : nn.Module
+      The model that we are training. It is expected that model is from pytorch.
+  path : str
+      The path for saving the file. It is expected that path can be formatted.
+  '''
+  print('Saving the model to the path {}'.format(PATH))
+  torch.save(model.state_dict(), PATH)
+
+def load_model(model : nn.Module, PATH : str):
+  ''' 
+  Load the model saved on the path. 
+  Path is expected to have full file name as well.
+  Arguments
+  ---------
+  model : nn.Module
+      The model that we wish to load weights to.
+  PATH : str
+      The path to the weight files. It is expected to contain the filename for
+      weights as well
+  '''
+  model.load_state_dict(torch.load(PATH))
+  print('Successfully loaded')
 
 def gender_pickle_generator(cap_model):
   '''
@@ -154,7 +186,6 @@ def make_train_test_split(args, age_task_mw_entries):
             young_entries.append(entry)
         elif entry['bb_age'] == 'Old':
             old_entries.append(entry)
-    #print(len(old_entries))
     each_test_sample_num = round(len(young_entries) * args.test_ratio)
     each_train_sample_num = len(young_entries) - each_test_sample_num
 
