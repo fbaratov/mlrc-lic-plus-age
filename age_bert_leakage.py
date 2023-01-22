@@ -38,7 +38,6 @@ from transformers import BertModel
 from transformers import BertPreTrainedModel
 
 from model import BERT_GenderClassifier
-from bias_dataset import BERT_ANN_leak_data, BERT_MODEL_leak_data
 
 from string import punctuation
 
@@ -47,8 +46,24 @@ import pandas as pd
 import random
 from collections import namedtuple
 
-# import age functions from utils
-from age_utils import *
+# import age variables from utils
+from age_utils import (
+  young_words,
+  old_words,
+  age_words
+)
+# import age functiond from utils
+from age_utils import (
+  gender_pickle_generator,
+  race_pickle_generator,
+  label_human_caption,
+  label_human_annotations,
+  match_labels,
+  make_train_test_split,
+
+)
+from age_dataset import BERT_ANN_leak_data, BERT_MODEL_leak_data
+
 
 def get_parser():
     parser = argparse.ArgumentParser()
@@ -371,7 +386,7 @@ if __name__ == "__main__":
     print("---Start---")
     print('Seed:', args.seed)
     print("Epoch:", args.num_epochs)
-    #print("Freeze BERT:", args.freeze_bert)
+    print("Freeze BERT:", args.freeze_bert)
     print("Learning rate:", args.learning_rate)
     print("Batch size:", args.batch_size)
     print("Calculate score:", args.calc_score)
