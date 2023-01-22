@@ -20,6 +20,17 @@ old_words = ['elder', 'man', 'men', 'woman', 'women', 'old', 'elders', 'elderly'
 age_words = young_words + old_words
 
 
+def save_leak_model(model: nn.Module,epoch: int, file_name : str, path : str, args):
+  '''
+  Binding of the function.
+  '''
+  if args.calc_ann_leak:
+    annotation = "human"
+  elif args.calc_model_leak:
+    annotation = "generated"
+  file_name = file_name.format(annotation,args.cap_model,args.seed,epoch)
+  path = path.format(file_name)
+  save_model(model, path)
 def save_model(model: nn.Module, PATH : str):
   '''
   This function saves the torch model to the specified file name under 

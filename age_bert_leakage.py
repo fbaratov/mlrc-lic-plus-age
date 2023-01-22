@@ -60,7 +60,7 @@ from age_utils import (
   label_human_annotations,
   match_labels,
   make_train_test_split,
-  save_model
+  save_leak_model
 )
 from age_dataset import BERT_ANN_leak_data, BERT_MODEL_leak_data
 
@@ -160,17 +160,14 @@ def calc_leak(args, model, train_dataloader, test_dataloader):
               if epoch % args.every == 0:
                 path = "saved_models/{}"
                 file_name = "age_annotation_{}_model_bert_{}_seed_{}_epoch_{}.pt"
-                if args.calc_ann_leak:
-                  annotation = "human"
-                elif args.calc_model_leak:
-                  annotation = "generated"
-                file_name = file_name.format(annotation,args.cap_model,args.seed,epoch)
-                path = path.format(file_name)
-                save_model(model, path)
+                save_leak_model(model,epoch, file_name,path, args)
 
     print("Finish training")
     print('{0}: train acc: {1:2f}'.format(epoch, train_acc))
-
+    # We also save the model after training is finished
+    file_name = "age_annotation_{}_model_bert_{}_seed_{}_epoch_{}.pt"
+    path = "saved_models/{}"
+    save_leak_model(model,epoch,file_name, path)
     # validation
     val_loss, val_acc, val_young_acc, val_old_acc, avg_score = calc_leak_epoch_pass(epoch, test_dataloader, model, optimizer, False, print_every=500)
     print('val, {0}, val loss: {1:.2f}, val acc: {2:.2f}'.format(epoch, val_loss*100, val_acc *100))

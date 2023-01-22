@@ -53,7 +53,7 @@ from age_utils import (
 )
 # Import the function responsible for saving the model
 from age_utils import (
-  save_model
+  save_leak_model
 )
 
 # import unchanged functions from original file, just to be clear what is modified and what isn't
@@ -412,13 +412,7 @@ def main(args):
                           if epoch % args.every == 0:
                             path = "saved_models/{}"
                             file_name = "age_annotation_{}_model_lstm_{}_seed_{}_epoch_{}.pt"
-                            if args.calc_ann_leak:
-                              annotation = "human"
-                            elif args.calc_model_leak:
-                              annotation = "generated"
-                            file_name = file_name.format(annotation,args.cap_model,args.seed,epoch)
-                            path = path.format(file_name)
-                            save_model(model, path)
+                            save_leak_model(model,epoch, file_name,path, args)
                 valid_loss, valid_acc, avg_score, young_acc, old_acc, young_score, old_score = evaluate(model, test_iterator, criterion, args.batch_size, TEXT, args)
                 val_acc_list.append(valid_acc)
                 young_acc_list.append(young_acc)
@@ -434,7 +428,10 @@ def main(args):
             avg_score = sum(score_list) / len(score_list)
             young_avg_score = sum(young_score_list) / len(young_score_list)
             old_avg_score = sum(old_score_list) / len(old_score_list)
-
+            # Save the model at last also.
+            path = "saved_models/{}"
+            file_name = "age_annotation_{}_model_lstm_{}_seed_{}_epoch_{}.pt"
+            save_leak_model(model,epoch, file_name,path, args)
             print('########## Results ##########')
             print(f"LIC score (LIC_D): {avg_score*100:.2f}%")
             #print(f"\t Feyoung score: {old_avg_score*100:.2f}%")
@@ -597,17 +594,16 @@ def main(args):
                   if epoch % args.every == 0:
                     path = "saved_models/{}"
                     file_name = "age_annotation_{}_model_lstm_{}_seed_{}_epoch_{}.pt"
-                    if args.calc_ann_leak:
-                      annotation = "human"
-                    elif args.calc_model_leak:
-                      annotation = "generated"
-                    file_name = file_name.format(annotation,args.cap_model,args.seed,epoch)
-                    path = path.format(file_name)
-                    save_model(model, path)
+                    save_leak_model(model,epoch, file_name,path, args)
+
                 
         valid_loss, valid_acc, avg_score, young_acc, old_acc, young_score, old_score  = evaluate(model, test_iterator, criterion, args.batch_size, TEXT, args)
+        path = "saved_models/{}"
+        file_name = "age_annotation_{}_model_lstm_{}_seed_{}_epoch_{}.pt"
+        save_leak_model(model,epoch, file_name,path, args)        
         print('########## Results ##########')
         print(f'LIC score (LIC_M): {avg_score*100:.2f}%')
+        # Save leak model after training is finished.
         #print(f'\t Male. score: {young_score*100:.2f}%')
         #print(f'\t Feyoung. score: {old_score*100:.2f}%')
         print('#############################')
