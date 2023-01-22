@@ -35,10 +35,29 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import average_precision_score
 from sklearn.metrics import roc_auc_score
 from sklearn.metrics import accuracy_score
-# import changed functions from age_utils file
-from age_utils import *
+
+# import age variables from utils
+from age_utils import (
+  young_words,
+  old_words,
+  age_words
+)
+# import age functiond from utils
+from age_utils import (
+  gender_pickle_generator,
+  race_pickle_generator,
+  label_human_caption,
+  label_human_annotations,
+  match_labels,
+  make_train_test_split,
+
+)
+
 # import unchanged functions from original file, just to be clear what is modified and what isn't
-from gender_lstm_leakage import (binary_accuracy, RNN, count_parameters, train)
+from gender_lstm_leakage import (binary_accuracy,
+ RNN, 
+ count_parameters, 
+ train)
 
 def get_parser():
     '''
