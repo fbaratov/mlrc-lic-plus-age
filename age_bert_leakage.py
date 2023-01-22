@@ -47,9 +47,6 @@ import pandas as pd
 import random
 from collections import namedtuple
 
-# import unchanged functions from original file, just to be clear what is modified and what isn't
-from gender_bert_leakage import binary_accuracy
-
 # import age functions from utils
 from age_utils import *
 
