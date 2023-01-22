@@ -60,10 +60,10 @@ def get_parser():
     parser.add_argument("--calc_mw_acc", default=True, type=bool)
     parser.add_argument("--test_ratio", default=0.1, type=float)
     parser.add_argument("--balanced_data", default=True, type=bool)
-    parser.add_argument("--mask_gender_words", default=True, type=bool)
+    parser.add_argument("--mask_age_words", default=True, type=bool)
     parser.add_argument("--freeze_bert", default=False, type=bool)
-    parser.add_argument("--store_topk_gender_pred", default=False, type=bool)
-    parser.add_argument("--topk_gender_pred", default=50, type=int)
+    parser.add_argument("--store_topk_age_pred", default=False, type=bool)
+    parser.add_argument("--topk_age_pred", default=50, type=int)
     parser.add_argument("--calc_score", default=True, type=bool)
     parser.add_argument("--align_vocab", default=True, type=bool)
 
