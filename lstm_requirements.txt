@@ -4,3 +4,4 @@ torchtext==0.10.0
 spacy==3.4.0 
 scikit-learn==1.0.2 
 nltk==3.6.3
+pandas
