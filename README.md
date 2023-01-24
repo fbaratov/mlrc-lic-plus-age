@@ -31,12 +31,13 @@ bash run_models.sh --model lstm --captions human --data age --epochs 20 --learni
 written in concside manner to outputs directory.
 ```
 
-This bash script needs to be executed from ~/fact-group21, otherwise it will throw file not found error.
+For more information about the bashscript please refer to the <a href="https://github.com/fbaratov/fact-group21/tree/main/run_scripts" target="_blank">README </a>
+file.
 
-For more information about the bashscript please refer to the README file in the ~/fact-group21/run_scripts.
 
-:bangbang: When saving the output of this bash script use this template: outputs/model_captions_data.txt
+‼️ When saving the output of this bash script use this template: outputs/model_captions_data.txt
 
+‼️ This bash script needs to be executed from ~/fact-group21, otherwise it will throw file not found error.
 
 
 # Parsing Results
