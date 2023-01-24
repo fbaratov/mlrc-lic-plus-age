@@ -10,6 +10,9 @@ data='race'
 epochs=5
 learning_rate=1e-5
 check=false
+save_every=5
+save_model=false
+
 usage()
 {
   echo "Usage: run_models 
@@ -23,21 +26,27 @@ usage()
 
                         [--data TEXT]
                         Set the dataset to use for training.
-                        Select 'gender' or 'race'
+                        Select 'gender' or 'race' or 'age'
 
                         [--epochs NUMBER ]
                         Set the number of epochs you want
                         
                         [--learning_rate NUMBER ]
                         Set the learning rate 
-                        
+
+                        [--save_model]
+                        Set the flag for setting the model
+
+                        [--every NUMBER]  
+                        Indicate the saving frequency
+
                         [--check]
                         Indicates if you only wanna run check.
                         " 
   exit 2
 }
 
-PARSED_ARGUMENTS=$(getopt -a -n run_models -o '' --long captions:,model:,data:,epochs:,learning_rate:,check -- "$@")
+PARSED_ARGUMENTS=$(getopt -a -n run_models -o '' --long captions:,model:,data:,epochs:,learning_rate:,save_model,every:,check -- "$@")
 eval set -- "$PARSED_ARGUMENTS"
 while :
 do
@@ -47,6 +56,8 @@ do
     --data) data="$2";  shift 2 ;;
     --epochs)   epochs="$2"   ; shift 2 ;;
     --learning_rate) learning_rate="$2"; shift 2;;
+    --save_model) save_model=true; shift;;
+    --every) save_every="$2"; shift 2;;
     --check) check=true epochs=1; shift;;
     # -- means the end of the arguments; drop this, and break out of the while loop
     --) shift; break ;;
@@ -59,7 +70,7 @@ done
 
 echo -e "\nRunning the model\n"
 echo -e "##########################################"
-echo -e "\tcaptions: $captions\n\tmodel: $model\n\tdata: $data\n\tepochs: $epochs\n\tlearning_rate: $learning_rate\n\tcheck:$check"
+echo -e "\tcaptions: $captions\n\tmodel: $model\n\tdata: $data\n\tepochs: $epochs\n\tlearning_rate: $learning_rate\n\tcheck:$check\n\tsave_model:$save_model\n\tsave_every:$save_every\n\t"
 echo -e "##########################################"
 
 
@@ -91,11 +102,11 @@ fi
 for m in ${models[@]}; do
     for seed in ${seeds[@]}; do
         if [ "$freeze_bert" = true ]; then
-          echo "python3 $python_file --seed $seed --num_epochs $epochs --$calc True --cap_model $m  --learning_rate $learning_rate --freeze_bert $freeze_bert"
-          python3 $python_file --seed $seed --num_epochs $epochs --$calc True --cap_model $m  --learning_rate $learning_rate --freeze_bert $freeze_bert
+          echo "python3 $python_file --seed $seed --num_epochs $epochs --$calc True --cap_model $m  --learning_rate $learning_rate --freeze_bert $freeze_bert --save_model $save_model --every $save_every"
+          python3 $python_file --seed $seed --num_epochs $epochs --$calc True --cap_model $m  --learning_rate $learning_rate --freeze_bert $freeze_bert --save_model $save_model --every $save_every
         else
-          echo "python3 $python_file --seed $seed --num_epochs $epochs --$calc True --cap_model $m  --learning_rate $learning_rate"   
-          python3 $python_file --seed $seed --num_epochs $epochs --$calc True --cap_model $m  --learning_rate $learning_rate
+          echo "python3 $python_file --seed $seed --num_epochs $epochs --$calc True --cap_model $m  --learning_rate $learning_rate --save_model $save_model --every $save_every"   
+          python3 $python_file --seed $seed --num_epochs $epochs --$calc True --cap_model $m  --learning_rate $learning_rate --save_model $save_model --every $save_every
         fi
     done
 done
