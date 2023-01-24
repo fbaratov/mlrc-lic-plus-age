@@ -11,7 +11,7 @@ epochs=5
 learning_rate=1e-5
 check=false
 save_every=5
-save_model=false
+save_model=true
 
 usage()
 {
