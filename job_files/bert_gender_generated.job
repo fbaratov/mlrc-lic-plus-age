@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#SBATCH --partition=gpu_titanrtx_shared_course
+#SBATCH --gres=gpu:1
+#SBATCH --job-name=RunModels
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=3
+#SBATCH --time=04:00:00
+#SBATCH --mem=32000M
+#SBATCH --output=bert_generated_gender.txt
+
+module purge
+module load 2021
+module load Anaconda3/2021.05
+
+source activate bert
+cd $HOME/fact-group21/fact-group21
+bash run_scripts/run_models.sh --captions generated --model bert --data gender --learning_rate 1e-5 --epochs 5
