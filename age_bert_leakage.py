@@ -159,13 +159,21 @@ def calc_leak(args, model, train_dataloader, test_dataloader):
         if args.save_model:
               if epoch % args.every == 0:
                 path = "saved_models/{}"
-                file_name = "age_annotation_{}_model_bert_{}_seed_{}_epoch_{}.pt"
+                if args.freeze_bert:
+                  file_name = "age_annotation_{}_model_pretrained_bert_{}_seed_{}_epoch_{}.pt"
+                else:
+                  file_name = "age_annotation_{}_model_bert_{}_seed_{}_epoch_{}.pt"
                 save_leak_model(model,epoch, file_name,path, args)
+                 
 
     print("Finish training")
     print('{0}: train acc: {1:2f}'.format(epoch, train_acc))
     # We also save the model after training is finished
-    file_name = "age_annotation_{}_model_bert_{}_seed_{}_epoch_{}.pt"
+    if args.freeze_bert:
+      file_name = "age_annotation_{}_model_pretrained_bert_{}_seed_{}_epoch_{}.pt"
+    else:
+      file_name = "age_annotation_{}_model_bert_{}_seed_{}_epoch_{}.pt"
+    save_leak_model(model,epoch, file_name,path, args)
     path = "saved_models/{}"
     save_leak_model(model,epoch,file_name, path)
     # validation
