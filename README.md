@@ -1,3 +1,57 @@
+
+# Reproducing Our Results
+
+Our repository is structured as follows.
+
+* fact-group21 contains the python scripts for runnig the models, as well as .job scripts for running the models in LISA cluster.
+    
+* fact-group21/Dockerfiles contains dockerfiles for building docker images. We have a lot of environmental requirements, so it is wise to use
+this when you do not have access to LISA cluster not UNIX based system. Explanation of how to use docker is out of scope of this repository, 
+but we provide commands for getting the models work in docker.[Running Docker Files](#running-docker-files)
+
+* fact-group21/bias_data contains the human annotated and generated captions for each model. This is our entry point to the dataset.
+    
+* fact-group21/notebooks contains the notebook for running the models in google colab. It is not very important. 
+    
+* fact-group21/outputs contains the outputs of the model runs, also scripts to parse them into python classes. Therefore, we can have
+easier time verifying them. The scripts needs to be executed in ~/fact-group21. For more information about using this script please refer to 
+the section [Parsing Results](#parsing-results)
+
+* fact-group21/run_scripts contains a bash file to run all models with specified seeds on partition of dataset 'gender' 'race' or 'age'.
+
+For more information about using the script please refer to the section [Running Models](#running-models)
+
+# Running Models
+
+We adapted a bash script to run the models with one command. 
+
+```
+bash run_models.sh --model lstm --captions human --data age --epochs 20 --learning_rate 5e-5 > outputs/lstm_human_age.txt
+#Run the lstm model with age data using human captions. This produces the LIC_D for lstm model. The output of the bash script needs to be
+written in concside manner to outputs directory.
+```
+
+This bash script needs to be executed from ~/fact-group21, otherwise it will throw file not found error.
+
+For more information about the bashscript please refer to the README file in the ~/fact-group21/run_scripts.
+
+:bangbang: When saving the output of this bash script use this template: outputs/model_captions_data.txt
+
+
+
+# Parsing Results
+
+We have developed a script to parse .txt file from the run, into python class.
+Calling the function python3 calculate_LIC.py parses the text files and produces results for us to verify and use.
+For verification, you can check the epochs, seeds, model names and observe if it is expected.
+For result generation, you can use the mean and std of LIC_M and LIC_D results.
+As well as LIC results. Which is basically LIC_M - LIC_D
+
+
+:bangbang: This script needs to be run in ~/fact-group21
+
+:heavy_check_mark: This script is tested using /fact-group21/outputs/test
+
 # Running docker files
 
 First of all make sure to install docker :) 
