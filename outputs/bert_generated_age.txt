@@ -694,6 +694,7 @@ val, 4, val loss: 0.94, Old val acc: 75.19
 ########### Reluts ##########
 LIC score (LIC_M): 51.50%
 #############################
+
 python3 age_bert_leakage.py --seed 456 --num_epochs 5 --calc_model_leak True --cap_model oscar  --learning_rate 1e-5 --save_model true --every 3
 
 ---Start---
@@ -719,7 +720,39 @@ Num of Trainable Parameters: 109681666
 train, 0, train loss: 0.94, train acc: 65.04
 Saving the model to the path saved_models/age_annotation_generated_model_bert_oscar_seed_456_epoch_0.pt
 Saving the model to the path saved_models/age_annotation_generated_model_bert_oscar_seed_456_epoch_3.pt
-��������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������train, 0, train loss: 1.06, train acc: 59.31
+Finish training
+4: train acc: 0.716804
+Saving the model to the path saved_models/age_annotation_generated_model_bert_oscar_seed_456_epoch_4.pt
+val, 4, val loss: 0.97, val acc: 64.39
+val, 4, val loss: 0.97, Young val acc: 63.03
+val, 4, val loss: 0.97, Old val acc: 65.76
+########### Reluts ##########
+LIC score (LIC_M): 48.89%
+#############################
+
+python3 age_bert_leakage.py --seed 0 --num_epochs 5 --calc_model_leak True --cap_model nic_plus  --learning_rate 1e-5 --save_model true --every 3
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_plus
+Protected attribute: Age
+Save Model :  True
+Saving Every :  3
+
+device: cuda n_gpu: 1
+Generated using nic_plus
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 59.31
 Saving the model to the path saved_models/age_annotation_generated_model_bert_nic_plus_seed_0_epoch_0.pt
 Saving the model to the path saved_models/age_annotation_generated_model_bert_nic_plus_seed_0_epoch_3.pt
 Finish training
@@ -731,6 +764,8 @@ val, 4, val loss: 1.03, Old val acc: 77.92
 ########### Reluts ##########
 LIC score (LIC_M): 45.35%
 #############################
+
+
 python3 age_bert_leakage.py --seed 12 --num_epochs 5 --calc_model_leak True --cap_model nic_plus  --learning_rate 1e-5 --save_model true --every 3
 
 ---Start---
