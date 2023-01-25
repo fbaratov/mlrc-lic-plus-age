@@ -1,0 +1,2331 @@
+
+Running the model
+
+##########################################
+	captions: human
+	model: bert
+	data: age
+	epochs: 5
+	learning_rate: 1e-5
+	check:false
+	save_model:true
+	save_every:5
+	
+##########################################
+age, bert
+
+python3 age_bert_leakage.py --seed 0 --num_epochs 5 --calc_ann_leak True --cap_model nic  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  nic
+
+device: cuda n_gpu: 1
+Generated using nic
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.04, train acc: 61.17
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.765840
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_0_epoch_4.pt
+val, 4, val loss: 0.96, val acc: 67.99
+val, 4, val loss: 0.96, Young val acc: 51.86
+val, 4, val loss: 0.96, Old val acc: 84.12
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 58.50
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.758540
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_0_epoch_4.pt
+val, 4, val loss: 1.01, val acc: 64.14
+val, 4, val loss: 1.01, Young val acc: 51.61
+val, 4, val loss: 1.01, Old val acc: 76.67
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.07, train acc: 57.85
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.748347
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_0_epoch_4.pt
+val, 4, val loss: 0.95, val acc: 66.13
+val, 4, val loss: 0.95, Young val acc: 64.52
+val, 4, val loss: 0.95, Old val acc: 67.74
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 59.38
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.750000
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_0_epoch_4.pt
+val, 4, val loss: 0.99, val acc: 66.38
+val, 4, val loss: 0.99, Young val acc: 58.31
+val, 4, val loss: 0.99, Old val acc: 74.44
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.13, train acc: 55.18
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.742149
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_0_epoch_4.pt
+val, 4, val loss: 1.00, val acc: 66.00
+val, 4, val loss: 1.00, Young val acc: 67.99
+val, 4, val loss: 1.00, Old val acc: 64.02
+########### Reluts ##########
+LIC score (LIC_D): 50.78%
+#############################
+python3 age_bert_leakage.py --seed 12 --num_epochs 5 --calc_ann_leak True --cap_model nic  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  nic
+
+device: cuda n_gpu: 1
+Generated using nic
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.04, train acc: 60.29
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.755647
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_12_epoch_4.pt
+val, 4, val loss: 0.93, val acc: 70.10
+val, 4, val loss: 0.93, Young val acc: 64.27
+val, 4, val loss: 0.93, Old val acc: 75.93
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 56.79
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.741598
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_12_epoch_4.pt
+val, 4, val loss: 0.97, val acc: 66.13
+val, 4, val loss: 0.97, Young val acc: 63.77
+val, 4, val loss: 0.97, Old val acc: 68.49
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.05, train acc: 60.28
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.750964
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_12_epoch_4.pt
+val, 4, val loss: 0.97, val acc: 67.25
+val, 4, val loss: 0.97, Young val acc: 66.00
+val, 4, val loss: 0.97, Old val acc: 68.49
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.05, train acc: 58.53
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.742562
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_12_epoch_4.pt
+val, 4, val loss: 1.01, val acc: 65.88
+val, 4, val loss: 1.01, Young val acc: 53.35
+val, 4, val loss: 1.01, Old val acc: 78.41
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 57.98
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.740496
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_12_epoch_4.pt
+val, 4, val loss: 0.91, val acc: 68.98
+val, 4, val loss: 0.91, Young val acc: 62.28
+val, 4, val loss: 0.91, Old val acc: 75.68
+########### Reluts ##########
+LIC score (LIC_D): 51.17%
+#############################
+python3 age_bert_leakage.py --seed 456 --num_epochs 5 --calc_ann_leak True --cap_model nic  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  nic
+
+device: cuda n_gpu: 1
+Generated using nic
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.02, train acc: 60.45
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.749725
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_456_epoch_4.pt
+val, 4, val loss: 0.90, val acc: 70.60
+val, 4, val loss: 0.90, Young val acc: 62.78
+val, 4, val loss: 0.90, Old val acc: 78.41
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 57.19
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.756198
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_456_epoch_4.pt
+val, 4, val loss: 0.95, val acc: 68.98
+val, 4, val loss: 0.95, Young val acc: 59.80
+val, 4, val loss: 0.95, Old val acc: 78.16
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.04, train acc: 60.90
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.753030
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_456_epoch_4.pt
+val, 4, val loss: 1.02, val acc: 66.13
+val, 4, val loss: 1.02, Young val acc: 53.35
+val, 4, val loss: 1.02, Old val acc: 78.91
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.05, train acc: 59.12
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.749725
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_456_epoch_4.pt
+val, 4, val loss: 0.93, val acc: 68.98
+val, 4, val loss: 0.93, Young val acc: 55.33
+val, 4, val loss: 0.93, Old val acc: 82.63
+len(self.model_vocab): 777
+len(self.model_vocab): 777
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 58.24
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.754545
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_seed_456_epoch_4.pt
+val, 4, val loss: 0.96, val acc: 67.87
+val, 4, val loss: 0.96, Young val acc: 64.52
+val, 4, val loss: 0.96, Old val acc: 71.22
+########### Reluts ##########
+LIC score (LIC_D): 53.00%
+#############################
+python3 age_bert_leakage.py --seed 0 --num_epochs 5 --calc_ann_leak True --cap_model sat  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  sat
+
+device: cuda n_gpu: 1
+Generated using sat
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.03, train acc: 60.76
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.759366
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_0_epoch_4.pt
+val, 4, val loss: 0.97, val acc: 68.11
+val, 4, val loss: 0.97, Young val acc: 51.36
+val, 4, val loss: 0.97, Old val acc: 84.86
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 58.57
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.746006
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_0_epoch_4.pt
+val, 4, val loss: 1.03, val acc: 67.74
+val, 4, val loss: 1.03, Young val acc: 50.87
+val, 4, val loss: 1.03, Old val acc: 84.62
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.07, train acc: 58.13
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.748209
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_0_epoch_4.pt
+val, 4, val loss: 0.95, val acc: 66.87
+val, 4, val loss: 0.95, Young val acc: 57.32
+val, 4, val loss: 0.95, Old val acc: 76.43
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 59.64
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.746281
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_0_epoch_4.pt
+val, 4, val loss: 0.94, val acc: 68.98
+val, 4, val loss: 0.94, Young val acc: 56.33
+val, 4, val loss: 0.94, Old val acc: 81.64
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.12, train acc: 57.37
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.729614
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_0_epoch_4.pt
+val, 4, val loss: 0.95, val acc: 68.73
+val, 4, val loss: 0.95, Young val acc: 67.99
+val, 4, val loss: 0.95, Old val acc: 69.48
+########### Reluts ##########
+LIC score (LIC_D): 51.91%
+#############################
+python3 age_bert_leakage.py --seed 12 --num_epochs 5 --calc_ann_leak True --cap_model sat  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  sat
+
+device: cuda n_gpu: 1
+Generated using sat
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.03, train acc: 60.15
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.753444
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_12_epoch_4.pt
+val, 4, val loss: 0.91, val acc: 70.72
+val, 4, val loss: 0.91, Young val acc: 65.76
+val, 4, val loss: 0.91, Old val acc: 75.68
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 57.41
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.736777
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_12_epoch_4.pt
+val, 4, val loss: 0.98, val acc: 67.25
+val, 4, val loss: 0.98, Young val acc: 53.85
+val, 4, val loss: 0.98, Old val acc: 80.65
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.05, train acc: 59.63
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.737879
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_12_epoch_4.pt
+val, 4, val loss: 0.94, val acc: 68.24
+val, 4, val loss: 0.94, Young val acc: 59.31
+val, 4, val loss: 0.94, Old val acc: 77.17
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.05, train acc: 59.05
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.748347
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_12_epoch_4.pt
+val, 4, val loss: 1.01, val acc: 64.52
+val, 4, val loss: 1.01, Young val acc: 51.36
+val, 4, val loss: 1.01, Old val acc: 77.67
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 57.78
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.741736
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_12_epoch_4.pt
+val, 4, val loss: 0.91, val acc: 69.48
+val, 4, val loss: 0.91, Young val acc: 62.28
+val, 4, val loss: 0.91, Old val acc: 76.67
+########### Reluts ##########
+LIC score (LIC_D): 51.44%
+#############################
+python3 age_bert_leakage.py --seed 456 --num_epochs 5 --calc_ann_leak True --cap_model sat  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  sat
+
+device: cuda n_gpu: 1
+Generated using sat
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.02, train acc: 60.34
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.751791
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_456_epoch_4.pt
+val, 4, val loss: 0.89, val acc: 70.22
+val, 4, val loss: 0.89, Young val acc: 61.79
+val, 4, val loss: 0.89, Old val acc: 78.66
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 57.29
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.752066
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_456_epoch_4.pt
+val, 4, val loss: 0.98, val acc: 65.26
+val, 4, val loss: 0.98, Young val acc: 64.52
+val, 4, val loss: 0.98, Old val acc: 66.00
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.04, train acc: 60.88
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.745179
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_456_epoch_4.pt
+val, 4, val loss: 1.01, val acc: 66.00
+val, 4, val loss: 1.01, Young val acc: 52.11
+val, 4, val loss: 1.01, Old val acc: 79.90
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.05, train acc: 58.98
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.744077
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_456_epoch_4.pt
+val, 4, val loss: 0.90, val acc: 69.35
+val, 4, val loss: 0.90, Young val acc: 57.82
+val, 4, val loss: 0.90, Old val acc: 80.89
+len(self.model_vocab): 641
+len(self.model_vocab): 641
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 58.09
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.743939
+Saving the model to the path saved_models/age_annotation_human_model_bert_sat_seed_456_epoch_4.pt
+val, 4, val loss: 1.00, val acc: 66.00
+val, 4, val loss: 1.00, Young val acc: 53.60
+val, 4, val loss: 1.00, Old val acc: 78.41
+########### Reluts ##########
+LIC score (LIC_D): 52.03%
+#############################
+python3 age_bert_leakage.py --seed 0 --num_epochs 5 --calc_ann_leak True --cap_model fc  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  fc
+
+device: cuda n_gpu: 1
+Generated using fc
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.03, train acc: 60.80
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.732507
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_0_epoch_4.pt
+val, 4, val loss: 0.97, val acc: 65.88
+val, 4, val loss: 0.97, Young val acc: 52.85
+val, 4, val loss: 0.97, Old val acc: 78.91
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 57.70
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.721074
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_0_epoch_4.pt
+val, 4, val loss: 0.97, val acc: 67.12
+val, 4, val loss: 0.97, Young val acc: 51.36
+val, 4, val loss: 0.97, Old val acc: 82.88
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.08, train acc: 57.42
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.720661
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_0_epoch_4.pt
+val, 4, val loss: 0.95, val acc: 66.13
+val, 4, val loss: 0.95, Young val acc: 64.02
+val, 4, val loss: 0.95, Old val acc: 68.24
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.07, train acc: 58.40
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.726033
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_0_epoch_4.pt
+val, 4, val loss: 0.98, val acc: 67.37
+val, 4, val loss: 0.98, Young val acc: 54.59
+val, 4, val loss: 0.98, Old val acc: 80.15
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.13, train acc: 55.88
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.713912
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_0_epoch_4.pt
+val, 4, val loss: 1.02, val acc: 65.63
+val, 4, val loss: 1.02, Young val acc: 49.88
+val, 4, val loss: 1.02, Old val acc: 81.39
+########### Reluts ##########
+LIC score (LIC_D): 50.25%
+#############################
+python3 age_bert_leakage.py --seed 12 --num_epochs 5 --calc_ann_leak True --cap_model fc  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  fc
+
+device: cuda n_gpu: 1
+Generated using fc
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.04, train acc: 59.28
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.729477
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_12_epoch_4.pt
+val, 4, val loss: 0.92, val acc: 68.49
+val, 4, val loss: 0.92, Young val acc: 56.82
+val, 4, val loss: 0.92, Old val acc: 80.15
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.07, train acc: 56.97
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.715702
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_12_epoch_4.pt
+val, 4, val loss: 1.01, val acc: 66.63
+val, 4, val loss: 1.01, Young val acc: 52.61
+val, 4, val loss: 1.01, Old val acc: 80.65
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 59.26
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.721625
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_12_epoch_4.pt
+val, 4, val loss: 0.98, val acc: 66.87
+val, 4, val loss: 0.98, Young val acc: 55.83
+val, 4, val loss: 0.98, Old val acc: 77.92
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.07, train acc: 57.66
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.722039
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_12_epoch_4.pt
+val, 4, val loss: 1.00, val acc: 64.02
+val, 4, val loss: 1.00, Young val acc: 45.41
+val, 4, val loss: 1.00, Old val acc: 82.63
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 58.07
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.711708
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_12_epoch_4.pt
+val, 4, val loss: 0.93, val acc: 67.87
+val, 4, val loss: 0.93, Young val acc: 56.58
+val, 4, val loss: 0.93, Old val acc: 79.16
+########### Reluts ##########
+LIC score (LIC_D): 50.20%
+#############################
+python3 age_bert_leakage.py --seed 456 --num_epochs 5 --calc_ann_leak True --cap_model fc  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  fc
+
+device: cuda n_gpu: 1
+Generated using fc
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.02, train acc: 60.40
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.729890
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_456_epoch_4.pt
+val, 4, val loss: 0.90, val acc: 69.73
+val, 4, val loss: 0.90, Young val acc: 64.02
+val, 4, val loss: 0.90, Old val acc: 75.43
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 57.58
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.725069
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_456_epoch_4.pt
+val, 4, val loss: 0.97, val acc: 65.51
+val, 4, val loss: 0.97, Young val acc: 58.81
+val, 4, val loss: 0.97, Old val acc: 72.21
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 58.88
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.719972
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_456_epoch_4.pt
+val, 4, val loss: 1.01, val acc: 66.50
+val, 4, val loss: 1.01, Young val acc: 50.62
+val, 4, val loss: 1.01, Old val acc: 82.38
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 58.36
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.726997
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_456_epoch_4.pt
+val, 4, val loss: 0.92, val acc: 67.12
+val, 4, val loss: 0.92, Young val acc: 59.80
+val, 4, val loss: 0.92, Old val acc: 74.44
+len(self.model_vocab): 269
+len(self.model_vocab): 269
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.07, train acc: 57.67
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.716253
+Saving the model to the path saved_models/age_annotation_human_model_bert_fc_seed_456_epoch_4.pt
+val, 4, val loss: 1.01, val acc: 64.76
+val, 4, val loss: 1.01, Young val acc: 46.40
+val, 4, val loss: 1.01, Old val acc: 83.13
+########### Reluts ##########
+LIC score (LIC_D): 51.04%
+#############################
+python3 age_bert_leakage.py --seed 0 --num_epochs 5 --calc_ann_leak True --cap_model att2in  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  att2in
+
+device: cuda n_gpu: 1
+Generated using att2in
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.03, train acc: 61.18
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.740220
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_0_epoch_4.pt
+val, 4, val loss: 0.98, val acc: 65.76
+val, 4, val loss: 0.98, Young val acc: 52.11
+val, 4, val loss: 0.98, Old val acc: 79.40
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.07, train acc: 57.66
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.735399
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_0_epoch_4.pt
+val, 4, val loss: 1.01, val acc: 65.51
+val, 4, val loss: 1.01, Young val acc: 48.14
+val, 4, val loss: 1.01, Old val acc: 82.88
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.07, train acc: 57.64
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.730303
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_0_epoch_4.pt
+val, 4, val loss: 0.98, val acc: 66.25
+val, 4, val loss: 0.98, Young val acc: 58.06
+val, 4, val loss: 0.98, Old val acc: 74.44
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.07, train acc: 58.55
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.735537
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_0_epoch_4.pt
+val, 4, val loss: 0.97, val acc: 67.49
+val, 4, val loss: 0.97, Young val acc: 58.56
+val, 4, val loss: 0.97, Old val acc: 76.43
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.14, train acc: 56.07
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.721625
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_0_epoch_4.pt
+val, 4, val loss: 1.01, val acc: 65.76
+val, 4, val loss: 1.01, Young val acc: 53.85
+val, 4, val loss: 1.01, Old val acc: 77.67
+########### Reluts ##########
+LIC score (LIC_D): 50.18%
+#############################
+python3 age_bert_leakage.py --seed 12 --num_epochs 5 --calc_ann_leak True --cap_model att2in  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  att2in
+
+device: cuda n_gpu: 1
+Generated using att2in
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.04, train acc: 59.94
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.733333
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_12_epoch_4.pt
+val, 4, val loss: 0.94, val acc: 68.36
+val, 4, val loss: 0.94, Young val acc: 54.84
+val, 4, val loss: 0.94, Old val acc: 81.89
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.08, train acc: 56.18
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.726860
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_12_epoch_4.pt
+val, 4, val loss: 1.01, val acc: 64.27
+val, 4, val loss: 1.01, Young val acc: 52.11
+val, 4, val loss: 1.01, Old val acc: 76.43
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 59.37
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.726446
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_12_epoch_4.pt
+val, 4, val loss: 0.94, val acc: 68.11
+val, 4, val loss: 0.94, Young val acc: 62.03
+val, 4, val loss: 0.94, Old val acc: 74.19
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.07, train acc: 57.13
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.725482
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_12_epoch_4.pt
+val, 4, val loss: 1.01, val acc: 63.52
+val, 4, val loss: 1.01, Young val acc: 46.15
+val, 4, val loss: 1.01, Old val acc: 80.89
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.07, train acc: 57.88
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.714738
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_12_epoch_4.pt
+val, 4, val loss: 0.94, val acc: 67.25
+val, 4, val loss: 0.94, Young val acc: 53.85
+val, 4, val loss: 0.94, Old val acc: 80.65
+########### Reluts ##########
+LIC score (LIC_D): 49.82%
+#############################
+python3 age_bert_leakage.py --seed 456 --num_epochs 5 --calc_ann_leak True --cap_model att2in  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  att2in
+
+device: cuda n_gpu: 1
+Generated using att2in
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.02, train acc: 60.36
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.736226
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_456_epoch_4.pt
+val, 4, val loss: 0.88, val acc: 70.35
+val, 4, val loss: 0.88, Young val acc: 63.77
+val, 4, val loss: 0.88, Old val acc: 76.92
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 57.16
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.729890
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_456_epoch_4.pt
+val, 4, val loss: 0.94, val acc: 67.12
+val, 4, val loss: 0.94, Young val acc: 60.55
+val, 4, val loss: 0.94, Old val acc: 73.70
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 59.34
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.735399
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_456_epoch_4.pt
+val, 4, val loss: 1.01, val acc: 67.12
+val, 4, val loss: 1.01, Young val acc: 49.13
+val, 4, val loss: 1.01, Old val acc: 85.11
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 57.91
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.727824
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_456_epoch_4.pt
+val, 4, val loss: 0.92, val acc: 67.62
+val, 4, val loss: 0.92, Young val acc: 56.08
+val, 4, val loss: 0.92, Old val acc: 79.16
+len(self.model_vocab): 335
+len(self.model_vocab): 335
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 57.84
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.724518
+Saving the model to the path saved_models/age_annotation_human_model_bert_att2in_seed_456_epoch_4.pt
+val, 4, val loss: 1.03, val acc: 64.14
+val, 4, val loss: 1.03, Young val acc: 49.13
+val, 4, val loss: 1.03, Old val acc: 79.16
+########### Reluts ##########
+LIC score (LIC_D): 51.62%
+#############################
+python3 age_bert_leakage.py --seed 0 --num_epochs 5 --calc_ann_leak True --cap_model updn  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  updn
+
+device: cuda n_gpu: 1
+Generated using updn
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.03, train acc: 60.83
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.750275
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_0_epoch_4.pt
+val, 4, val loss: 0.95, val acc: 68.73
+val, 4, val loss: 0.95, Young val acc: 55.58
+val, 4, val loss: 0.95, Old val acc: 81.89
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.07, train acc: 57.74
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.742424
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_0_epoch_4.pt
+val, 4, val loss: 0.99, val acc: 68.36
+val, 4, val loss: 0.99, Young val acc: 49.38
+val, 4, val loss: 0.99, Old val acc: 87.34
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.07, train acc: 58.11
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.738843
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_0_epoch_4.pt
+val, 4, val loss: 0.97, val acc: 66.13
+val, 4, val loss: 0.97, Young val acc: 63.77
+val, 4, val loss: 0.97, Old val acc: 68.49
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.07, train acc: 58.21
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.736226
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_0_epoch_4.pt
+val, 4, val loss: 0.94, val acc: 67.62
+val, 4, val loss: 0.94, Young val acc: 59.80
+val, 4, val loss: 0.94, Old val acc: 75.43
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.13, train acc: 56.60
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.735950
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_0_epoch_4.pt
+val, 4, val loss: 0.99, val acc: 68.24
+val, 4, val loss: 0.99, Young val acc: 61.29
+val, 4, val loss: 0.99, Old val acc: 75.19
+########### Reluts ##########
+LIC score (LIC_D): 51.42%
+#############################
+python3 age_bert_leakage.py --seed 12 --num_epochs 5 --calc_ann_leak True --cap_model updn  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  updn
+
+device: cuda n_gpu: 1
+Generated using updn
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.04, train acc: 59.26
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.740771
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_12_epoch_4.pt
+val, 4, val loss: 0.93, val acc: 69.98
+val, 4, val loss: 0.93, Young val acc: 58.81
+val, 4, val loss: 0.93, Old val acc: 81.14
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.07, train acc: 56.67
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.734160
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_12_epoch_4.pt
+val, 4, val loss: 0.97, val acc: 67.74
+val, 4, val loss: 0.97, Young val acc: 53.60
+val, 4, val loss: 0.97, Old val acc: 81.89
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.05, train acc: 59.72
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.730165
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_12_epoch_4.pt
+val, 4, val loss: 0.93, val acc: 68.98
+val, 4, val loss: 0.93, Young val acc: 64.76
+val, 4, val loss: 0.93, Old val acc: 73.20
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 58.00
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.735537
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_12_epoch_4.pt
+val, 4, val loss: 1.01, val acc: 65.01
+val, 4, val loss: 1.01, Young val acc: 56.33
+val, 4, val loss: 1.01, Old val acc: 73.70
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 58.24
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.728512
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_12_epoch_4.pt
+val, 4, val loss: 0.93, val acc: 69.73
+val, 4, val loss: 0.93, Young val acc: 56.08
+val, 4, val loss: 0.93, Old val acc: 83.37
+########### Reluts ##########
+LIC score (LIC_D): 51.28%
+#############################
+python3 age_bert_leakage.py --seed 456 --num_epochs 5 --calc_ann_leak True --cap_model updn  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  updn
+
+device: cuda n_gpu: 1
+Generated using updn
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.02, train acc: 60.59
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.744490
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_456_epoch_4.pt
+val, 4, val loss: 0.87, val acc: 71.46
+val, 4, val loss: 0.87, Young val acc: 59.55
+val, 4, val loss: 0.87, Old val acc: 83.37
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 58.14
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.739945
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_456_epoch_4.pt
+val, 4, val loss: 0.94, val acc: 67.62
+val, 4, val loss: 0.94, Young val acc: 62.78
+val, 4, val loss: 0.94, Old val acc: 72.46
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.05, train acc: 60.39
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.730854
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_456_epoch_4.pt
+val, 4, val loss: 1.00, val acc: 67.00
+val, 4, val loss: 1.00, Young val acc: 50.12
+val, 4, val loss: 1.00, Old val acc: 83.87
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 58.62
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.736088
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_456_epoch_4.pt
+val, 4, val loss: 0.92, val acc: 67.87
+val, 4, val loss: 0.92, Young val acc: 58.81
+val, 4, val loss: 0.92, Old val acc: 76.92
+len(self.model_vocab): 417
+len(self.model_vocab): 417
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 59.17
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.737328
+Saving the model to the path saved_models/age_annotation_human_model_bert_updn_seed_456_epoch_4.pt
+val, 4, val loss: 1.02, val acc: 67.00
+val, 4, val loss: 1.02, Young val acc: 50.12
+val, 4, val loss: 1.02, Old val acc: 83.87
+########### Reluts ##########
+LIC score (LIC_D): 52.76%
+#############################
+python3 age_bert_leakage.py --seed 0 --num_epochs 5 --calc_ann_leak True --cap_model transformer  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  transformer
+
+device: cuda n_gpu: 1
+Generated using transformer
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.02, train acc: 61.23
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.764876
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_0_epoch_4.pt
+val, 4, val loss: 0.92, val acc: 69.35
+val, 4, val loss: 0.92, Young val acc: 59.31
+val, 4, val loss: 0.92, Old val acc: 79.40
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 58.57
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.757025
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_0_epoch_4.pt
+val, 4, val loss: 0.99, val acc: 67.99
+val, 4, val loss: 0.99, Young val acc: 55.33
+val, 4, val loss: 0.99, Old val acc: 80.65
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.08, train acc: 57.30
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.752204
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_0_epoch_4.pt
+val, 4, val loss: 0.94, val acc: 67.25
+val, 4, val loss: 0.94, Young val acc: 60.05
+val, 4, val loss: 0.94, Old val acc: 74.44
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 60.10
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.760055
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_0_epoch_4.pt
+val, 4, val loss: 0.97, val acc: 67.12
+val, 4, val loss: 0.97, Young val acc: 59.80
+val, 4, val loss: 0.97, Old val acc: 74.44
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.12, train acc: 56.69
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.755096
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_0_epoch_4.pt
+val, 4, val loss: 0.98, val acc: 68.24
+val, 4, val loss: 0.98, Young val acc: 61.29
+val, 4, val loss: 0.98, Old val acc: 75.19
+########### Reluts ##########
+LIC score (LIC_D): 52.35%
+#############################
+python3 age_bert_leakage.py --seed 12 --num_epochs 5 --calc_ann_leak True --cap_model transformer  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  transformer
+
+device: cuda n_gpu: 1
+Generated using transformer
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.03, train acc: 60.50
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.763361
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_12_epoch_4.pt
+val, 4, val loss: 0.96, val acc: 68.73
+val, 4, val loss: 0.96, Young val acc: 57.82
+val, 4, val loss: 0.96, Old val acc: 79.65
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.05, train acc: 57.49
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.745179
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_12_epoch_4.pt
+val, 4, val loss: 0.96, val acc: 69.11
+val, 4, val loss: 0.96, Young val acc: 54.59
+val, 4, val loss: 0.96, Old val acc: 83.62
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.05, train acc: 59.74
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.752617
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_12_epoch_4.pt
+val, 4, val loss: 0.97, val acc: 67.62
+val, 4, val loss: 0.97, Young val acc: 65.76
+val, 4, val loss: 0.97, Old val acc: 69.48
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.04, train acc: 59.67
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.757713
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_12_epoch_4.pt
+val, 4, val loss: 0.99, val acc: 66.50
+val, 4, val loss: 0.99, Young val acc: 54.84
+val, 4, val loss: 0.99, Old val acc: 78.16
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 58.37
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.739118
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_12_epoch_4.pt
+val, 4, val loss: 0.90, val acc: 71.34
+val, 4, val loss: 0.90, Young val acc: 61.29
+val, 4, val loss: 0.90, Old val acc: 81.39
+########### Reluts ##########
+LIC score (LIC_D): 52.63%
+#############################
+python3 age_bert_leakage.py --seed 456 --num_epochs 5 --calc_ann_leak True --cap_model transformer  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  transformer
+
+device: cuda n_gpu: 1
+Generated using transformer
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.02, train acc: 60.65
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.759229
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_456_epoch_4.pt
+val, 4, val loss: 0.90, val acc: 71.96
+val, 4, val loss: 0.90, Young val acc: 66.25
+val, 4, val loss: 0.90, Old val acc: 77.67
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 57.77
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.748760
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_456_epoch_4.pt
+val, 4, val loss: 0.96, val acc: 68.24
+val, 4, val loss: 0.96, Young val acc: 62.28
+val, 4, val loss: 0.96, Old val acc: 74.19
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.04, train acc: 61.47
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.751791
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_456_epoch_4.pt
+val, 4, val loss: 1.02, val acc: 65.26
+val, 4, val loss: 1.02, Young val acc: 54.84
+val, 4, val loss: 1.02, Old val acc: 75.68
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.04, train acc: 59.02
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.751791
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_456_epoch_4.pt
+val, 4, val loss: 0.92, val acc: 66.63
+val, 4, val loss: 0.92, Young val acc: 58.06
+val, 4, val loss: 0.92, Old val acc: 75.19
+len(self.model_vocab): 910
+len(self.model_vocab): 910
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 58.15
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.761570
+Saving the model to the path saved_models/age_annotation_human_model_bert_transformer_seed_456_epoch_4.pt
+val, 4, val loss: 0.98, val acc: 67.49
+val, 4, val loss: 0.98, Young val acc: 60.79
+val, 4, val loss: 0.98, Old val acc: 74.19
+########### Reluts ##########
+LIC score (LIC_D): 52.68%
+#############################
+
+python3 age_bert_leakage.py --seed 0 --num_epochs 5 --calc_ann_leak True --cap_model oscar  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  oscar
+
+device: cuda n_gpu: 1
+Generated using oscar
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.02, train acc: 61.67
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.741185
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_0_epoch_4.pt
+val, 4, val loss: 0.99, val acc: 67.25
+val, 4, val loss: 0.99, Young val acc: 49.13
+val, 4, val loss: 0.99, Old val acc: 85.36
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 58.15
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.739394
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_0_epoch_4.pt
+val, 4, val loss: 0.98, val acc: 67.12
+val, 4, val loss: 0.98, Young val acc: 52.36
+val, 4, val loss: 0.98, Old val acc: 81.89
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.07, train acc: 56.97
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.732645
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_0_epoch_4.pt
+val, 4, val loss: 0.95, val acc: 66.63
+val, 4, val loss: 0.95, Young val acc: 59.55
+val, 4, val loss: 0.95, Old val acc: 73.70
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 59.24
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.744904
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_0_epoch_4.pt
+val, 4, val loss: 0.96, val acc: 67.25
+val, 4, val loss: 0.96, Young val acc: 52.36
+val, 4, val loss: 0.96, Old val acc: 82.13
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.12, train acc: 56.53
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.723829
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_0_epoch_4.pt
+val, 4, val loss: 0.99, val acc: 65.88
+val, 4, val loss: 0.99, Young val acc: 61.04
+val, 4, val loss: 0.99, Old val acc: 70.72
+########### Reluts ##########
+LIC score (LIC_D): 51.12%
+#############################
+python3 age_bert_leakage.py --seed 12 --num_epochs 5 --calc_ann_leak True --cap_model oscar  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  oscar
+
+device: cuda n_gpu: 1
+Generated using oscar
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.03, train acc: 60.87
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.742424
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_12_epoch_4.pt
+val, 4, val loss: 0.94, val acc: 68.61
+val, 4, val loss: 0.94, Young val acc: 60.30
+val, 4, val loss: 0.94, Old val acc: 76.92
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.05, train acc: 57.66
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.724518
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_12_epoch_4.pt
+val, 4, val loss: 0.97, val acc: 66.38
+val, 4, val loss: 0.97, Young val acc: 55.58
+val, 4, val loss: 0.97, Old val acc: 77.17
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.04, train acc: 60.39
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.736915
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_12_epoch_4.pt
+val, 4, val loss: 0.96, val acc: 66.13
+val, 4, val loss: 0.96, Young val acc: 58.81
+val, 4, val loss: 0.96, Old val acc: 73.45
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.04, train acc: 58.87
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.729890
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_12_epoch_4.pt
+val, 4, val loss: 0.98, val acc: 66.50
+val, 4, val loss: 0.98, Young val acc: 50.12
+val, 4, val loss: 0.98, Old val acc: 82.88
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 58.06
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.733747
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_12_epoch_4.pt
+val, 4, val loss: 0.95, val acc: 67.87
+val, 4, val loss: 0.95, Young val acc: 54.34
+val, 4, val loss: 0.95, Old val acc: 81.39
+########### Reluts ##########
+LIC score (LIC_D): 50.94%
+#############################
+python3 age_bert_leakage.py --seed 456 --num_epochs 5 --calc_ann_leak True --cap_model oscar  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  oscar
+
+device: cuda n_gpu: 1
+Generated using oscar
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.00, train acc: 61.28
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.750551
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_456_epoch_4.pt
+val, 4, val loss: 0.90, val acc: 70.60
+val, 4, val loss: 0.90, Young val acc: 64.27
+val, 4, val loss: 0.90, Old val acc: 76.92
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.05, train acc: 57.63
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.739669
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_456_epoch_4.pt
+val, 4, val loss: 0.93, val acc: 68.49
+val, 4, val loss: 0.93, Young val acc: 61.04
+val, 4, val loss: 0.93, Old val acc: 75.93
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.03, train acc: 61.24
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.733333
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_456_epoch_4.pt
+val, 4, val loss: 0.98, val acc: 67.99
+val, 4, val loss: 0.98, Young val acc: 56.58
+val, 4, val loss: 0.98, Old val acc: 79.40
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.05, train acc: 59.21
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.737603
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_456_epoch_4.pt
+val, 4, val loss: 0.94, val acc: 67.62
+val, 4, val loss: 0.94, Young val acc: 51.12
+val, 4, val loss: 0.94, Old val acc: 84.12
+len(self.model_vocab): 491
+len(self.model_vocab): 491
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 57.52
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.734298
+Saving the model to the path saved_models/age_annotation_human_model_bert_oscar_seed_456_epoch_4.pt
+val, 4, val loss: 0.95, val acc: 66.63
+val, 4, val loss: 0.95, Young val acc: 60.05
+val, 4, val loss: 0.95, Old val acc: 73.20
+########### Reluts ##########
+LIC score (LIC_D): 52.39%
+#############################
+python3 age_bert_leakage.py --seed 0 --num_epochs 5 --calc_ann_leak True --cap_model nic_plus  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  nic_plus
+
+device: cuda n_gpu: 1
+Generated using nic_plus
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.03, train acc: 61.28
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.755096
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_0_epoch_4.pt
+val, 4, val loss: 0.97, val acc: 68.49
+val, 4, val loss: 0.97, Young val acc: 53.35
+val, 4, val loss: 0.97, Old val acc: 83.62
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 57.84
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.744490
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_0_epoch_4.pt
+val, 4, val loss: 1.00, val acc: 65.51
+val, 4, val loss: 1.00, Young val acc: 53.60
+val, 4, val loss: 1.00, Old val acc: 77.42
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.07, train acc: 57.41
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.748209
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_0_epoch_4.pt
+val, 4, val loss: 0.97, val acc: 66.75
+val, 4, val loss: 0.97, Young val acc: 58.56
+val, 4, val loss: 0.97, Old val acc: 74.94
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.07, train acc: 58.40
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.755785
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_0_epoch_4.pt
+val, 4, val loss: 0.98, val acc: 64.89
+val, 4, val loss: 0.98, Young val acc: 55.33
+val, 4, val loss: 0.98, Old val acc: 74.44
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.12, train acc: 55.85
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.728512
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_0_epoch_4.pt
+val, 4, val loss: 0.99, val acc: 66.25
+val, 4, val loss: 0.99, Young val acc: 64.52
+val, 4, val loss: 0.99, Old val acc: 67.99
+########### Reluts ##########
+LIC score (LIC_D): 50.59%
+#############################
+python3 age_bert_leakage.py --seed 12 --num_epochs 5 --calc_ann_leak True --cap_model nic_plus  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  nic_plus
+
+device: cuda n_gpu: 1
+Generated using nic_plus
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.03, train acc: 60.19
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.748209
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_12_epoch_4.pt
+val, 4, val loss: 0.94, val acc: 69.35
+val, 4, val loss: 0.94, Young val acc: 62.78
+val, 4, val loss: 0.94, Old val acc: 75.93
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 56.90
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.738430
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_12_epoch_4.pt
+val, 4, val loss: 0.99, val acc: 64.39
+val, 4, val loss: 0.99, Young val acc: 56.33
+val, 4, val loss: 0.99, Old val acc: 72.46
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.04, train acc: 60.56
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.746694
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_12_epoch_4.pt
+val, 4, val loss: 0.95, val acc: 66.87
+val, 4, val loss: 0.95, Young val acc: 57.82
+val, 4, val loss: 0.95, Old val acc: 75.93
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 58.35
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.741736
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_12_epoch_4.pt
+val, 4, val loss: 0.98, val acc: 67.00
+val, 4, val loss: 0.98, Young val acc: 53.85
+val, 4, val loss: 0.98, Old val acc: 80.15
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.07, train acc: 57.34
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.736777
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_12_epoch_4.pt
+val, 4, val loss: 0.93, val acc: 68.61
+val, 4, val loss: 0.93, Young val acc: 60.79
+val, 4, val loss: 0.93, Old val acc: 76.43
+########### Reluts ##########
+LIC score (LIC_D): 51.00%
+#############################
+python3 age_bert_leakage.py --seed 456 --num_epochs 5 --calc_ann_leak True --cap_model nic_plus  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  nic_plus
+
+device: cuda n_gpu: 1
+Generated using nic_plus
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.02, train acc: 61.13
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.750551
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_456_epoch_4.pt
+val, 4, val loss: 0.88, val acc: 70.47
+val, 4, val loss: 0.88, Young val acc: 59.31
+val, 4, val loss: 0.88, Old val acc: 81.64
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 57.34
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.752617
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_456_epoch_4.pt
+val, 4, val loss: 0.96, val acc: 67.99
+val, 4, val loss: 0.96, Young val acc: 63.77
+val, 4, val loss: 0.96, Old val acc: 72.21
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.04, train acc: 60.33
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.737603
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_456_epoch_4.pt
+val, 4, val loss: 0.98, val acc: 67.00
+val, 4, val loss: 0.98, Young val acc: 51.61
+val, 4, val loss: 0.98, Old val acc: 82.38
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 57.82
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.745868
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_456_epoch_4.pt
+val, 4, val loss: 0.95, val acc: 69.11
+val, 4, val loss: 0.95, Young val acc: 50.62
+val, 4, val loss: 0.95, Old val acc: 87.59
+len(self.model_vocab): 511
+len(self.model_vocab): 511
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 58.18
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.743113
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_plus_seed_456_epoch_4.pt
+val, 4, val loss: 0.97, val acc: 67.37
+val, 4, val loss: 0.97, Young val acc: 54.59
+val, 4, val loss: 0.97, Old val acc: 80.15
+########### Reluts ##########
+LIC score (LIC_D): 53.06%
+#############################
+python3 age_bert_leakage.py --seed 0 --num_epochs 5 --calc_ann_leak True --cap_model nic_equalizer  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 0
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  nic_equalizer
+
+device: cuda n_gpu: 1
+Generated using nic_equalizer
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.03, train acc: 61.21
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.754545
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_0_epoch_4.pt
+val, 4, val loss: 0.96, val acc: 67.87
+val, 4, val loss: 0.96, Young val acc: 49.88
+val, 4, val loss: 0.96, Old val acc: 85.86
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 58.07
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.747245
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_0_epoch_4.pt
+val, 4, val loss: 0.97, val acc: 65.63
+val, 4, val loss: 0.97, Young val acc: 56.08
+val, 4, val loss: 0.97, Old val acc: 75.19
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.07, train acc: 58.03
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.752893
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_0_epoch_4.pt
+val, 4, val loss: 0.97, val acc: 67.49
+val, 4, val loss: 0.97, Young val acc: 66.75
+val, 4, val loss: 0.97, Old val acc: 68.24
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 59.10
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.751102
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_0_epoch_4.pt
+val, 4, val loss: 0.98, val acc: 65.76
+val, 4, val loss: 0.98, Young val acc: 62.78
+val, 4, val loss: 0.98, Old val acc: 68.73
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.12, train acc: 55.56
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_0_epoch_0.pt
+Finish training
+4: train acc: 0.730303
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_0_epoch_4.pt
+val, 4, val loss: 0.97, val acc: 68.36
+val, 4, val loss: 0.97, Young val acc: 63.03
+val, 4, val loss: 0.97, Old val acc: 73.70
+########### Reluts ##########
+LIC score (LIC_D): 50.90%
+#############################
+python3 age_bert_leakage.py --seed 12 --num_epochs 5 --calc_ann_leak True --cap_model nic_equalizer  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 12
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  nic_equalizer
+
+device: cuda n_gpu: 1
+Generated using nic_equalizer
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.03, train acc: 60.96
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.749174
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_12_epoch_4.pt
+val, 4, val loss: 0.93, val acc: 68.36
+val, 4, val loss: 0.93, Young val acc: 63.03
+val, 4, val loss: 0.93, Old val acc: 73.70
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 56.75
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.736501
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_12_epoch_4.pt
+val, 4, val loss: 0.98, val acc: 65.88
+val, 4, val loss: 0.98, Young val acc: 59.31
+val, 4, val loss: 0.98, Old val acc: 72.46
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.05, train acc: 60.01
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.747934
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_12_epoch_4.pt
+val, 4, val loss: 0.96, val acc: 67.12
+val, 4, val loss: 0.96, Young val acc: 57.57
+val, 4, val loss: 0.96, Old val acc: 76.67
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 58.68
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.750413
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_12_epoch_4.pt
+val, 4, val loss: 0.98, val acc: 66.13
+val, 4, val loss: 0.98, Young val acc: 55.33
+val, 4, val loss: 0.98, Old val acc: 76.92
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 57.81
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_12_epoch_0.pt
+Finish training
+4: train acc: 0.737190
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_12_epoch_4.pt
+val, 4, val loss: 0.91, val acc: 69.85
+val, 4, val loss: 0.91, Young val acc: 60.55
+val, 4, val loss: 0.91, Old val acc: 79.16
+########### Reluts ##########
+LIC score (LIC_D): 51.31%
+#############################
+python3 age_bert_leakage.py --seed 456 --num_epochs 5 --calc_ann_leak True --cap_model nic_equalizer  --learning_rate 1e-5 --save_model true --every 5
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+Align vocab: True
+Vocab of  nic_equalizer
+
+device: cuda n_gpu: 1
+Generated using nic_equalizer
+--- calc ANN LIC score ---
+-- Task is Captioning --
+#train : #test =  7260 806
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.02, train acc: 61.61
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.749174
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_456_epoch_4.pt
+val, 4, val loss: 0.88, val acc: 70.84
+val, 4, val loss: 0.88, Young val acc: 62.78
+val, 4, val loss: 0.88, Old val acc: 78.91
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 57.48
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.748760
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_456_epoch_4.pt
+val, 4, val loss: 0.95, val acc: 68.49
+val, 4, val loss: 0.95, Young val acc: 65.76
+val, 4, val loss: 0.95, Old val acc: 71.22
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.04, train acc: 60.04
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.738017
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_456_epoch_4.pt
+val, 4, val loss: 1.00, val acc: 65.01
+val, 4, val loss: 1.00, Young val acc: 49.88
+val, 4, val loss: 1.00, Old val acc: 80.15
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.05, train acc: 58.11
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.746006
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_456_epoch_4.pt
+val, 4, val loss: 0.94, val acc: 67.37
+val, 4, val loss: 0.94, Young val acc: 56.82
+val, 4, val loss: 0.94, Old val acc: 77.92
+len(self.model_vocab): 504
+len(self.model_vocab): 504
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 58.37
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_456_epoch_0.pt
+
