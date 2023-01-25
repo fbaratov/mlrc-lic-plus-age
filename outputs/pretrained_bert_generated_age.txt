@@ -1,0 +1,572 @@
+
+Running the model
+
+##########################################
+	captions: generated
+	model: bert_pretrained
+	data: age
+	epochs: 20
+	learning_rate: 5e-5
+	check:false
+	save_model:true
+	save_every:5
+	
+##########################################
+age
+python3 age_bert_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model nic  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+
+---Start---
+Seed: 0
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+
+device: cuda n_gpu: 1
+Generated using nic
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.11, train acc: 52.58
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_nic_seed_0_epoch_0.pt
+train, 5, train loss: 1.07, train acc: 57.47
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_nic_seed_0_epoch_5.pt
+python3 age_bert_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model nic  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+python3 age_bert_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model nic  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+python3 age_bert_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model sat  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+
+---Start---
+Seed: 0
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: sat
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+
+device: cuda n_gpu: 1
+Generated using sat
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+python3 age_bert_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model sat  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+
+---Start---
+Seed: 12
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: sat
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+
+device: cuda n_gpu: 1
+Generated using sat
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+python3 age_bert_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model sat  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+
+---Start---
+Seed: 456
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: sat
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+
+device: cuda n_gpu: 1
+Generated using sat
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+python3 age_bert_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model fc  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+
+---Start---
+Seed: 0
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: fc
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+
+device: cuda n_gpu: 1
+Generated using fc
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+python3 age_bert_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model fc  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+
+---Start---
+Seed: 12
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: fc
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+
+device: cuda n_gpu: 1
+Generated using fc
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+python3 age_bert_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model fc  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+
+---Start---
+Seed: 456
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: fc
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+
+device: cuda n_gpu: 1
+Generated using fc
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+python3 age_bert_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model att2in  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+
+---Start---
+Seed: 0
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: att2in
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+
+device: cuda n_gpu: 1
+Generated using att2in
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+python3 age_bert_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model att2in  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+
+---Start---
+Seed: 12
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: att2in
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+
+device: cuda n_gpu: 1
+Generated using att2in
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+python3 age_bert_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model att2in  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+
+---Start---
+Seed: 456
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: att2in
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+
+device: cuda n_gpu: 1
+Generated using att2in
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+python3 age_bert_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model updn  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+
+---Start---
+Seed: 0
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: updn
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+
+device: cuda n_gpu: 1
+Generated using updn
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+python3 age_bert_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model updn  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+
+---Start---
+Seed: 12
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: updn
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+
+device: cuda n_gpu: 1
+Generated using updn
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+python3 age_bert_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model updn  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+
+---Start---
+Seed: 456
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: updn
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+
+device: cuda n_gpu: 1
+Generated using updn
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+python3 age_bert_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model transformer  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+
+---Start---
+Seed: 0
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: transformer
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+
+device: cuda n_gpu: 1
+Generated using transformer
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+python3 age_bert_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model transformer  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+
+---Start---
+Seed: 12
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: transformer
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+
+device: cuda n_gpu: 1
+Generated using transformer
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+python3 age_bert_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model transformer  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+
+---Start---
+Seed: 456
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: transformer
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+
+device: cuda n_gpu: 1
+Generated using transformer
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+python3 age_bert_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model oscar  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+
+---Start---
+Seed: 0
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: oscar
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+
+device: cuda n_gpu: 1
+Generated using oscar
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+python3 age_bert_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model oscar  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+
+---Start---
+Seed: 12
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: oscar
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+
+device: cuda n_gpu: 1
+Generated using oscar
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+python3 age_bert_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model oscar  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+
+---Start---
+Seed: 456
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: oscar
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+
+device: cuda n_gpu: 1
+Generated using oscar
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+python3 age_bert_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+
+---Start---
+Seed: 0
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_plus
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+
+device: cuda n_gpu: 1
+Generated using nic_plus
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+python3 age_bert_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+
+---Start---
+Seed: 12
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_plus
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+
+device: cuda n_gpu: 1
+Generated using nic_plus
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+python3 age_bert_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+
+---Start---
+Seed: 456
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_plus
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+
+device: cuda n_gpu: 1
+Generated using nic_plus
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+python3 age_bert_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+
+---Start---
+Seed: 0
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_equalizer
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+
+device: cuda n_gpu: 1
+Generated using nic_equalizer
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+python3 age_bert_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+
+---Start---
+Seed: 12
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_equalizer
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+
+device: cuda n_gpu: 1
+Generated using nic_equalizer
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+python3 age_bert_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5 --freeze_bert true --save_model true --every 5
+
+---Start---
+Seed: 456
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_equalizer
+Protected attribute: Age
+Save Model :  True
+Saving Every :  5
+
+device: cuda n_gpu: 1
+Generated using nic_equalizer
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
