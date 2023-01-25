@@ -719,7 +719,7 @@ Num of Trainable Parameters: 109681666
 train, 0, train loss: 0.94, train acc: 65.04
 Saving the model to the path saved_models/age_annotation_generated_model_bert_oscar_seed_456_epoch_0.pt
 Saving the model to the path saved_models/age_annotation_generated_model_bert_oscar_seed_456_epoch_3.pt
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      train, 0, train loss: 1.06, train acc: 59.31
+��������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������train, 0, train loss: 1.06, train acc: 59.31
 Saving the model to the path saved_models/age_annotation_generated_model_bert_nic_plus_seed_0_epoch_0.pt
 Saving the model to the path saved_models/age_annotation_generated_model_bert_nic_plus_seed_0_epoch_3.pt
 Finish training
@@ -833,6 +833,7 @@ val, 4, val loss: 1.02, Old val acc: 70.47
 ########### Reluts ##########
 LIC score (LIC_M): 45.61%
 #############################
+
 python3 age_bert_leakage.py --seed 12 --num_epochs 5 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 1e-5 --save_model true --every 3
 
 ---Start---
@@ -855,3 +856,49 @@ Generated using nic_equalizer
 #train : #test =  7260 806
 --- Random guess --
 Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.07, train acc: 57.19
+Saving the model to the path saved_models/age_annotation_generated_model_bert_nic_equalizer_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_generated_model_bert_nic_equalizer_seed_12_epoch_3.pt
+Finish training
+4: train acc: 0.654132
+Saving the model to the path saved_models/age_annotation_generated_model_bert_nic_equalizer_seed_12_epoch_4.pt
+val, 4, val loss: 1.04, val acc: 63.03
+val, 4, val loss: 1.04, Young val acc: 56.08
+val, 4, val loss: 1.04, Old val acc: 69.98
+########### Reluts ##########
+LIC score (LIC_M): 43.28%
+#############################
+python3 age_bert_leakage.py --seed 456 --num_epochs 5 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 1e-5 --save_model true --every 3
+
+---Start---
+Seed: 456
+Epoch: 5
+Freeze BERT: False
+Learning rate: 1e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_equalizer
+Protected attribute: Age
+Save Model :  True
+Saving Every :  3
+
+device: cuda n_gpu: 1
+Generated using nic_equalizer
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+--- Random guess --
+Num of Trainable Parameters: 109681666
+train, 0, train loss: 1.06, train acc: 58.44
+Saving the model to the path saved_models/age_annotation_generated_model_bert_nic_equalizer_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_generated_model_bert_nic_equalizer_seed_456_epoch_3.pt
+Finish training
+4: train acc: 0.654270
+Saving the model to the path saved_models/age_annotation_generated_model_bert_nic_equalizer_seed_456_epoch_4.pt
+val, 4, val loss: 1.06, val acc: 60.17
+val, 4, val loss: 1.06, Young val acc: 52.11
+val, 4, val loss: 1.06, Old val acc: 68.24
+########### Reluts ##########
+LIC score (LIC_M): 40.65%
+#############################
