@@ -23,6 +23,31 @@ For more information about using the script please refer to the section [Running
 
 # Running Models
 
+
+‼️ Firstly the environment dependencies needs to be installed. 
+
+We only train bert and pretrained bert models in LISA cluster because their computational overhead is not as significant as LSTM.
+
+### Local installation
+
+First of all, make sure you are running python 3.7.
+Installing python 3.7 is out of scope for this readme, so it is assumed that you already installed it and it is working properly.
+
+Depending on which model you want to use:
+
+For pre_trained bert and fine tuned bert.
+```
+python3 -m pip install -r bert_requirements.txt
+```
+
+For LSTM.
+```
+python3 -m pip install -r lstm_requirements.txt
+```
+
+Now, you have the environment set up. And ready to run the bash script.
+
+
 We adapted a bash script to run the models with one command. 
 
 ```
@@ -35,11 +60,35 @@ For more information about the bashscript please refer to the <a href="https://g
 file.
 
 
-‼️ When saving the output of this bash script use this template: outputs/model_captions_data.txt
+‼️ When saving the output of this bash script use this template: 
+
+```
+outputs/model_captions_data.txt
+```
 
 ‼️ This bash script needs to be executed from ~/fact-group21, otherwise it will throw file not found error.
 
+### LISA Installation 
 
+In LISA, run the bert_env_install.job using
+
+```
+sbatch bert_env_install.job
+```
+After running the job, you can run the models using
+
+```
+sbatch bert_gender_generated.job
+sbatch bert_gender_human.job
+```
+
+The template for finding the .job files is.
+
+```
+model_data_captions.job
+```
+
+After job is finished, move the .txt file into /outputs file and follow [Parsing Results](#parsing-results).
 # Parsing Results
 
 We have developed a script to parse .txt file from the run, into python class.
@@ -115,9 +164,8 @@ LIC metric measures how much biased a set of model generated captions are with r
 
 ## Setup
 1. Clone the repository.
-2. Download the [data](https://drive.google.com/drive/folders/1PI03BqcnhdXZi2QY9PUHzWn4cxgdonT-?usp=sharing) (folder name: bias_data) and place in the current directory.
-  The folder contains human/generated captions and corresponding gender/racial annotations from the paper [Understanding and Evaluating Racial Biases in Image Captioning](https://github.com/princetonvisualai/imagecaptioning-bias).
-3. Install dependancies:
+  /bias_data  folder contains human/generated captions and corresponding gender/racial annotations from the paper [Understanding and Evaluating Racial Biases in Image Captioning](https://github.com/princetonvisualai/imagecaptioning-bias).
+2. Install dependancies:
   ### For LSTM classifier
     - Python 3.7
     - numpy 1.21.2 
@@ -126,6 +174,7 @@ LIC metric measures how much biased a set of model generated captions are with r
     - spacy 3.4.0 
     - sklearn 1.0.2 
     - nltk 3.6.3
+    - pandas
 
   ### For BERT classifier
     - Python 3.7
@@ -135,46 +184,13 @@ LIC metric measures how much biased a set of model generated captions are with r
     - spacy 2.3
     - sklearn 1.0.2 
     - nltk 3.6.3
+    - pandas
     
 ## Compute LIC  
 We evaluate various captioning models (i.e. [NIC](https://arxiv.org/abs/1411.4555), [SAT](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning), [FC](https://github.com/ruotianluo/self-critical.pytorch), [Att2in](https://github.com/ruotianluo/self-critical.pytorch), [UpDn](https://github.com/ruotianluo/self-critical.pytorch/blob/master/MODEL_ZOO.md), [Transformer](https://github.com/ruotianluo/self-critical.pytorch/blob/master/MODEL_ZOO.md), [OSCAR](https://github.com/microsoft/Oscar), [NIC+](https://github.com/kayburns/women-snowboard), and [NIC+Equalizer](https://github.com/kayburns/women-snowboard)). In the following commands, you can select a model in `$model_name` from them (i.e. `nic`, `sat`, `fc`, `att2in`, `updn`, `transformer`, `oscar`, `nic_equalizer`, or `nic_plus`).
 
 
-In the paper, LSTM or BERT is used as the classifier. Please run the following commands according to the classifier you prefer to use.
-
-</br>
-
-- To train the **LSTM** classifier on **human captions** and compute LIC in terms of **gender** bias run:
-    
-  `python3 lstm_leakage.py --seed $int --cap_model $model_name --calc_ann_leak True`
-    
-  Where `$int` is the arbitrary integer for random seed and `$model_name` is the choice of a captioning model to be compared.
-
-</br>
-
-- To train the **LSTM** classifier on **generated captions** and compute LIC in terms of **gender** bias run:
-    
-  `python3 lstm_leakage.py --seed $int --cap_model $model_name --calc_model_leak True`
-    
-  Where `$model_name` is the choice of a captioning model. 
-  
-</br>
-
-- To train the **BERT** classifier on **human captions** and compute LIC in terms of **gender** bias run:
-    
-  `python3 bert_leakage.py --seed $int --cap_model $model_name --calc_ann_leak True`
-    
-</br>
-
-- To train the **BERT** classifier on **generated captions** and compute LIC in terms of **gender** bias run:
-    
-  `python3 bert_leakage.py --seed $int --cap_model $model_name --calc_model_leak True`
-
-<br/>
-
-**Note**: If you compute LIC in terms of **racial** bias, please run `race_lstm_leakage.py` or `race_bert_leakage.py`.
-  
-**Note**: To use pre-trained BERT without fine-tuning, you can add `--freeze_bert True`, `--num_epochs 20`, and `--learning_rate 5e-5`. 
+In the paper, LSTM or BERT is used as the classifier. Please refer to [Running models](#running-models)
   
 
 ## Results
