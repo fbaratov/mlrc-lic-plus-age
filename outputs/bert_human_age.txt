@@ -2251,6 +2251,7 @@ val, 4, val loss: 0.91, Old val acc: 79.16
 ########### Reluts ##########
 LIC score (LIC_D): 51.31%
 #############################
+
 python3 age_bert_leakage.py --seed 456 --num_epochs 5 --calc_ann_leak True --cap_model nic_equalizer  --learning_rate 1e-5 --save_model true --every 5
 
 ---Start---
@@ -2328,4 +2329,13 @@ len(self.model_vocab): 504
 Num of Trainable Parameters: 109681666
 train, 0, train loss: 1.06, train acc: 58.37
 Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_456_epoch_0.pt
+Finish training
+4: train acc: 0.751240
+Saving the model to the path saved_models/age_annotation_human_model_bert_nic_equalizer_seed_456_epoch_4.pt
+val, 4, val loss: 0.97, val acc: 66.87
+val, 4, val loss: 0.97, Young val acc: 59.55
+val, 4, val loss: 0.97, Old val acc: 74.19
+########### Reluts ##########
+LIC score (LIC_D): 52.23%
+#############################
 
