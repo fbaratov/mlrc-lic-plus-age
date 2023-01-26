@@ -1683,3 +1683,365 @@ val, 19, val loss: 1.04, Feale val acc: 74.02
 ########### Reluts ##########
 LIC score (LIC_D): 42.87%
 #############################
+
+python3 age_bert_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model oscar  --learning_rate 5e-5 --freeze_bert true --save_model true --every 10
+
+---Start---
+Seed: 0
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: oscar
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+
+device: cuda n_gpu: 1
+Generated using oscar
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.06, train acc: 58.20
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_oscar_seed_0_epoch_0.pt
+train, 5, train loss: 0.97, train acc: 66.02
+train, 10, train loss: 0.95, train acc: 66.57
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_oscar_seed_0_epoch_10.pt
+train, 15, train loss: 0.93, train acc: 67.84
+Finish training
+19: train acc: 0.666116
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_oscar_seed_0_epoch_19.pt
+val, 19, val loss: 0.91, val acc: 71.46
+val, 19, val loss: 0.91, Young val acc: 62.78
+val, 19, val loss: 0.91, Old val acc: 80.15
+########### Reluts ##########
+LIC score (LIC_M): 50.41%
+#############################
+python3 age_bert_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model oscar  --learning_rate 5e-5 --freeze_bert true --save_model true --every 10
+
+---Start---
+Seed: 12
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: oscar
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+
+device: cuda n_gpu: 1
+Generated using oscar
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.07, train acc: 56.98
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_oscar_seed_12_epoch_0.pt
+train, 5, train loss: 0.97, train acc: 66.13
+train, 10, train loss: 0.94, train acc: 67.25
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_oscar_seed_12_epoch_10.pt
+train, 15, train loss: 0.94, train acc: 67.02
+Finish training
+19: train acc: 0.674931
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_oscar_seed_12_epoch_19.pt
+val, 19, val loss: 0.95, val acc: 67.37
+val, 19, val loss: 0.95, Young val acc: 57.07
+val, 19, val loss: 0.95, Old val acc: 77.67
+########### Reluts ##########
+LIC score (LIC_M): 46.59%
+#############################
+python3 age_bert_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model oscar  --learning_rate 5e-5 --freeze_bert true --save_model true --every 10
+
+---Start---
+Seed: 456
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: oscar
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+
+device: cuda n_gpu: 1
+Generated using oscar
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.05, train acc: 58.82
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_oscar_seed_456_epoch_0.pt
+train, 5, train loss: 0.97, train acc: 65.92
+train, 10, train loss: 0.94, train acc: 67.59
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_oscar_seed_456_epoch_10.pt
+train, 15, train loss: 0.94, train acc: 67.08
+Finish training
+19: train acc: 0.680441
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_oscar_seed_456_epoch_19.pt
+val, 19, val loss: 0.96, val acc: 65.51
+val, 19, val loss: 0.96, Young val acc: 58.81
+val, 19, val loss: 0.96, Old val acc: 72.21
+########### Reluts ##########
+LIC score (LIC_M): 46.63%
+#############################
+python3 age_bert_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5 --freeze_bert true --save_model true --every 10
+
+---Start---
+Seed: 0
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_plus
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+
+device: cuda n_gpu: 1
+Generated using nic_plus
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.09, train acc: 55.61
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_nic_plus_seed_0_epoch_0.pt
+train, 5, train loss: 1.04, train acc: 60.19
+train, 10, train loss: 1.02, train acc: 61.56
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_nic_plus_seed_0_epoch_10.pt
+train, 15, train loss: 1.02, train acc: 62.55
+Finish training
+19: train acc: 0.621212
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_nic_plus_seed_0_epoch_19.pt
+val, 19, val loss: 1.04, val acc: 62.90
+val, 19, val loss: 1.04, Young val acc: 49.88
+val, 19, val loss: 1.04, Old val acc: 75.93
+########### Reluts ##########
+LIC score (LIC_M): 39.89%
+#############################
+python3 age_bert_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5 --freeze_bert true --save_model true --every 10
+
+---Start---
+Seed: 12
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_plus
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+
+device: cuda n_gpu: 1
+Generated using nic_plus
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.10, train acc: 53.48
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_nic_plus_seed_12_epoch_0.pt
+train, 5, train loss: 1.04, train acc: 60.12
+train, 10, train loss: 1.02, train acc: 61.47
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_nic_plus_seed_12_epoch_10.pt
+train, 15, train loss: 1.02, train acc: 61.60
+Finish training
+19: train acc: 0.625344
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_nic_plus_seed_12_epoch_19.pt
+val, 19, val loss: 1.05, val acc: 61.41
+val, 19, val loss: 1.05, Young val acc: 59.80
+val, 19, val loss: 1.05, Old val acc: 63.03
+########### Reluts ##########
+LIC score (LIC_M): 38.76%
+#############################
+python3 age_bert_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model nic_plus  --learning_rate 5e-5 --freeze_bert true --save_model true --every 10
+
+---Start---
+Seed: 456
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_plus
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+
+device: cuda n_gpu: 1
+Generated using nic_plus
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.08, train acc: 55.43
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_nic_plus_seed_456_epoch_0.pt
+train, 5, train loss: 1.03, train acc: 61.18
+train, 10, train loss: 1.02, train acc: 62.18
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_nic_plus_seed_456_epoch_10.pt
+train, 15, train loss: 1.01, train acc: 62.71
+Finish training
+19: train acc: 0.619559
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_nic_plus_seed_456_epoch_19.pt
+val, 19, val loss: 1.06, val acc: 60.67
+val, 19, val loss: 1.06, Young val acc: 53.60
+val, 19, val loss: 1.06, Old val acc: 67.74
+########### Reluts ##########
+LIC score (LIC_M): 39.15%
+#############################
+python3 age_bert_leakage.py --seed 0 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5 --freeze_bert true --save_model true --every 10
+
+---Start---
+Seed: 0
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_equalizer
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+
+device: cuda n_gpu: 1
+Generated using nic_equalizer
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.09, train acc: 55.15
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_nic_equalizer_seed_0_epoch_0.pt
+train, 5, train loss: 1.04, train acc: 60.70
+train, 10, train loss: 1.03, train acc: 61.17
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_nic_equalizer_seed_0_epoch_10.pt
+train, 15, train loss: 1.02, train acc: 61.97
+Finish training
+19: train acc: 0.625482
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_nic_equalizer_seed_0_epoch_19.pt
+val, 19, val loss: 1.04, val acc: 64.76
+val, 19, val loss: 1.04, Young val acc: 56.08
+val, 19, val loss: 1.04, Old val acc: 73.45
+########### Reluts ##########
+LIC score (LIC_M): 40.77%
+#############################
+python3 age_bert_leakage.py --seed 12 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5 --freeze_bert true --save_model true --every 10
+
+---Start---
+Seed: 12
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_equalizer
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+
+device: cuda n_gpu: 1
+Generated using nic_equalizer
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.09, train acc: 54.72
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_nic_equalizer_seed_12_epoch_0.pt
+train, 5, train loss: 1.04, train acc: 60.04
+train, 10, train loss: 1.02, train acc: 62.20
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_nic_equalizer_seed_12_epoch_10.pt
+train, 15, train loss: 1.02, train acc: 61.65
+Finish training
+19: train acc: 0.623416
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_nic_equalizer_seed_12_epoch_19.pt
+val, 19, val loss: 1.05, val acc: 61.17
+val, 19, val loss: 1.05, Young val acc: 61.54
+val, 19, val loss: 1.05, Old val acc: 60.79
+########### Reluts ##########
+LIC score (LIC_M): 38.87%
+#############################
+python3 age_bert_leakage.py --seed 456 --num_epochs 20 --calc_model_leak True --cap_model nic_equalizer  --learning_rate 5e-5 --freeze_bert true --save_model true --every 10
+
+---Start---
+Seed: 456
+Epoch: 20
+Freeze BERT: True
+Learning rate: 5e-05
+Batch size: 64
+Calculate score: True
+Task: captioning
+Captioning model: nic_equalizer
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+
+device: cuda n_gpu: 1
+Generated using nic_equalizer
+--- calc MODEL LIC score---
+-- Task is Captioning --
+#train : #test =  7260 806
+***Freeze BERT***
+--- Random guess --
+[nltk_data] Downloading package punkt to /home/lcur0829/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Num of Trainable Parameters: 199426
+train, 0, train loss: 1.08, train acc: 55.70
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_nic_equalizer_seed_456_epoch_0.pt
+train, 5, train loss: 1.04, train acc: 61.21
+train, 10, train loss: 1.02, train acc: 62.22
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_nic_equalizer_seed_456_epoch_10.pt
+train, 15, train loss: 1.02, train acc: 61.60
+Finish training
+19: train acc: 0.621625
+Saving the model to the path saved_models/age_annotation_generated_model_pretrained_bert_nic_equalizer_seed_456_epoch_19.pt
+val, 19, val loss: 1.06, val acc: 60.05
+val, 19, val loss: 1.06, Young val acc: 56.33
+val, 19, val loss: 1.06, Old val acc: 63.77
+########### Reluts ##########
+LIC score (LIC_M): 38.13%
+#############################
+
