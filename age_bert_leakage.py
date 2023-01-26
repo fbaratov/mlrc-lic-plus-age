@@ -159,15 +159,22 @@ def calc_leak(args, model, train_dataloader, test_dataloader):
         if args.save_model:
               if epoch % args.every == 0:
                 path = "saved_models/{}"
-                file_name = "age_annotation_{}_model_bert_{}_seed_{}_epoch_{}.pt"
+                if args.freeze_bert:
+                  file_name = "age_annotation_{}_model_pretrained_bert_{}_seed_{}_epoch_{}.pt"
+                else:
+                  file_name = "age_annotation_{}_model_bert_{}_seed_{}_epoch_{}.pt"
                 save_leak_model(model,epoch, file_name,path, args)
+                 
 
     print("Finish training")
     print('{0}: train acc: {1:2f}'.format(epoch, train_acc))
     # We also save the model after training is finished
-    file_name = "age_annotation_{}_model_bert_{}_seed_{}_epoch_{}.pt"
+    if args.freeze_bert:
+      file_name = "age_annotation_{}_model_pretrained_bert_{}_seed_{}_epoch_{}.pt"
+    else:
+      file_name = "age_annotation_{}_model_bert_{}_seed_{}_epoch_{}.pt"
     path = "saved_models/{}"
-    save_leak_model(model,epoch,file_name, path)
+    save_leak_model(model,epoch, file_name,path, args)
     # validation
     val_loss, val_acc, val_young_acc, val_old_acc, avg_score = calc_leak_epoch_pass(epoch, test_dataloader, model, optimizer, False, print_every=500)
     print('val, {0}, val loss: {1:.2f}, val acc: {2:.2f}'.format(epoch, val_loss*100, val_acc *100))
