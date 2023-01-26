@@ -1,0 +1,1276 @@
+
+Running the model
+
+##########################################
+	captions: human
+	model: lstm
+	data: age
+	epochs: 20
+	learning_rate: 5e-5
+	check:false
+	save_model:true
+	save_every:10
+	
+##########################################
+age, lstm
+
+python3 age_lstm_leakage.py --seed 0 --num_epochs 20 --calc_ann_leak True --cap_model nic  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  nic
+
+device: cuda n_gpu: 1
+Generated using nic
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 777
+two ageword play wii <unk> in their living room .
+a person doing a skateboard trick up a bowl
+a <unk> <unk> down to <unk> <unk> head on a baseball bat .
+a ageword sitting at a table eating food from a plate .
+a ageword ageword standing in the kitchen <unk> from a large <unk> cup .
+a bear <unk> out of <unk> bears sitting on a counter .
+<unk> is a <unk> skateboarder doing a trick
+a ageword is holding a wii controller <unk> <unk> it <unk> a baseball bat .
+a tall ageword is talking to a ageword while eating
+a ageword on a skateboard doing an <unk>
+two baseball players <unk> out on the field .
+Unique tokens in TEXT vocabulary: 694
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 707
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 695
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 700
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 699
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_0_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_0_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 46.11%
+#############################
+python3 age_lstm_leakage.py --seed 12 --num_epochs 20 --calc_ann_leak True --cap_model nic  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  nic
+
+device: cuda n_gpu: 1
+Generated using nic
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 777
+Unique tokens in TEXT vocabulary: 694
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 702
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 698
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 701
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 703
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_12_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_12_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 46.28%
+#############################
+python3 age_lstm_leakage.py --seed 456 --num_epochs 20 --calc_ann_leak True --cap_model nic  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  nic
+
+device: cuda n_gpu: 1
+Generated using nic
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 777
+Unique tokens in TEXT vocabulary: 696
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 708
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 692
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 694
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 695
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_456_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_seed_456_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 47.08%
+#############################
+python3 age_lstm_leakage.py --seed 0 --num_epochs 20 --calc_ann_leak True --cap_model sat  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  sat
+
+device: cuda n_gpu: 1
+Generated using sat
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 641
+two ageword <unk> wii <unk> in their living room <unk>
+a person doing a skateboard trick up a bowl
+a <unk> <unk> down to <unk> <unk> head on a baseball bat <unk>
+a ageword sitting at a table eating food from a plate <unk>
+a ageword ageword standing in the kitchen <unk> from a large <unk> cup <unk>
+a bear <unk> out of <unk> bears sitting on a counter <unk>
+<unk> is a <unk> skateboarder doing a trick
+a ageword is holding a wii controller <unk> <unk> it <unk> a baseball bat <unk>
+a tall ageword is talking to a ageword while eating
+a ageword on a skateboard doing an <unk>
+two baseball players <unk> out on the field <unk>
+Unique tokens in TEXT vocabulary: 613
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 606
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 614
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 604
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 609
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_0_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_0_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 45.43%
+#############################
+python3 age_lstm_leakage.py --seed 12 --num_epochs 20 --calc_ann_leak True --cap_model sat  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  sat
+
+device: cuda n_gpu: 1
+Generated using sat
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 641
+Unique tokens in TEXT vocabulary: 611
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 609
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 614
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 609
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 613
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_12_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_12_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 45.84%
+#############################
+python3 age_lstm_leakage.py --seed 456 --num_epochs 20 --calc_ann_leak True --cap_model sat  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  sat
+
+device: cuda n_gpu: 1
+Generated using sat
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 641
+Unique tokens in TEXT vocabulary: 612
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 609
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 611
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 613
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 609
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_456_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_sat_seed_456_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 47.17%
+#############################
+python3 age_lstm_leakage.py --seed 0 --num_epochs 20 --calc_ann_leak True --cap_model fc  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  fc
+
+device: cuda n_gpu: 1
+Generated using fc
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 269
+<unk> ageword <unk> <unk> <unk> in their living room <unk>
+a person doing a skateboard trick <unk> a bowl
+a <unk> <unk> down to <unk> <unk> <unk> on a baseball bat <unk>
+a ageword sitting at a table eating food <unk> a plate <unk>
+a ageword ageword standing in the kitchen <unk> <unk> a <unk> <unk> cup <unk>
+a bear <unk> <unk> of <unk> bears sitting on a counter <unk>
+<unk> is a <unk> <unk> doing a trick
+a ageword is holding a <unk> controller <unk> <unk> <unk> <unk> a baseball bat <unk>
+a <unk> ageword is talking to a ageword <unk> eating
+a ageword on a skateboard doing an <unk>
+<unk> baseball players <unk> <unk> on the field <unk>
+Unique tokens in TEXT vocabulary: 266
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 268
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 264
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 265
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 265
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_0_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_0_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 44.79%
+#############################
+python3 age_lstm_leakage.py --seed 12 --num_epochs 20 --calc_ann_leak True --cap_model fc  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  fc
+
+device: cuda n_gpu: 1
+Generated using fc
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 269
+Unique tokens in TEXT vocabulary: 265
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 265
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 264
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 264
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 265
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_12_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_12_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 44.40%
+#############################
+python3 age_lstm_leakage.py --seed 456 --num_epochs 20 --calc_ann_leak True --cap_model fc  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  fc
+
+device: cuda n_gpu: 1
+Generated using fc
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 269
+Unique tokens in TEXT vocabulary: 267
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 265
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 265
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 266
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 266
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_456_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_fc_seed_456_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 46.30%
+#############################
+python3 age_lstm_leakage.py --seed 0 --num_epochs 20 --calc_ann_leak True --cap_model att2in  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  att2in
+
+device: cuda n_gpu: 1
+Generated using att2in
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 335
+two ageword <unk> wii <unk> in their living room <unk>
+a person <unk> a skateboard <unk> up a bowl
+a <unk> <unk> down to <unk> <unk> <unk> on a baseball bat <unk>
+a ageword sitting at a table eating food from a plate <unk>
+a ageword ageword standing in the kitchen <unk> from a large <unk> cup <unk>
+a bear <unk> <unk> of <unk> bears sitting on a counter <unk>
+<unk> is a <unk> <unk> <unk> a <unk>
+a ageword is holding a wii controller <unk> <unk> it <unk> a baseball bat <unk>
+a <unk> ageword is talking to a ageword while eating
+a ageword on a skateboard <unk> an <unk>
+two baseball players <unk> <unk> on the field <unk>
+Unique tokens in TEXT vocabulary: 331
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 331
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 327
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 328
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 328
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_0_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_0_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 44.82%
+#############################
+python3 age_lstm_leakage.py --seed 12 --num_epochs 20 --calc_ann_leak True --cap_model att2in  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  att2in
+
+device: cuda n_gpu: 1
+Generated using att2in
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 335
+Unique tokens in TEXT vocabulary: 330
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 329
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 330
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 329
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 328
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_12_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_12_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 45.39%
+#############################
+python3 age_lstm_leakage.py --seed 456 --num_epochs 20 --calc_ann_leak True --cap_model att2in  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  att2in
+
+device: cuda n_gpu: 1
+Generated using att2in
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 335
+Unique tokens in TEXT vocabulary: 330
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 331
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 327
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 330
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 330
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_456_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_att2in_seed_456_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 46.43%
+#############################
+python3 age_lstm_leakage.py --seed 0 --num_epochs 20 --calc_ann_leak True --cap_model updn  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  updn
+
+device: cuda n_gpu: 1
+Generated using updn
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 417
+two ageword <unk> wii <unk> in their living room <unk>
+a person doing a skateboard trick up a bowl
+a <unk> <unk> down to <unk> <unk> <unk> on a baseball bat <unk>
+a ageword sitting at a table eating food from a plate <unk>
+a ageword ageword standing in the kitchen <unk> from a large <unk> cup <unk>
+a bear <unk> out of <unk> bears sitting on a counter <unk>
+<unk> is a <unk> <unk> doing a trick
+a ageword is holding a wii controller <unk> <unk> it <unk> a baseball bat <unk>
+a <unk> ageword is talking to a ageword while eating
+a ageword on a skateboard doing an <unk>
+two baseball players <unk> out on the field <unk>
+Unique tokens in TEXT vocabulary: 408
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 409
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 404
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 405
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 404
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_0_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_0_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 45.80%
+#############################
+python3 age_lstm_leakage.py --seed 12 --num_epochs 20 --calc_ann_leak True --cap_model updn  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  updn
+
+device: cuda n_gpu: 1
+Generated using updn
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 417
+Unique tokens in TEXT vocabulary: 407
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 407
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 408
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 406
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 406
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_12_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_12_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 46.31%
+#############################
+python3 age_lstm_leakage.py --seed 456 --num_epochs 20 --calc_ann_leak True --cap_model updn  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  updn
+
+device: cuda n_gpu: 1
+Generated using updn
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 417
+Unique tokens in TEXT vocabulary: 406
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 407
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 404
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 407
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 404
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_456_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_updn_seed_456_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 47.26%
+#############################
+python3 age_lstm_leakage.py --seed 0 --num_epochs 20 --calc_ann_leak True --cap_model transformer  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  transformer
+
+device: cuda n_gpu: 1
+Generated using transformer
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 910
+two ageword play wii sports in their living room <unk>
+a person doing a skateboard trick up a bowl
+a <unk> bending down to <unk> <unk> head on a baseball bat <unk>
+a ageword sitting at a table eating food from a plate <unk>
+a ageword ageword standing in the kitchen <unk> from a large <unk> cup <unk>
+a bear <unk> out of <unk> bears sitting on a counter <unk>
+<unk> is a <unk> skateboarder doing a trick
+a ageword is holding a wii controller as <unk> it <unk> a baseball bat <unk>
+a tall ageword is talking to a ageword while eating
+a ageword on a skateboard doing an <unk>
+two baseball players work out on the field <unk>
+Unique tokens in TEXT vocabulary: 866
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 875
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 866
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 865
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 867
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_0_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_0_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 46.14%
+#############################
+python3 age_lstm_leakage.py --seed 12 --num_epochs 20 --calc_ann_leak True --cap_model transformer  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  transformer
+
+device: cuda n_gpu: 1
+Generated using transformer
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 910
+Unique tokens in TEXT vocabulary: 860
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 870
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 866
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 869
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 866
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_12_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_12_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 46.33%
+#############################
+python3 age_lstm_leakage.py --seed 456 --num_epochs 20 --calc_ann_leak True --cap_model transformer  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  transformer
+
+device: cuda n_gpu: 1
+Generated using transformer
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 910
+Unique tokens in TEXT vocabulary: 859
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 875
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 874
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 874
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 867
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_456_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_transformer_seed_456_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 47.59%
+#############################
+python3 age_lstm_leakage.py --seed 0 --num_epochs 20 --calc_ann_leak True --cap_model oscar  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  oscar
+
+device: cuda n_gpu: 1
+Generated using oscar
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 491
+two ageword <unk> <unk> <unk> in their living room .
+a person doing a skateboard trick <unk> a bowl
+a <unk> <unk> down to <unk> <unk> head on a baseball bat .
+a ageword sitting at a table eating food from a plate .
+a ageword ageword standing in the kitchen <unk> from a <unk> <unk> cup .
+a bear <unk> out of <unk> bears sitting on a counter .
+<unk> <unk> a <unk> <unk> doing a trick
+a ageword <unk> holding a <unk> controller <unk> <unk> <unk> <unk> a baseball bat .
+a <unk> ageword <unk> talking to a ageword <unk> eating
+a ageword on a skateboard doing an <unk>
+two baseball players <unk> out on the field .
+Unique tokens in TEXT vocabulary: 477
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 477
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 477
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 472
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 471
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_0_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_0_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 45.54%
+#############################
+python3 age_lstm_leakage.py --seed 12 --num_epochs 20 --calc_ann_leak True --cap_model oscar  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  oscar
+
+device: cuda n_gpu: 1
+Generated using oscar
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 491
+Unique tokens in TEXT vocabulary: 475
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 476
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 479
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 476
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 473
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_12_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_12_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 46.23%
+#############################
+python3 age_lstm_leakage.py --seed 456 --num_epochs 20 --calc_ann_leak True --cap_model oscar  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  oscar
+
+device: cuda n_gpu: 1
+Generated using oscar
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 491
+Unique tokens in TEXT vocabulary: 475
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 475
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 480
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 479
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 475
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_456_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_oscar_seed_456_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 47.48%
+#############################
+python3 age_lstm_leakage.py --seed 0 --num_epochs 20 --calc_ann_leak True --cap_model nic_plus  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  nic_plus
+
+device: cuda n_gpu: 1
+Generated using nic_plus
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 511
+two ageword <unk> wii <unk> in their living room .
+a person doing a skateboard trick up a bowl
+a <unk> <unk> down to <unk> <unk> head on a baseball bat .
+a ageword sitting at a table eating food from a plate .
+a ageword ageword standing in the kitchen <unk> from a large <unk> cup .
+a bear <unk> out of <unk> bears sitting on a counter .
+<unk> is a <unk> <unk> doing a trick
+a ageword is holding a wii controller <unk> <unk> it <unk> a baseball bat .
+a tall ageword is talking to a ageword while eating
+a ageword on a skateboard doing an <unk>
+two baseball <unk> <unk> out on the field .
+Unique tokens in TEXT vocabulary: 495
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 493
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 495
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 491
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 491
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_0_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_0_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 45.98%
+#############################
+python3 age_lstm_leakage.py --seed 12 --num_epochs 20 --calc_ann_leak True --cap_model nic_plus  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  nic_plus
+
+device: cuda n_gpu: 1
+Generated using nic_plus
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 511
+Unique tokens in TEXT vocabulary: 491
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 492
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 492
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 492
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 494
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_12_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_12_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 46.28%
+#############################
+python3 age_lstm_leakage.py --seed 456 --num_epochs 20 --calc_ann_leak True --cap_model nic_plus  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  nic_plus
+
+device: cuda n_gpu: 1
+Generated using nic_plus
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 511
+Unique tokens in TEXT vocabulary: 493
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 495
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 491
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 493
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 495
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_456_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_plus_seed_456_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 46.89%
+#############################
+python3 age_lstm_leakage.py --seed 0 --num_epochs 20 --calc_ann_leak True --cap_model nic_equalizer  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 0
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  nic_equalizer
+
+device: cuda n_gpu: 1
+Generated using nic_equalizer
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 504
+two ageword <unk> wii <unk> in their living room .
+a person doing a skateboard trick up a bowl
+a <unk> <unk> down to <unk> <unk> head on a baseball bat .
+a ageword sitting at a table eating food from a plate .
+a ageword ageword standing in the kitchen <unk> from a large <unk> cup .
+a bear <unk> out of <unk> bears sitting on a counter .
+<unk> is a <unk> skateboarder doing a trick
+a ageword is holding a wii controller <unk> <unk> it <unk> a baseball bat .
+a tall ageword is talking to a ageword while eating
+a ageword on a skateboard doing an <unk>
+two baseball <unk> <unk> out on the field .
+Unique tokens in TEXT vocabulary: 489
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 484
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 488
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 484
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_0_epoch_10.pt
+Unique tokens in TEXT vocabulary: 486
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_0_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_0_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_0_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 46.26%
+#############################
+python3 age_lstm_leakage.py --seed 12 --num_epochs 20 --calc_ann_leak True --cap_model nic_equalizer  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 12
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  nic_equalizer
+
+device: cuda n_gpu: 1
+Generated using nic_equalizer
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 504
+Unique tokens in TEXT vocabulary: 485
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 484
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 485
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 487
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_12_epoch_10.pt
+Unique tokens in TEXT vocabulary: 489
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_12_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_12_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_12_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 46.34%
+#############################
+python3 age_lstm_leakage.py --seed 456 --num_epochs 20 --calc_ann_leak True --cap_model nic_equalizer  --learning_rate 5e-5 --save_model true --every 10
+---Start---
+Seed: 456
+Epoch: 20
+Learning rate: 5e-05
+Use GLoVe: False
+Task: captioning
+Protected attribute: Age
+Save Model :  True
+Saving Every :  10
+Align vocab: True
+Vocab of  nic_equalizer
+
+device: cuda n_gpu: 1
+Generated using nic_equalizer
+--- calc ANN Leakage ---
+-- task is Captioning --
+#train : #test =  7260 806
+len(model_vocab): 504
+Unique tokens in TEXT vocabulary: 486
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 486
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 481
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 488
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_456_epoch_10.pt
+Unique tokens in TEXT vocabulary: 487
+Unique tokens in LABEL vocabulary: 2
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_456_epoch_0.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_456_epoch_10.pt
+Saving the model to the path saved_models/age_annotation_human_model_lstm_nic_equalizer_seed_456_epoch_19.pt
+########## Results ##########
+LIC score (LIC_D): 47.23%
+#############################
