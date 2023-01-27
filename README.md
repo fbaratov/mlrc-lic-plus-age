@@ -205,7 +205,14 @@ In the paper, LSTM or BERT is used as the classifier. Please refer to [Running m
 <img src="images/LIC_race.png" width="800pix"/>
 </div>
 
-**Note**: The classifier is trained 10 times with random initializations, and the results are reported by the average and standard deviation.
+
+###Age bias
+<div align="center">
+<img src="images/LIC_race.png" width="800pix"/>
+</div>
+
+
+**Note**: The classifier is trained 3 times with random initializations except LSTM NIC+ and NIC_Equalizer [10 seeds], and the results are reported by the average and standard deviation.
 
 ## Citation
     @inproceedings{hirota2022quantifying,
