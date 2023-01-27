@@ -197,22 +197,41 @@ In the paper, LSTM or BERT is used as the classifier. Please refer to [Running m
 
 ### Gender bias
 <div align="center">
-<img src="images/LIC_gender.png" width="800pix"/>
+<img src="images/table_gender" width="800pix"/>
 </div>
 
 ### Racial bias
 <div align="center">
-<img src="images/LIC_race.png" width="800pix"/>
+<img src="images/table_race" width="800pix"/>
 </div>
 
 
 ###Age bias
 <div align="center">
-<img src="images/LIC_race.png" width="800pix"/>
+<img src="images/table_age" width="800pix"/>
 </div>
 
 
 **Note**: The classifier is trained 3 times with random initializations except LSTM NIC+ and NIC_Equalizer [10 seeds], and the results are reported by the average and standard deviation.
+
+
+#Results from bert
+
+
+### BERT for young-old
+<div align="center">
+<img src="images/bert_age_old_young" width="800pix"/>
+</div>
+
+### Differences between pre-trained and fine-tuned BERT
+<div align="center">
+<img src="images/bert_differences" width="800pix"/>
+</div>
+
+### BERT First Layer Attention Weights 
+<div align="center">
+<img src="images/mask_mask_attention_first_layer" width="800pix"/>
+</div>
 
 ## Citation
     @inproceedings{hirota2022quantifying,
