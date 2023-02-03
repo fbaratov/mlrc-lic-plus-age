@@ -1,4 +1,6 @@
-_Note: the repository of the paper that we are reproducing can be found [here](https://github.com/rebnej/lick-caption-bias). The repo's README is included below._
+_Note: the repository of the paper that we are reproducing can be found [here](https://github.com/rebnej/lick-caption-bias). Much of the scripts and code available in this project are taken directly from the aforementioned repository._
+
+
 
 # Reproducing Our Results
 
@@ -20,9 +22,16 @@ the section [Parsing Results](#parsing-results)
 
 * ./run_scripts contains a bash file to run all models with specified seeds on partition of dataset 'gender' 'race' or 'age'.
 
-For more information about using the script please refer to the section [Running Models](#running-models)
+For more information about using the script please refer to the section [Running Models](#running-models).
 
-# Running Models
+# Quick run in Colab
+The most out-of-box way to run the models is in Google Colab. The following steps apply:
+
+1. Use either ```run_bert.ipynb``` or ```run_lstm.ipynb``` as the main notebook file.
+2. Upload or clone the repository to the runtime.
+3. Run the notebook fully. It will install the environment and provide all relevant results for the respective model.
+
+# Running Models outside of colab
 
 
 ‼️ Firstly the environment dependencies needs to be installed. 
@@ -107,110 +116,3 @@ cd lick-caption-bias
 ```
 
 You should be in the container now. Go to the lick-caption-bias directory and run the scripts as described below. 
-
-
-
-# README of original repo - Quantifying Societal Bias Amplification in Image Captioning
-
-
-This repository contains source code necessary to reproduce the results presented in the paper [Quantifying Societal Bias Amplification in Image Captioning](https://openaccess.thecvf.com/content/CVPR2022/html/Hirota_Quantifying_Societal_Bias_Amplification_in_Image_Captioning_CVPR_2022_paper.html) (CVPR 2022, Oral). Please check the project website [here](https://sites.google.com/view/cvpr-2022-quantify-bias/home).
-
-
-<div align="center">
-<img src="images/LIC_test.png" width="700pix"/>
-</div>
-
-
-
-
-## LIC metric
-LIC metric measures how much biased a set of model generated captions are with respect to the captions in the training dataset. LIC is computer as follows:
-
-1. Mask attribute-revealing words. 
-    
-<div align="center">
-<img src="images/mask.png" width="400pix"/>
-</div>
-
-2. Train 2 classifiers, 1 for human captions and 1 for generated captions, with attribute labels. The classifiers' goal is to predict the attribute (e.g. gender, race) for the person in the image **using only the captions**.
-
-3. Calculate LIC scores for each classifier. If the set of captions is not biased, the classifier accuracy should be close to random chance.
-
-<div align="center">
-<img src="images/LIC_formula.png" width="500pix"/>
-</div>
-
-4. To compute bias amplification, take the difference of the LIC socres between 2 classifiers.
-
-
-
-## Setup
-1. Clone the repository.
-  /bias_data  folder contains human/generated captions and corresponding gender/racial annotations from the paper [Understanding and Evaluating Racial Biases in Image Captioning](https://github.com/princetonvisualai/imagecaptioning-bias).
-2. Install dependancies:
-  ### For LSTM classifier
-    - Python 3.7
-    - numpy 1.21.2 
-    - pytorch 1.9
-    - torchtext 0.10.0 
-    - spacy 3.4.0 
-    - sklearn 1.0.2 
-    - nltk 3.6.3
-    - pandas
-
-  ### For BERT classifier
-    - Python 3.7
-    - numpy 1.21.2 
-    - pytorch 1.4
-    - transformers 4.0.1
-    - spacy 2.3
-    - sklearn 1.0.2 
-    - nltk 3.6.3
-    - pandas
-    
-## Compute LIC  
-We evaluate various captioning models (i.e. [NIC](https://arxiv.org/abs/1411.4555), [SAT](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning), [FC](https://github.com/ruotianluo/self-critical.pytorch), [Att2in](https://github.com/ruotianluo/self-critical.pytorch), [UpDn](https://github.com/ruotianluo/self-critical.pytorch/blob/master/MODEL_ZOO.md), [Transformer](https://github.com/ruotianluo/self-critical.pytorch/blob/master/MODEL_ZOO.md), [OSCAR](https://github.com/microsoft/Oscar), [NIC+](https://github.com/kayburns/women-snowboard), and [NIC+Equalizer](https://github.com/kayburns/women-snowboard)). In the following commands, you can select a model in `$model_name` from them (i.e. `nic`, `sat`, `fc`, `att2in`, `updn`, `transformer`, `oscar`, `nic_equalizer`, or `nic_plus`).
-
-
-In the paper, LSTM or BERT is used as the classifier. Please refer to [Running models](#running-models)
-  
-
-## Results
-
-### Gender bias
-<div align="center">
-<img src="images/table_gender.png" width="800pix"/>
-</div>
-
-### Racial bias
-<div align="center">
-<img src="images/table_race.png" width="800pix"/>
-</div>
-
-
-### Age bias
-<div align="center">
-<img src="images/table_age.png" width="800pix"/>
-</div>
-
-
-**Note**: The classifier is trained 3 times with random initializations except LSTM NIC+ and NIC_Equalizer [10 seeds], and the results are reported by the average and standard deviation.
-
-
-# Results from bert
-
-
-### BERT for young-old
-<div align="center">
-<img src="images/bert_age_old_young.png" width="800pix"/>
-</div>
-
-### Differences between pre-trained and fine-tuned BERT
-<div align="center">
-<img src="images/bert_differences.png" width="800pix"/>
-</div>
-
-### BERT First Layer Attention Weights 
-<div align="center">
-<img src="images/mask_mask_attention_first_layer.png" width="800pix"/>
-</div>
