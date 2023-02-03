@@ -2,15 +2,15 @@
 #Pull the python 3.7 image as required in the requirements of the paper.
 FROM python:3.7.5-slim
 #We make the directory to store our repo
-RUN mkdir mlrc-lic-plus-age-fork
+RUN mkdir mlrc-lic-plus-age
 #Copy the requirements to the docker image, we do not want to run this again unless requirments do change.
-COPY lstm_requirements.txt ./mlrc-lic-plus-age-fork/lstm_requirements.txt
+COPY lstm_requirements.txt ./mlrc-lic-plus-age/lstm_requirements.txt
 #Change the working directory to our repo.
-WORKDIR "/mlrc-lic-plus-age-fork"
+WORKDIR "/mlrc-lic-plus-age"
 #Verify the files using ls.
 RUN ls
 #Install requirements.txt for lstm model
 RUN pip install -r lstm_requirements.txt
 #Copy the repo to the docker working directory
-COPY . ./mlrc-lic-plus-age-fork
+COPY . ./mlrc-lic-plus-age
 RUN python3 -m spacy download en_core_web_sm
