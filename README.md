@@ -214,12 +214,3 @@ In the paper, LSTM or BERT is used as the classifier. Please refer to [Running m
 <div align="center">
 <img src="images/mask_mask_attention_first_layer.png" width="800pix"/>
 </div>
-
-## Citation
-    @inproceedings{hirota2022quantifying,
-      title={Quantifying Societal Bias Amplification in Image Captioning},
-      author={Hirota, Yusuke and Nakashima, Yuta and Garcia, Noa},
-      booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-      pages={13450--13459},
-      year={2022}
-     }
