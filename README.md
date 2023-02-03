@@ -3,21 +3,21 @@
 
 Our repository is structured as follows.
 
-* fact-group21 contains the python scripts for runnig the models, as well as .job scripts for running the models in LISA cluster.
+* mlrc-lic-plus-age-fork contains the python scripts for runnig the models, as well as .job scripts for running the models in LISA cluster.
     
-* fact-group21/Dockerfiles contains dockerfiles for building docker images. We have a lot of environmental requirements, so it is wise to use
+* mlrc-lic-plus-age-fork/Dockerfiles contains dockerfiles for building docker images. We have a lot of environmental requirements, so it is wise to use
 this when you do not have access to LISA cluster not UNIX based system. Explanation of how to use docker is out of scope of this repository, 
 but we provide commands for getting the models work in docker.[Running Docker Files](#running-docker-files)
 
-* fact-group21/bias_data contains the human annotated and generated captions for each model. This is our entry point to the dataset.
+* mlrc-lic-plus-age-fork/bias_data contains the human annotated and generated captions for each model. This is our entry point to the dataset.
     
-* fact-group21/notebooks contains the notebook for running the models in google colab. It is not very important. 
+* mlrc-lic-plus-age-fork/notebooks contains the notebook for running the models in google colab. It is not very important. 
     
-* fact-group21/outputs contains the outputs of the model runs, also scripts to parse them into python classes. Therefore, we can have
-easier time verifying them. The scripts needs to be executed in ~/fact-group21. For more information about using this script please refer to 
+* mlrc-lic-plus-age-fork/outputs contains the outputs of the model runs, also scripts to parse them into python classes. Therefore, we can have
+easier time verifying them. The scripts needs to be executed in ~/mlrc-lic-plus-age-fork. For more information about using this script please refer to 
 the section [Parsing Results](#parsing-results)
 
-* fact-group21/run_scripts contains a bash file to run all models with specified seeds on partition of dataset 'gender' 'race' or 'age'.
+* mlrc-lic-plus-age-fork/run_scripts contains a bash file to run all models with specified seeds on partition of dataset 'gender' 'race' or 'age'.
 
 For more information about using the script please refer to the section [Running Models](#running-models)
 
@@ -56,7 +56,7 @@ bash run_models.sh --model lstm --captions human --data age --epochs 20 --learni
 written in concside manner to outputs directory.
 ```
 
-For more information about the bashscript please refer to the <a href="https://github.com/fbaratov/fact-group21/tree/main/run_scripts" target="_blank">README </a>
+For more information about the bashscript please refer to run_scripts/README.md .
 file.
 
 
@@ -66,29 +66,8 @@ file.
 outputs/model_captions_data.txt
 ```
 
-‼️ This bash script needs to be executed from ~/fact-group21, otherwise it will throw file not found error.
+‼️ This bash script needs to be executed from ~/mlrc-lic-plus-age-fork, otherwise it will throw file not found error.
 
-### LISA Installation 
-
-In LISA, run the bert_env_install.job using
-
-```
-sbatch bert_env_install.job
-```
-After running the job, you can run the models using
-
-```
-sbatch bert_gender_generated.job
-sbatch bert_gender_human.job
-```
-
-The template for finding the .job files is.
-
-```
-model_data_captions.job
-```
-
-After job is finished, move the .txt file into /outputs file and follow [Parsing Results](#parsing-results).
 # Parsing Results
 
 We have developed a script to parse .txt file from the run, into python class.
@@ -98,9 +77,9 @@ For result generation, you can use the mean and std of LIC_M and LIC_D results.
 As well as LIC results. Which is basically LIC_M - LIC_D
 
 
-:bangbang: This script needs to be run in ~/fact-group21
+:bangbang: This script needs to be run in ~/mlrc-lic-plus-age-fork
 
-:heavy_check_mark: This script is tested using /fact-group21/outputs/test
+:heavy_check_mark: This script is tested using /mlrc-lic-plus-age-fork/outputs/test
 
 # Running docker files
 
@@ -111,8 +90,8 @@ Follow the directory to the lick-caption-bias, and when you are in the directory
 <h3> For lstm </h3>
 
 ```
-docker build -f ./Dockerfiles/Dockerfile_lstm -t lstm_fact . 
-docker run -it lstm_fact /bin/bash
+docker build -f ./Dockerfiles/Dockerfile_lstm -t lstm. 
+docker run -it lstm /bin/bash
 #In the container
 cd lick-caption-bias
 ```
@@ -120,7 +99,7 @@ cd lick-caption-bias
 <h3> For BERT </h3>
 
 ```
-docker build -f ./Dockerfiles/Dockerfile_bert -t bert_fact . 
+docker build -f ./Dockerfiles/Dockerfile_bert -t bert. 
 docker run -it bert_fact /bin/bash
 #In the container
 cd lick-caption-bias
