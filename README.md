@@ -31,7 +31,7 @@ The most out-of-box way to run the models is in Google Colab. The following step
 2. Upload or clone the repository to the runtime.
 3. Run the notebook fully. It will install the environment and provide all relevant results for the respective model.
 
-# Running Models outside of colab
+# Running Models
 
 
 ‼️ Firstly the environment dependencies needs to be installed. 
