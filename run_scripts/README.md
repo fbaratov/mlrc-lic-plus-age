@@ -1,6 +1,6 @@
 <h1> Usage </h1>
 
-To use the script, you need to be in the ~/fact-group21 directory. If you are not in there, then you will get an error saying file not found.
+To use the script, you need to be in the root directory of the repository. If you are not in there, then you will get an error saying file not found.
 
 <h2> Arguments </h2>
 
