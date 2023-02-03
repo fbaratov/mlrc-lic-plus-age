@@ -1,4 +1,4 @@
-_Note: the original repository can be found [here](https://github.com/rebnej/lick-caption-bias)._
+_Note: the repository of the paper that we are reproducing can be found [here](https://github.com/rebnej/lick-caption-bias)._
 
 # Reproducing Our Results
 
