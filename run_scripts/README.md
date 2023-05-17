@@ -27,7 +27,7 @@ The script accepts 6 arguments in total.
                         [--check]
                         Indicates if you only wanna run check.
                         
-If --check flag is used, all the models are run for 1 epochs only.
+If the `--check` flag is used, all the models are run for 1 epochs only.
 
 <h2> Using the script for training different models </h2>
 
@@ -64,7 +64,7 @@ python3 ./scripts/calculate_LIC.py
 <h3> BERT-pre </h3>
 
 Use the script with the values defined in the paper for BERT-pre.
-This is how you can compute the LIC values for BERT-pre model.
+This is how you can compute the LIC values for BERT-pre.
 
 ```bash
 bash run_models.sh --model bert_pretrained --captions human --data gender --epochs 20 --learning_rate 5e-5 > outputs/pretrained_bert_human_gender.txt
